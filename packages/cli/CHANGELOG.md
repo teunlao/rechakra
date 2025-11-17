@@ -1,5 +1,13 @@
 # @rechakra/cli
 
+## 1.0.2
+
+### Patch Changes
+
+- [`4f7a249`](https://github.com/teunlao/rechakra/commit/4f7a2496129ad75ebad666f57f4a38eba7a965b6)
+  Thanks [@teunlao](https://github.com/teunlao)! - Fix recipe type override with
+  Omit utility for proper custom recipe support
+
 ## 1.0.1
 
 ### Patch Changes
