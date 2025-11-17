@@ -6,7 +6,7 @@
     "type": "git",
     "url": "git+https://github.com/teunlao/rechakra.git"
   },
-  "author": "Segun Adebayo <sage@adebayosegun.com>",
+  "author": "teunlao <teunlao@gmail.com>",
   "license": "MIT",
   "scripts": {
     "prepare": "husky",
