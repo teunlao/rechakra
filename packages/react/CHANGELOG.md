@@ -1,5 +1,14 @@
 # @rechakra/react
 
+## 1.0.3
+
+### Patch Changes
+
+- [`c2d4f15`](https://github.com/teunlao/rechakra/commit/c2d4f151d97dc687840de010813b5633c397b8ff)
+  Thanks [@teunlao](https://github.com/teunlao)! - Add lint-schema CLI command
+  to generate design system schema JSON for external linters. The schema
+  includes tokens, props, recipes, and slot recipes information.
+
 ## 1.0.2
 
 ## 1.0.1

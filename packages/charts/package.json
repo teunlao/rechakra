@@ -1,6 +1,6 @@
 {
   "name": "@rechakra/charts",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Data visualization components for Chakra UI",
   "type": "module",
   "main": "dist/cjs/index.cjs",
