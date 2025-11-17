@@ -6,7 +6,7 @@ import {
   Select,
   Stack,
   createListCollection,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 
 export const SelectWithVariants = () => {
   return (

@@ -7,21 +7,21 @@ import {
   Tabs,
   createShikiAdapter,
   useTabs,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import { useEffect } from "react"
 import type { HighlighterGeneric } from "shiki"
 
 const files = [
-  { title: "npm", language: "bash", code: "npm install @chakra-ui/react" },
+  { title: "npm", language: "bash", code: "npm install @rechakra/react" },
   {
     title: "yarn",
     language: "bash",
-    code: "yarn add @chakra-ui/react",
+    code: "yarn add @rechakra/react",
   },
   {
     title: "bun",
     language: "bash",
-    code: "bun install @chakra-ui/react",
+    code: "bun install @rechakra/react",
   },
 ]
 

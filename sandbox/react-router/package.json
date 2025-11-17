@@ -10,7 +10,7 @@
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
-    "@chakra-ui/react": "workspace:*",
+    "@rechakra/react": "workspace:*",
     "@emotion/cache": "^11.14.0",
     "@emotion/react": "^11.14.0",
     "@emotion/server": "^11.11.0",
@@ -24,7 +24,7 @@
     "react-router": "^7.9.4"
   },
   "devDependencies": {
-    "@chakra-ui/cli": "workspace:*",
+    "@rechakra/cli": "workspace:*",
     "@react-router/dev": "^7.6.2",
     "@types/node": "^24",
     "@types/react": "19.2.2",

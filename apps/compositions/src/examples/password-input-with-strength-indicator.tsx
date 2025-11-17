@@ -1,6 +1,6 @@
 "use client"
 
-import { Stack } from "@chakra-ui/react"
+import { Stack } from "@rechakra/react"
 import { type Options, passwordStrength } from "check-password-strength"
 import {
   PasswordInput,

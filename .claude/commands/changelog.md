@@ -10,7 +10,7 @@ properly formatted entry in `.changelog/v3.mdx`.
 
 2. **Parse each changeset file**:
    - Extract frontmatter (YAML between `---` markers) to get:
-     - Package name(s) affected (e.g., `"@chakra-ui/react": patch`)
+     - Package name(s) affected (e.g., `"@rechakra/react": patch`)
      - Version bump type: `patch`, `minor`, or `major`
    - Extract the description after the frontmatter
    - Look for code snippets (markdown code blocks with triple backticks)
@@ -85,7 +85,7 @@ properly formatted entry in `.changelog/v3.mdx`.
 ### Changeset Format
 ```markdown
 ---
-"@chakra-ui/react": patch
+"@rechakra/react": patch
 ---
 
 Fix issue where something doesn't work
@@ -95,8 +95,8 @@ Fix issue where something doesn't work
 
 ```markdown
 ---
-"@chakra-ui/react": patch
-"@chakra-ui/cli": minor
+"@rechakra/react": patch
+"@rechakra/cli": minor
 ---
 
 Add new feature that affects multiple components
@@ -106,7 +106,7 @@ Add new feature that affects multiple components
 
 ```markdown
 ---
-"@chakra-ui/react": minor
+"@rechakra/react": minor
 ---
 
 Add support for `newProp` option in Accordion component

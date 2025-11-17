@@ -1,4 +1,4 @@
-import { Button, Menu, Portal, ScrollArea } from "@chakra-ui/react"
+import { Button, Menu, Portal, ScrollArea } from "@rechakra/react"
 import { useId } from "react"
 
 export const ScrollAreaWithMenu = () => {

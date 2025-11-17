@@ -7,7 +7,7 @@ import {
   Presence,
   Stack,
   useDisclosure,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 
 export const PresenceUnmountOnExit = () => {
   const { open, onToggle } = useDisclosure()

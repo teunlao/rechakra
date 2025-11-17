@@ -1,6 +1,6 @@
 "use client"
 
-import { TreeView, createTreeCollection } from "@chakra-ui/react"
+import { TreeView, createTreeCollection } from "@rechakra/react"
 import { LuFile, LuFolder } from "react-icons/lu"
 
 export const TreeViewDefaultExpanded = () => {

@@ -1,7 +1,7 @@
 "use client"
 
-import { Button, Dialog, Portal } from "@chakra-ui/react"
-import { createOverlay } from "@chakra-ui/react"
+import { Button, Dialog, Portal } from "@rechakra/react"
+import { createOverlay } from "@rechakra/react"
 
 interface DialogProps {
   title: string

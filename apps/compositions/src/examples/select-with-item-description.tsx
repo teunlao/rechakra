@@ -6,7 +6,7 @@ import {
   Span,
   Stack,
   createListCollection,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 
 export const SelectWithItemDescription = () => {
   return (

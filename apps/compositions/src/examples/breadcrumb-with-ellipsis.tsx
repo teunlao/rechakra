@@ -1,4 +1,4 @@
-import { Breadcrumb } from "@chakra-ui/react"
+import { Breadcrumb } from "@rechakra/react"
 
 export const BreadcrumbWithEllipsis = () => {
   return (

@@ -10,7 +10,7 @@ import {
   Span,
   Stack,
   Text,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import { BsGithub } from "react-icons/bs"
 import { FaDiscord } from "react-icons/fa"
 import { IconType } from "react-icons/lib"

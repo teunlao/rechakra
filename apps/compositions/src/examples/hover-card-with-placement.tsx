@@ -1,4 +1,4 @@
-import { Box, HoverCard, Link, Portal, Strong } from "@chakra-ui/react"
+import { Box, HoverCard, Link, Portal, Strong } from "@rechakra/react"
 
 export const HoverCardWithPlacement = () => {
   return (

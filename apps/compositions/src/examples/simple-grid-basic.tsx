@@ -1,4 +1,4 @@
-import { SimpleGrid } from "@chakra-ui/react"
+import { SimpleGrid } from "@rechakra/react"
 import { DecorativeBox } from "compositions/lib/decorative-box"
 
 export const SimpleGridBasic = () => {

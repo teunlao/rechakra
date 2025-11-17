@@ -1,4 +1,4 @@
-import { Center, For, Stack } from "@chakra-ui/react"
+import { Center, For, Stack } from "@rechakra/react"
 
 export const TokensFocusRing = () => {
   return (

@@ -5,7 +5,7 @@ import {
   LinkOverlay,
   Span,
   Text,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 
 export const LinkOverlayArticle = () => {
   return (

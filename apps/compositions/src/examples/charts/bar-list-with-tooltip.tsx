@@ -1,6 +1,6 @@
 "use client"
 
-import { BarList, type BarListData, useChart } from "@chakra-ui/charts"
+import { BarList, type BarListData, useChart } from "@rechakra/charts"
 
 export const BarListWithTooltip = () => {
   const chart = useChart<BarListData>({

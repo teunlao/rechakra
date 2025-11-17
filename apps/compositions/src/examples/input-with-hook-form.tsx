@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, Field, Input, Stack } from "@chakra-ui/react"
+import { Button, Field, Input, Stack } from "@rechakra/react"
 import { useForm } from "react-hook-form"
 
 interface FormValues {

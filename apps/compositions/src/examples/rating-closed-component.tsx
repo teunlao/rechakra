@@ -1,4 +1,4 @@
-import { RatingGroup } from "@chakra-ui/react"
+import { RatingGroup } from "@rechakra/react"
 import * as React from "react"
 
 export interface RatingProps extends RatingGroup.RootProps {

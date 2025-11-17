@@ -9,7 +9,7 @@ import {
   RadioGroup,
   Skeleton,
   VStack,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import type { MetaFunction } from "@remix-run/node"
 import { ColorModeToggle } from "../components/color-mode-toggle"
 
@@ -65,7 +65,7 @@ export default function Index() {
 
         <HStack>
           <Button>Lets go</Button>
-          <Button variant="outline">bun install @chakra-ui/react</Button>
+          <Button variant="outline">bun install @rechakra/react</Button>
         </HStack>
       </VStack>
 

@@ -4,8 +4,8 @@ import type {
   SlotRecipeDefinition,
   SystemRecipeFn,
   SystemSlotRecipeFn,
-} from "@chakra-ui/react"
-import "@chakra-ui/react/typegen"
+} from "@rechakra/react"
+import "@rechakra/react/typegen"
 
 export interface BadgeVariant {
   /** @default "subtle" */
@@ -1677,7 +1677,7 @@ export type HeroCardVariantMap = {
   [K in keyof HeroCardVariant]: Array<HeroCardVariant[K]>
 }
 
-declare module "@chakra-ui/react/typegen" {
+declare module "@rechakra/react/typegen" {
   interface ChakraCustomRecipeConfig {
     badge: SystemRecipeFn<BadgeVariantProps, BadgeVariantMap>
     button: SystemRecipeFn<ButtonVariantProps, ButtonVariantMap>

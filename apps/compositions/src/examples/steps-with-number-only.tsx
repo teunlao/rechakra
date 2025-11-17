@@ -1,4 +1,4 @@
-import { Button, ButtonGroup, Steps } from "@chakra-ui/react"
+import { Button, ButtonGroup, Steps } from "@rechakra/react"
 
 export const StepsWithNumberOnly = () => {
   return (

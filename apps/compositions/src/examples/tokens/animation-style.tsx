@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, Center, For, HStack, Stack } from "@chakra-ui/react"
+import { Button, Center, For, HStack, Stack } from "@rechakra/react"
 import { useState } from "react"
 
 export const TokensAnimationStyle = () => {

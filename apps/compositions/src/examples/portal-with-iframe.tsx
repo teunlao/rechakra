@@ -1,4 +1,4 @@
-import { Portal } from "@chakra-ui/react"
+import { Portal } from "@rechakra/react"
 import Frame from "react-frame-component"
 
 export const PortalWithIframe = () => (

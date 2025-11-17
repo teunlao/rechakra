@@ -198,7 +198,7 @@ pnpm build:tokens-dev   # Generate tokens locally
 ### Package Management
 
 ```bash
-pnpm react              # Run commands in @chakra-ui/react
+pnpm react              # Run commands in @rechakra/react
 pnpm www                # Run commands in docs site
 pnpm mcp                # Run commands in MCP server
 ```

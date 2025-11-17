@@ -1,5 +1,5 @@
-import type { HTMLChakraProps, RecipeVariantProps } from "@chakra-ui/react"
-import { createSlotRecipeContext, defineSlotRecipe } from "@chakra-ui/react"
+import type { HTMLChakraProps, RecipeVariantProps } from "@rechakra/react"
+import { createSlotRecipeContext, defineSlotRecipe } from "@rechakra/react"
 
 // 1. Define the recipe
 

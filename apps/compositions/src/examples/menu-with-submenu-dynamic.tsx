@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, Menu, Portal } from "@chakra-ui/react"
+import { Button, Menu, Portal } from "@rechakra/react"
 import { LuChevronRight } from "react-icons/lu"
 
 interface Item {

@@ -1,6 +1,6 @@
 "use client"
 
-import { Portal, Select, createListCollection } from "@chakra-ui/react"
+import { Portal, Select, createListCollection } from "@rechakra/react"
 
 export const SelectBasic = () => {
   return (

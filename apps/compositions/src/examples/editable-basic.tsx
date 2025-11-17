@@ -1,4 +1,4 @@
-import { Editable } from "@chakra-ui/react"
+import { Editable } from "@rechakra/react"
 
 export const EditableBasic = () => (
   <Editable.Root textAlign="start" defaultValue="Click to edit">

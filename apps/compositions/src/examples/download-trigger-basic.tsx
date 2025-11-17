@@ -1,4 +1,4 @@
-import { Button, DownloadTrigger } from "@chakra-ui/react"
+import { Button, DownloadTrigger } from "@rechakra/react"
 
 const data = "The quick brown fox jumps over the lazy dog"
 

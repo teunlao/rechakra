@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react"
+import { Box } from "@rechakra/react"
 
 export const BoxWithAsProp = () => {
   return (

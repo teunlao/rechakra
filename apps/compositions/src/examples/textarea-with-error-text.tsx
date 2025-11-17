@@ -1,4 +1,4 @@
-import { Field, HStack, Textarea } from "@chakra-ui/react"
+import { Field, HStack, Textarea } from "@rechakra/react"
 
 export const TextareaWithErrorText = () => {
   return (

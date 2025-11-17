@@ -1,7 +1,7 @@
 import {
   type BlockquoteRootProps,
   Blockquote as ChakraBlockquote,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 
 export const Blockquote = (props: BlockquoteRootProps) => {
   return (

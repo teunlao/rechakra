@@ -1,4 +1,4 @@
-import { ActionBar, Portal } from "@chakra-ui/react"
+import { ActionBar, Portal } from "@rechakra/react"
 import { CloseButton } from "compositions/ui/close-button"
 import * as React from "react"
 

@@ -1,4 +1,4 @@
-import { Box, Button, Heading } from "@chakra-ui/react"
+import { Box, Button, Heading } from "@rechakra/react"
 import type { Route } from "./+types/home"
 
 export function meta({}: Route.MetaArgs) {

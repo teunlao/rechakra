@@ -1,4 +1,4 @@
-import { Box, SkipNavContent, SkipNavLink, Text } from "@chakra-ui/react"
+import { Box, SkipNavContent, SkipNavLink, Text } from "@rechakra/react"
 
 export const SkipNavCustomId = () => {
   return (

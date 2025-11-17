@@ -1,4 +1,4 @@
-import { Alert } from "@chakra-ui/react"
+import { Alert } from "@rechakra/react"
 
 export const AlertWithDescription = () => {
   return (

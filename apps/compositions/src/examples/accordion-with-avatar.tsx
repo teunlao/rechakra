@@ -1,4 +1,4 @@
-import { Accordion, Avatar, Badge, HStack } from "@chakra-ui/react"
+import { Accordion, Avatar, Badge, HStack } from "@rechakra/react"
 import { LuTrophy } from "react-icons/lu"
 import { LoremIpsum } from "react-lorem-ipsum"
 

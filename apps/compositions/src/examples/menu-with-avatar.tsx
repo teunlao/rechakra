@@ -1,4 +1,4 @@
-import { Avatar, Menu, Portal } from "@chakra-ui/react"
+import { Avatar, Menu, Portal } from "@rechakra/react"
 
 export const MenuWithAvatar = () => {
   return (

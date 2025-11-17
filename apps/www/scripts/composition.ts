@@ -61,7 +61,7 @@ function getDependencies(imports: Set<string>, dependencies: string[]) {
 const setFileExtension = (file: string, ext: string) =>
   basename(file, extname(file)) + ext
 
-const excludedDependencies = ["@chakra-ui/react", "react", "react-dom"]
+const excludedDependencies = ["@rechakra/react", "react", "react-dom"]
 
 const camelCase = (str: string) => str.charAt(0).toUpperCase() + str.slice(1)
 

@@ -1,4 +1,4 @@
-import type { RecipeProps, SlotRecipeProps } from "@chakra-ui/react"
+import type { RecipeProps, SlotRecipeProps } from "@rechakra/react"
 
 type BrandChipProps = RecipeProps<"brandChip">
 const brandOk: BrandChipProps = { tone: "primary" }

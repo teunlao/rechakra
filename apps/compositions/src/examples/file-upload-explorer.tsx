@@ -7,7 +7,7 @@ import {
   HStack,
   Text,
   VStack,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import { useState } from "react"
 import { LuUpload, LuX } from "react-icons/lu"
 

@@ -1,6 +1,6 @@
 "use client"
 
-import { Alert, Stack } from "@chakra-ui/react"
+import { Alert, Stack } from "@rechakra/react"
 
 export const AlertExplorer = () => {
   return (

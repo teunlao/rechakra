@@ -1,6 +1,6 @@
 "use client"
 
-import { Editable, HStack, IconButton, Text, VStack } from "@chakra-ui/react"
+import { Editable, HStack, IconButton, Text, VStack } from "@rechakra/react"
 import { LuCheck, LuPencilLine, LuX } from "react-icons/lu"
 
 export const EditableExplorer = () => {

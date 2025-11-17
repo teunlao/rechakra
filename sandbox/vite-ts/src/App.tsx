@@ -9,7 +9,7 @@ import {
   RadioGroup,
   Skeleton,
   VStack,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import { ColorModeToggle } from "./components/color-mode-toggle"
 
 export default function Page() {
@@ -57,7 +57,7 @@ export default function Page() {
 
         <HStack>
           <Button>Let's go!</Button>
-          <Button variant="outline">bun install @chakra-ui/react</Button>
+          <Button variant="outline">bun install @rechakra/react</Button>
         </HStack>
       </VStack>
 

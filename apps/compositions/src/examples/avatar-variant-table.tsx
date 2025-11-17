@@ -1,4 +1,4 @@
-import { Avatar, For, HStack, Span, useSlotRecipe } from "@chakra-ui/react"
+import { Avatar, For, HStack, Span, useSlotRecipe } from "@rechakra/react"
 import { colorPalettes } from "compositions/lib/color-palettes"
 import { PlaygroundTable } from "compositions/lib/playground-table"
 

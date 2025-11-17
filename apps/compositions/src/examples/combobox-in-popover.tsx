@@ -7,7 +7,7 @@ import {
   Portal,
   useFilter,
   useListCollection,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 
 export const ComboboxInPopover = () => {
   return (

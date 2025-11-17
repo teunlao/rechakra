@@ -1,6 +1,6 @@
 import type { RecipeDefinition, SlotRecipeDefinition, SystemRecipeFn, SystemSlotRecipeFn } from "../recipe.types"
 import type { ConditionalValue } from "../css.types"
-import type { ChakraCustomRecipeConfig, ChakraCustomSlotRecipeConfig, ChakraCustomRecipeSlots } from "@chakra-ui/react/typegen"
+import type { ChakraCustomRecipeConfig, ChakraCustomSlotRecipeConfig, ChakraCustomRecipeSlots } from "@rechakra/react/typegen"
 
 export interface BadgeVariant {
   /** @default "subtle" */

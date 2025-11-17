@@ -1,4 +1,4 @@
-import { Avatar, Blockquote, Float, HStack, Span } from "@chakra-ui/react"
+import { Avatar, Blockquote, Float, HStack, Span } from "@rechakra/react"
 
 export const BlockquoteWithAvatar = () => {
   return (

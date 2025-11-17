@@ -1,4 +1,4 @@
-import { SegmentGroup } from "@chakra-ui/react"
+import { SegmentGroup } from "@rechakra/react"
 
 export const SegmentedControlWithDisabledItem = () => {
   return (

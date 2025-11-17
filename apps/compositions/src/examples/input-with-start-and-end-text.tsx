@@ -1,4 +1,4 @@
-import { Input, InputGroup } from "@chakra-ui/react"
+import { Input, InputGroup } from "@rechakra/react"
 
 export const InputWithStartAndEndText = () => {
   return (

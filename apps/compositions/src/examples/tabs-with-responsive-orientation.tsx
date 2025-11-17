@@ -1,6 +1,6 @@
 "use client"
 
-import { Tabs, useBreakpointValue } from "@chakra-ui/react"
+import { Tabs, useBreakpointValue } from "@rechakra/react"
 
 export const TabsWithResponsiveOrientation = () => {
   const orientation = useBreakpointValue<"horizontal" | "vertical">({

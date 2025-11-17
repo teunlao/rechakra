@@ -1,6 +1,6 @@
 "use client"
 
-import { Blockquote, For, Span, useSlotRecipe } from "@chakra-ui/react"
+import { Blockquote, For, Span, useSlotRecipe } from "@rechakra/react"
 import { colorPalettes } from "compositions/lib/color-palettes"
 import { PlaygroundTable } from "compositions/lib/playground-table"
 

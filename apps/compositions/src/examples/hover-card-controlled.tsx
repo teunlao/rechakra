@@ -1,6 +1,6 @@
 "use client"
 
-import { Box, HoverCard, Link, Portal, Strong } from "@chakra-ui/react"
+import { Box, HoverCard, Link, Portal, Strong } from "@rechakra/react"
 import { useState } from "react"
 
 export const HoverCardControlled = () => {

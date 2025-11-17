@@ -1,6 +1,6 @@
 {
-  "name": "@chakra-ui/cli",
-  "version": "3.29.0",
+  "name": "@rechakra/cli",
+  "version": "1.0.0",
   "description": "Generate theme typings for autocomplete",
   "keywords": [
     "theme",
@@ -12,7 +12,7 @@
     "theme"
   ],
   "author": "Segun Adebayo <sage@adebayosegun.com>",
-  "homepage": "https://github.com/chakra-ui/chakra-ui#readme",
+  "homepage": "https://github.com/teunlao/rechakra#readme",
   "license": "MIT",
   "type": "module",
   "main": "dist/esm/index.js",
@@ -28,10 +28,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chakra-ui/chakra-ui.git"
+    "url": "git+https://github.com/teunlao/rechakra.git"
   },
   "bugs": {
-    "url": "https://github.com/chakra-ui/chakra-ui/issues"
+    "url": "https://github.com/teunlao/rechakra/issues"
   },
   "bin": {
     "chakra": "bin/index.js"
@@ -68,10 +68,10 @@
     "zod": "^4.1.12"
   },
   "peerDependencies": {
-    "@chakra-ui/react": ">=3.0.0-next.0"
+    "@rechakra/react": ">=3.0.0-next.0"
   },
   "devDependencies": {
-    "@chakra-ui/react": "workspace:*"
+    "@rechakra/react": "workspace:*"
   },
   "exports": {
     ".": {

@@ -7,7 +7,7 @@ import {
   Stack,
   Steps,
   useSteps,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 
 export const StepsWithStore = () => {
   const steps = useSteps({

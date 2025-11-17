@@ -1,4 +1,4 @@
-import { Highlight } from "@chakra-ui/react"
+import { Highlight } from "@rechakra/react"
 
 export const HighlightBasic = () => {
   return (

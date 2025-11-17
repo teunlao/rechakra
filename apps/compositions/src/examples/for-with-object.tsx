@@ -1,4 +1,4 @@
-import { Box, For, Stack, Text } from "@chakra-ui/react"
+import { Box, For, Stack, Text } from "@rechakra/react"
 
 export const ForWithObject = () => {
   return (

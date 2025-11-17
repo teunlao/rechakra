@@ -1,6 +1,6 @@
 "use client"
 
-import { HStack, Stack, Stat } from "@chakra-ui/react"
+import { HStack, Stack, Stat } from "@rechakra/react"
 
 export const StatExplorer = () => {
   return (

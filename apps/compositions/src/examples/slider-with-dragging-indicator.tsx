@@ -1,4 +1,4 @@
-import { Slider } from "@chakra-ui/react"
+import { Slider } from "@rechakra/react"
 
 export const SliderWithDraggingIndicator = () => {
   return (

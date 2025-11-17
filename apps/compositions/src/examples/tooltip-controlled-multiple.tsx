@@ -1,6 +1,6 @@
 "use client"
 
-import { Box, Flex } from "@chakra-ui/react"
+import { Box, Flex } from "@rechakra/react"
 import { Tooltip } from "compositions/ui/tooltip"
 import { useState } from "react"
 

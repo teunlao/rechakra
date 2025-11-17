@@ -10,7 +10,7 @@ import {
   useComboboxContext,
   useFilter,
   useListCollection,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 
 function ComboboxValue() {
   const combobox = useComboboxContext()

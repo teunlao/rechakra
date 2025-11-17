@@ -1,7 +1,7 @@
 "use client"
 
 import { highlightCode } from "@/lib/highlight-code"
-import { Box, Flex, Span } from "@chakra-ui/react"
+import { Box, Flex, Span } from "@rechakra/react"
 import { useEffect, useState } from "react"
 import { SiTypescript } from "react-icons/si"
 import ts from "typescript"
@@ -46,8 +46,8 @@ export function ComponentCodeSnapshot({
   useEffect(() => {
     const generate = async () => {
       const content = activePart
-        ? `import { ${pascal}Anatomy } from "@chakra-ui/react/anatomy"
-import { defineSlotRecipe } from "@chakra-ui/react"
+        ? `import { ${pascal}Anatomy } from "@rechakra/react/anatomy"
+import { defineSlotRecipe } from "@rechakra/react"
 // __SPACE__
 export const ${pascal}SlotRecipe = defineSlotRecipe({
   slots: ${pascal}Anatomy.keys(),
@@ -55,8 +55,8 @@ export const ${pascal}SlotRecipe = defineSlotRecipe({
     ${activePart}: ${JSON.stringify(activeStyles, null, 2)}
   }
 });`
-        : `import { ${pascal}Anatomy } from "@chakra-ui/react/anatomy"
-import { defineSlotRecipe } from "@chakra-ui/react"
+        : `import { ${pascal}Anatomy } from "@rechakra/react/anatomy"
+import { defineSlotRecipe } from "@rechakra/react"
 // __SPACE__
 export const ${pascal}SlotRecipe = defineSlotRecipe({
   slots: ${pascal}Anatomy.keys()

@@ -1,4 +1,4 @@
-import { Editable, Input } from "@chakra-ui/react"
+import { Editable, Input } from "@rechakra/react"
 
 export const EditableWithCustomComponent = () => {
   return (

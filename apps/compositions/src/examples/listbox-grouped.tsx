@@ -1,6 +1,6 @@
 "use client"
 
-import { Listbox, createListCollection } from "@chakra-ui/react"
+import { Listbox, createListCollection } from "@rechakra/react"
 
 export const ListboxGrouped = () => {
   return (

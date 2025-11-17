@@ -1,4 +1,4 @@
-import { Box, Button, ButtonGroup, Steps } from "@chakra-ui/react"
+import { Box, Button, ButtonGroup, Steps } from "@rechakra/react"
 
 export const StepsWithDescription = () => {
   return (

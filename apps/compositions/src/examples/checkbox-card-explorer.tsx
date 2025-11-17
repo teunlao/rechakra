@@ -1,6 +1,6 @@
 "use client"
 
-import { Box, Button, CheckboxCard, Text } from "@chakra-ui/react"
+import { Box, Button, CheckboxCard, Text } from "@rechakra/react"
 
 export const CheckboxCardExplorer = () => {
   return (

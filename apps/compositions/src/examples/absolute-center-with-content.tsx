@@ -1,4 +1,4 @@
-import { AbsoluteCenter, Box } from "@chakra-ui/react"
+import { AbsoluteCenter, Box } from "@rechakra/react"
 import { LuHeart } from "react-icons/lu"
 
 export const AbsoluteCenterWithContent = () => {

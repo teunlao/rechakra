@@ -1,4 +1,4 @@
-import { Heading, Link, LinkOverlay, Stack, Text } from "@chakra-ui/react"
+import { Heading, Link, LinkOverlay, Stack, Text } from "@rechakra/react"
 
 export const LinkOverlayBasic = () => {
   return (

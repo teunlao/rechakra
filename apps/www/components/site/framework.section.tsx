@@ -7,7 +7,7 @@ import {
   Square,
   Stack,
   VStack,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import { Blob } from "./blob"
 import {
   BlitzIcon,

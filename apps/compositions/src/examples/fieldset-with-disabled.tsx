@@ -5,7 +5,7 @@ import {
   Input,
   NativeSelect,
   Textarea,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 
 export const FieldsetWithDisabled = () => {
   return (

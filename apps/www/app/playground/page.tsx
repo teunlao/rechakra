@@ -12,7 +12,7 @@ import {
   Spinner,
   Stack,
   Tabs,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import { PaginationBasic } from "compositions/examples/pagination-basic"
 import { StepsBasic } from "compositions/examples/steps-basic"
 import { TimelineBasic } from "compositions/examples/timeline-basic"

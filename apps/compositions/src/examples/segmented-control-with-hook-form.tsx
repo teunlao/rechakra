@@ -1,7 +1,7 @@
 "use client"
 
-import { Button, Field, SegmentGroup, Stack } from "@chakra-ui/react"
 import { standardSchemaResolver } from "@hookform/resolvers/standard-schema"
+import { Button, Field, SegmentGroup, Stack } from "@rechakra/react"
 import { Controller, useForm } from "react-hook-form"
 import { z } from "zod"
 

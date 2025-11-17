@@ -1,4 +1,4 @@
-import { Checkbox, CheckboxGroup, Fieldset, For } from "@chakra-ui/react"
+import { Checkbox, CheckboxGroup, Fieldset, For } from "@rechakra/react"
 
 export const CheckboxWithGroup = () => {
   return (

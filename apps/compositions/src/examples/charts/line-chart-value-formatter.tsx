@@ -1,6 +1,6 @@
 "use client"
 
-import { Chart, useChart } from "@chakra-ui/charts"
+import { Chart, useChart } from "@rechakra/charts"
 import { CartesianGrid, Line, LineChart, Tooltip, XAxis, YAxis } from "recharts"
 
 export const LineChartValueFormatter = () => {

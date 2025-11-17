@@ -1,4 +1,4 @@
-import { Avatar } from "@chakra-ui/react"
+import { Avatar } from "@rechakra/react"
 import { Tooltip } from "compositions/ui/tooltip"
 import { useId } from "react"
 

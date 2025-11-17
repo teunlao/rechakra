@@ -1,5 +1,5 @@
 import { Header } from "@/components/docs/header"
-import { Box, Center, Heading, Icon, Text, VStack } from "@chakra-ui/react"
+import { Box, Center, Heading, Icon, Text, VStack } from "@rechakra/react"
 import { TbProgressBolt } from "react-icons/tb"
 
 export default function NotFound() {

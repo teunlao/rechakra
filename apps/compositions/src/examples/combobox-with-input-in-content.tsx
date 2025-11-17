@@ -8,7 +8,7 @@ import {
   Span,
   useFilter,
   useListCollection,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import { useState } from "react"
 import { LuChevronsUpDown } from "react-icons/lu"
 

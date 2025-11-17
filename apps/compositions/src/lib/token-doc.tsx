@@ -1,4 +1,4 @@
-import { Box, type BoxProps } from "@chakra-ui/react"
+import { Box, type BoxProps } from "@rechakra/react"
 
 interface TokenDocProps extends BoxProps {
   action?: React.ReactNode

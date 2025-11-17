@@ -1,4 +1,4 @@
-import type { IconButtonProps, StackProps } from "@chakra-ui/react"
+import type { IconButtonProps, StackProps } from "@rechakra/react"
 import {
   ColorPicker as ChakraColorPicker,
   For,
@@ -8,7 +8,7 @@ import {
   Stack,
   Text,
   VStack,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import * as React from "react"
 import { LuCheck, LuPipette } from "react-icons/lu"
 

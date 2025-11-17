@@ -1,4 +1,4 @@
-import { Textarea } from "@chakra-ui/react"
+import { Textarea } from "@rechakra/react"
 
 export const TextareaBasic = () => {
   return <Textarea placeholder="Comment..." />

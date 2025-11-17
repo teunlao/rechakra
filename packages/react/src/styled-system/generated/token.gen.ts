@@ -1,4 +1,4 @@
-import type { ChakraCustomColorPalette, ChakraCustomTokenUnion, ChakraCustomTokenValue } from "@chakra-ui/react/typegen"
+import type { ChakraCustomColorPalette, ChakraCustomTokenUnion, ChakraCustomTokenValue } from "@rechakra/react/typegen"
 
 export type Token =
   | "aspectRatios.square"

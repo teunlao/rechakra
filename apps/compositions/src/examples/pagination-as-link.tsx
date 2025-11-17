@@ -6,7 +6,7 @@ import {
   type IconButtonProps,
   Pagination,
   usePaginationContext,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi"
 
 const PaginationLink = (

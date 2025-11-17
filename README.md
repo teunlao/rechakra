@@ -15,8 +15,8 @@
   <a href="https://github.com/chakra-ui/chakra-ui/blob/main/LICENSE">
     <img alt="MIT License" src="https://img.shields.io/github/license/chakra-ui/chakra-ui"/>
   </a>
-  <a href="https://www.npmjs.com/package/@chakra-ui/react">
-    <img alt="NPM Downloads" src="https://img.shields.io/npm/dm/@chakra-ui/react.svg?style=flat"/>
+  <a href="https://www.npmjs.com/package/@rechakra/react">
+    <img alt="NPM Downloads" src="https://img.shields.io/npm/dm/@rechakra/react.svg?style=flat"/>
   </a>
   <a href="https://github.com/chakra-ui/chakra-ui">
     <img alt="Github Stars" src="https://badgen.net/github/stars/chakra-ui/chakra-ui" />
@@ -43,21 +43,21 @@ It's the https://chakra-ui.com website for the latest version of Chakra UI.
 
 ## Installation
 
-To use Chakra UI components, all you need to do is install the
-`@chakra-ui/react` package and its peer dependencies:
+To use Chakra UI components, all you need to do is install the `@rechakra/react`
+package and its peer dependencies:
 
 ```sh
 # with Yarn
-$ yarn add @chakra-ui/react @emotion/react
+$ yarn add @rechakra/react @emotion/react
 
 # with npm
-$ npm i @chakra-ui/react @emotion/react
+$ npm i @rechakra/react @emotion/react
 
 # with pnpm
-$ pnpm add @chakra-ui/react @emotion/react
+$ pnpm add @rechakra/react @emotion/react
 
 # with Bun
-$ bun add @chakra-ui/react @emotion/react
+$ bun add @rechakra/react @emotion/react
 ```
 
 ## Usage

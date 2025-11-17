@@ -1,4 +1,4 @@
-# @chakra-ui/panda-preset
+# @rechakra/panda-preset
 
 ## 3.29.0
 

@@ -1,4 +1,4 @@
-import { Box, Center, Link } from "@chakra-ui/react"
+import { Box, Center, Link } from "@rechakra/react"
 import { LuArrowRight } from "react-icons/lu"
 
 export const CenterWithInline = () => {

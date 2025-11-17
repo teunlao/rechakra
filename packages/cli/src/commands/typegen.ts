@@ -1,5 +1,5 @@
-import type { SystemContext } from "@chakra-ui/react"
 import * as p from "@clack/prompts"
+import type { SystemContext } from "@rechakra/react"
 import { Command } from "commander"
 import createDebug from "debug"
 import { writeFileSync } from "fs"
@@ -23,7 +23,7 @@ const getDefaultBasePath = () => {
   const cwd = process.cwd()
 
   if (!process.env.LOCAL) {
-    const root = req.resolve("@chakra-ui/react", { paths: [cwd] })
+    const root = req.resolve("@rechakra/react", { paths: [cwd] })
     return resolve(root, "..", "..", "types", "styled-system", "generated")
   }
 

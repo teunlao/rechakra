@@ -1,6 +1,6 @@
 "use client"
 
-import type { BoxProps, StackProps, Tokens } from "@chakra-ui/react"
+import type { BoxProps, StackProps, Tokens } from "@rechakra/react"
 import {
   Box,
   ColorSwatch,
@@ -10,7 +10,7 @@ import {
   Span,
   Stack,
   Text,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import * as React from "react"
 import type { UseChartReturn } from "../use-chart"
 

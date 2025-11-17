@@ -1,7 +1,7 @@
 "use client"
 
-import type { AccordionRootProps } from "@chakra-ui/react"
-import { Accordion, For, Span, useSlotRecipe } from "@chakra-ui/react"
+import type { AccordionRootProps } from "@rechakra/react"
+import { Accordion, For, Span, useSlotRecipe } from "@rechakra/react"
 import { colorPalettes } from "compositions/lib/color-palettes"
 import { PlaygroundTable } from "compositions/lib/playground-table"
 

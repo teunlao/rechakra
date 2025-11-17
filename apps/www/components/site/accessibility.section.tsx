@@ -9,7 +9,7 @@ import {
   Stack,
   Tabs,
   Text,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import Link from "next/link"
 // import { DemoCode } from "../demo-code"
 import { Blob } from "./blob"

@@ -1,4 +1,4 @@
-import { Blockquote, Stack, Text } from "@chakra-ui/react"
+import { Blockquote, Stack, Text } from "@rechakra/react"
 import { colorPalettes } from "compositions/lib/color-palettes"
 
 export const BlockquoteWithColors = () => {

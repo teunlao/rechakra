@@ -1,4 +1,4 @@
-import { Flex, Text } from "@chakra-ui/react"
+import { Flex, Text } from "@rechakra/react"
 
 export const TextWithLineClamp = () => {
   return (

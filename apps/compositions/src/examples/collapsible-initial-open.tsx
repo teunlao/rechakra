@@ -1,4 +1,4 @@
-import { Collapsible, Stack } from "@chakra-ui/react"
+import { Collapsible, Stack } from "@rechakra/react"
 import { LuChevronRight } from "react-icons/lu"
 import LoremIpsum from "react-lorem-ipsum"
 

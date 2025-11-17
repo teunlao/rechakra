@@ -7,7 +7,7 @@ import {
   Portal,
   Stack,
   createOverlay,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import { useState } from "react"
 
 interface ContactFormProps {

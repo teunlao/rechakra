@@ -1,4 +1,4 @@
-import { Button, FileUpload } from "@chakra-ui/react"
+import { Button, FileUpload } from "@rechakra/react"
 import { HiUpload } from "react-icons/hi"
 
 export const FileUploadMultiple = () => {

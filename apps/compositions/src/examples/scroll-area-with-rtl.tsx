@@ -1,4 +1,4 @@
-import { LocaleProvider, ScrollArea } from "@chakra-ui/react"
+import { LocaleProvider, ScrollArea } from "@rechakra/react"
 
 const arabicText = [
   "مرحباً بكم في نظام التمرير المخصص",

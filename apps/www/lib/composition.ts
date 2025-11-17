@@ -28,8 +28,8 @@ function transformCode(content: string): string {
 
     // Handle DecorativeBox -> Box conversion
     if (moduleSpecifier === "compositions/lib/decorative-box") {
-      // Find or create @chakra-ui/react import
-      let chakraImport = sourceFile.getImportDeclaration("@chakra-ui/react")
+      // Find or create @rechakra/react import
+      let chakraImport = sourceFile.getImportDeclaration("@rechakra/react")
 
       if (chakraImport) {
         // Add Box to existing Chakra import if not already present
@@ -44,7 +44,7 @@ function transformCode(content: string): string {
         importDecl.remove()
       } else {
         // Replace DecorativeBox import with Box import
-        importDecl.setModuleSpecifier("@chakra-ui/react")
+        importDecl.setModuleSpecifier("@rechakra/react")
         importDecl.getNamedImports().forEach((namedImport) => {
           if (namedImport.getName() === "DecorativeBox") {
             namedImport.setName("Box")

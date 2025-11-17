@@ -1,4 +1,4 @@
-import { Avatar, HStack } from "@chakra-ui/react"
+import { Avatar, HStack } from "@rechakra/react"
 
 const colorPalette = ["red", "blue", "green", "yellow", "purple", "orange"]
 

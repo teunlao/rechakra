@@ -14,13 +14,13 @@ const excludeSet = new Map([
 const importReplacements = new Map([
   [
     'import { DecorativeBox } from "compositions/lib/decorative-box"',
-    'import { Box } from "@chakra-ui/react"',
+    'import { Box } from "@rechakra/react"',
   ],
 ])
 
 const componentReplacements = new Map([["DecorativeBox", "Box"]])
 
-const nativeDependencies = new Set(["@chakra-ui/react", "react", "react-dom"])
+const nativeDependencies = new Set(["@rechakra/react", "react", "react-dom"])
 
 function refine(str: string) {
   return str.replaceAll("compositions/ui", "@/components/ui")
@@ -213,7 +213,7 @@ export class ProjectSdk {
 
     const importPath =
       importPaths.find((path) => path.includes(snippetImportPath)) ||
-      `import { ${component.split("-").map(trainCase).join("")} } from "@chakra-ui/react"`
+      `import { ${component.split("-").map(trainCase).join("")} } from "@rechakra/react"`
 
     const finalContent = this.stripImports(content)
     const finalName = parse(file).name

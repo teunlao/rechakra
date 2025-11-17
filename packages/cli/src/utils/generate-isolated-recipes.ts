@@ -1,5 +1,5 @@
-import type { SystemContext } from "@chakra-ui/react"
-import { defaultSystem } from "@chakra-ui/react"
+import type { SystemContext } from "@rechakra/react"
+import { defaultSystem } from "@rechakra/react"
 import { pretty } from "./pretty.js"
 import { capitalize, isBooleanValue, unionType } from "./shared.js"
 
@@ -35,8 +35,8 @@ export async function generateIsolatedRecipes(
   }
 
   const chunks: string[] = [
-    'import type { ConditionalValue, RecipeDefinition, SlotRecipeDefinition, SystemRecipeFn, SystemSlotRecipeFn } from "@chakra-ui/react"',
-    'import "@chakra-ui/react/typegen"',
+    'import type { ConditionalValue, RecipeDefinition, SlotRecipeDefinition, SystemRecipeFn, SystemSlotRecipeFn } from "@rechakra/react"',
+    'import "@rechakra/react/typegen"',
   ]
 
   const recipeInterfaceChunks: string[] = []
@@ -109,7 +109,7 @@ export async function generateIsolatedRecipes(
   chunks.push(recipeInterfaceChunks.join("\n\n"))
   chunks.push(slotInterfaceChunks.join("\n\n"))
 
-  const moduleAugmentation = `declare module "@chakra-ui/react/typegen" {\n  interface ChakraCustomRecipeConfig {\n    ${recipeConfigEntries.join("\n    ") || "// no custom recipes"}\n  }\n\n  interface ChakraCustomSlotRecipeConfig {\n    ${slotConfigEntries.join("\n    ") || "// no custom slot recipes"}\n  }\n\n  interface ChakraCustomRecipeSlots {\n    ${slotRecordEntries.join("\n    ") || "// no custom slots"}\n  }\n}`
+  const moduleAugmentation = `declare module "@rechakra/react/typegen" {\n  interface ChakraCustomRecipeConfig {\n    ${recipeConfigEntries.join("\n    ") || "// no custom recipes"}\n  }\n\n  interface ChakraCustomSlotRecipeConfig {\n    ${slotConfigEntries.join("\n    ") || "// no custom slot recipes"}\n  }\n\n  interface ChakraCustomRecipeSlots {\n    ${slotRecordEntries.join("\n    ") || "// no custom slots"}\n  }\n}`
 
   chunks.push(moduleAugmentation)
 

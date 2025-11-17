@@ -1,6 +1,6 @@
 "use client"
 
-import { CodeBlock, createHighlightJsAdapter } from "@chakra-ui/react"
+import { CodeBlock, createHighlightJsAdapter } from "@rechakra/react"
 import hljs from "highlight.js/lib/core"
 
 const file = {

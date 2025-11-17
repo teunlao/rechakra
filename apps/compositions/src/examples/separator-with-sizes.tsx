@@ -1,4 +1,4 @@
-import { Separator, Stack } from "@chakra-ui/react"
+import { Separator, Stack } from "@rechakra/react"
 
 export const SeparatorWithSizes = () => {
   return (

@@ -15,7 +15,7 @@ import {
   Stack,
   Text,
   VStack,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import { Metadata } from "next"
 import NextLink from "next/link"
 import { Suspense } from "react"

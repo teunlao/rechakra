@@ -1,5 +1,5 @@
 {
-  "name": "@chakra-ui/compositions",
+  "name": "@rechakra/compositions",
   "version": "1.0.0",
   "private": "true",
   "description": "Registry for component compositions",
@@ -17,8 +17,8 @@
   "author": "Segun Adebayo <sage@adebayosegun.com>",
   "license": "ISC",
   "dependencies": {
-    "@chakra-ui/charts": "workspace:*",
-    "@chakra-ui/react": "workspace:*",
+    "@rechakra/charts": "workspace:*",
+    "@rechakra/react": "workspace:*",
     "@hookform/resolvers": "5.2.2",
     "@tanstack/react-table": "8.21.3",
     "@tanstack/react-virtual": "3.13.12",

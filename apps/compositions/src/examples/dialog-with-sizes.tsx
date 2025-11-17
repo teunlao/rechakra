@@ -5,7 +5,7 @@ import {
   For,
   HStack,
   Portal,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 
 export const DialogWithSizes = () => {
   return (

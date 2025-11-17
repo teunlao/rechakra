@@ -6,7 +6,7 @@ import {
   SimpleGrid,
   Stack,
   Text,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import Link from "next/link"
 
 const linkTree = [

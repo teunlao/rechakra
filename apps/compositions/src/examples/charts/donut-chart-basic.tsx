@@ -1,6 +1,6 @@
 "use client"
 
-import { Chart, useChart } from "@chakra-ui/charts"
+import { Chart, useChart } from "@rechakra/charts"
 import { Cell, Pie, PieChart, Tooltip } from "recharts"
 
 export const DonutChartBasic = () => {

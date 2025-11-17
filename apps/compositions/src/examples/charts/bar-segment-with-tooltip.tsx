@@ -1,6 +1,6 @@
 "use client"
 
-import { BarSegment, useChart } from "@chakra-ui/charts"
+import { BarSegment, useChart } from "@rechakra/charts"
 
 export const BarSegmentWithTooltip = () => {
   const chart = useChart({

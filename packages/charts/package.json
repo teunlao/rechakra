@@ -1,6 +1,6 @@
 {
-  "name": "@chakra-ui/charts",
-  "version": "3.29.0",
+  "name": "@rechakra/charts",
+  "version": "1.0.0",
   "description": "Data visualization components for Chakra UI",
   "type": "module",
   "main": "dist/cjs/index.cjs",
@@ -18,7 +18,7 @@
   "homepage": "https://chakra-ui.com/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chakra-ui/chakra-ui",
+    "url": "https://github.com/teunlao/rechakra",
     "directory": "packages/charts"
   },
   "keywords": [
@@ -53,13 +53,13 @@
     "./package.json": "./package.json"
   },
   "devDependencies": {
-    "@chakra-ui/react": "workspace:*",
+    "@rechakra/react": "workspace:*",
     "recharts": "^3.3.0",
     "react": "19.2.0",
     "react-dom": "19.2.0"
   },
   "peerDependencies": {
-    "@chakra-ui/react": ">=3",
+    "@rechakra/react": ">=3",
     "recharts": ">=3",
     "react": ">=18",
     "react-dom": ">=18"

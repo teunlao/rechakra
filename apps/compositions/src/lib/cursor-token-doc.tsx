@@ -1,4 +1,4 @@
-import { Button, HStack } from "@chakra-ui/react"
+import { Button, HStack } from "@rechakra/react"
 import { Checkbox } from "compositions/ui/checkbox"
 import { Slider } from "compositions/ui/slider"
 import { Switch } from "compositions/ui/switch"

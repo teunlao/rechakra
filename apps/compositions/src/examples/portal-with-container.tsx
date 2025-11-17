@@ -1,6 +1,6 @@
 "use client"
 
-import { Portal } from "@chakra-ui/react"
+import { Portal } from "@rechakra/react"
 import { useRef } from "react"
 
 export const PortalWithContainer = () => {

@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      "@chakra-ui/react": resolve("..", "..", "packages/react/src"),
+      "@rechakra/react": resolve("..", "..", "packages/react/src"),
     },
   },
 })

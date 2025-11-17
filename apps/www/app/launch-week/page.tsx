@@ -23,7 +23,7 @@ import {
   StackSeparator,
   Text,
   VStack,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import { ColorModeButton } from "compositions/ui/color-mode"
 import Image from "next/image"
 import Link from "next/link"

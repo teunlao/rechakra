@@ -1,4 +1,4 @@
-import { Blockquote as ChakraBlockquote } from "@chakra-ui/react"
+import { Blockquote as ChakraBlockquote } from "@rechakra/react"
 import * as React from "react"
 
 export interface BlockquoteProps extends ChakraBlockquote.RootProps {

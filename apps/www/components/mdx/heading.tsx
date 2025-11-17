@@ -1,4 +1,4 @@
-import { Box, BoxProps } from "@chakra-ui/react"
+import { Box, BoxProps } from "@rechakra/react"
 
 export const H1 = (props: BoxProps) => {
   return (

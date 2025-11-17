@@ -1,4 +1,4 @@
-import { Button, ButtonGroup, IconButton } from "@chakra-ui/react"
+import { Button, ButtonGroup, IconButton } from "@rechakra/react"
 import { LuChevronDown } from "react-icons/lu"
 
 export const ButtonWithGroupFlushed = () => {

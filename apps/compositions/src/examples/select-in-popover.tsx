@@ -6,7 +6,7 @@ import {
   Portal,
   Select,
   createListCollection,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 
 export const SelectInPopover = () => {
   return (

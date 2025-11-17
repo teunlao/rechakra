@@ -1,4 +1,4 @@
-import { FormatNumber, Stat } from "@chakra-ui/react"
+import { FormatNumber, Stat } from "@rechakra/react"
 
 export const StatWithFormatOptions = () => {
   return (

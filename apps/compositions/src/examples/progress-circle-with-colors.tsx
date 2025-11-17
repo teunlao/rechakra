@@ -1,4 +1,4 @@
-import { HStack, ProgressCircle, Stack, Text } from "@chakra-ui/react"
+import { HStack, ProgressCircle, Stack, Text } from "@rechakra/react"
 import { colorPalettes } from "compositions/lib/color-palettes"
 
 export const ProgressCircleWithColors = () => {

@@ -1,4 +1,4 @@
-import { HStack, Skeleton, Stack, Text } from "@chakra-ui/react"
+import { HStack, Skeleton, Stack, Text } from "@rechakra/react"
 
 export const SkeletonWithVariants = () => {
   return (

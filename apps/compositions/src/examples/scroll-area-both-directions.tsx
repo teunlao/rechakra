@@ -1,4 +1,4 @@
-import { ScrollArea } from "@chakra-ui/react"
+import { ScrollArea } from "@rechakra/react"
 import LoremIpsum from "react-lorem-ipsum"
 
 export const ScrollAreaBothDirections = () => (

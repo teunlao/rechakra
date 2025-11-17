@@ -1,4 +1,4 @@
-import { ColorSwatchMix, HStack } from "@chakra-ui/react"
+import { ColorSwatchMix, HStack } from "@rechakra/react"
 
 export const ColorSwatchMixed = () => {
   return (

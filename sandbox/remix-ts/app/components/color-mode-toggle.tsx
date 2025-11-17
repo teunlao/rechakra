@@ -1,4 +1,4 @@
-import { IconButton } from "@chakra-ui/react"
+import { IconButton } from "@rechakra/react"
 import { useTheme } from "next-themes"
 import { LuMoon, LuSun } from "react-icons/lu"
 

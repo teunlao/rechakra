@@ -11,7 +11,7 @@ import {
   InputGroup,
   Text,
   chakra,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import Link from "next/link"
 import { useRouter, useSearchParams } from "next/navigation"
 import { useMemo } from "react"

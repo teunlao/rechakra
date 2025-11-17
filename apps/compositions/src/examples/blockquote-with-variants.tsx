@@ -1,4 +1,4 @@
-import { Blockquote, Stack } from "@chakra-ui/react"
+import { Blockquote, Stack } from "@rechakra/react"
 
 export const BlockquoteWithVariants = () => {
   return (

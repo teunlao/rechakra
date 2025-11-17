@@ -1,4 +1,4 @@
-import { Table } from "@chakra-ui/react"
+import { Table } from "@rechakra/react"
 
 export const TableBasicExplorer = () => {
   const total = items.reduce((sum, item) => sum + item.price, 0)

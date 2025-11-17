@@ -7,7 +7,7 @@ import {
   Listbox,
   Text,
   createListCollection,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import { useState } from "react"
 
 export const ListboxImageExplorer = () => {

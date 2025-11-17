@@ -1,4 +1,4 @@
-import { Image } from "@chakra-ui/react"
+import { Image } from "@rechakra/react"
 
 export const ImageCircular = () => (
   <Image

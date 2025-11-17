@@ -1,4 +1,4 @@
-import { NumberInput } from "@chakra-ui/react"
+import { NumberInput } from "@rechakra/react"
 
 export const NumberInputWithMinMax = () => {
   return (

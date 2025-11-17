@@ -1,4 +1,4 @@
-import { Tag } from "@chakra-ui/react"
+import { Tag } from "@rechakra/react"
 import { LuCheck } from "react-icons/lu"
 
 export const TagAsButton = () => {

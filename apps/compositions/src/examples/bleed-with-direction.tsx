@@ -1,4 +1,4 @@
-import { Bleed, Box, Stack } from "@chakra-ui/react"
+import { Bleed, Box, Stack } from "@rechakra/react"
 import { DecorativeBox } from "compositions/lib/decorative-box"
 
 export const BleedWithDirection = () => {

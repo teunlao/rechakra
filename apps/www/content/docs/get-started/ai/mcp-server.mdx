@@ -61,7 +61,7 @@ instructions.
 
 The MCP server currently supports only
 [stdio transport](https://modelcontextprotocol.io/specification/2025-06-18/basic/transports#stdio)
-and is published at `@chakra-ui/react-mcp`.
+and is published at `@rechakra/react-mcp`.
 
 ### Visual Studio Code
 
@@ -79,7 +79,7 @@ block:
   "servers": {
     "chakra-ui": {
       "command": "npx",
-      "args": ["-y", "@chakra-ui/react-mcp"]
+      "args": ["-y", "@rechakra/react-mcp"]
     }
   }
 }
@@ -97,7 +97,7 @@ configuration:
   "mcpServers": {
     "chakra-ui": {
       "command": "npx",
-      "args": ["-y", "@chakra-ui/react-mcp"]
+      "args": ["-y", "@rechakra/react-mcp"]
     }
   }
 }
@@ -115,7 +115,7 @@ configuration:
 Run the following command in your terminal to add the Chakra UI MCP server:
 
 ```bash
-claude mcp add chakra-ui -- npx -y @chakra-ui/react-mcp
+claude mcp add chakra-ui -- npx -y @rechakra/react-mcp
 ```
 
 The MCP server is now ready to use. Start a Claude Code session by running
@@ -134,7 +134,7 @@ The MCP server is now ready to use. Start a Claude Code session by running
   "mcpServers": {
     "chakra-ui": {
       "command": "npx",
-      "args": ["-y", "@chakra-ui/react-mcp"]
+      "args": ["-y", "@rechakra/react-mcp"]
     }
   }
 }
@@ -155,7 +155,7 @@ The MCP server is now ready to use. Start a Claude Code session by running
     "chakra-ui": {
       "source": "custom",
       "command": "npx",
-      "args": ["-y", "@chakra-ui/react-mcp"]
+      "args": ["-y", "@rechakra/react-mcp"]
     }
   }
 }
@@ -171,7 +171,7 @@ client, you need to add the MCP server to the client's configuration file.
   "mcpServers": {
     "chakra-ui": {
       "command": "npx",
-      "args": ["-y", "@chakra-ui/react-mcp"]
+      "args": ["-y", "@rechakra/react-mcp"]
     }
   }
 }
@@ -203,7 +203,7 @@ to configure your API key. This requires an active
 **For Claude Code:**
 
 ```bash
-claude mcp add chakra-ui --env CHAKRA_PRO_API_KEY=your_api_key_here -- npx -y @chakra-ui/react-mcp
+claude mcp add chakra-ui --env CHAKRA_PRO_API_KEY=your_api_key_here -- npx -y @rechakra/react-mcp
 ```
 
 Once configured, the `list_component_templates` and `get_component_templates`

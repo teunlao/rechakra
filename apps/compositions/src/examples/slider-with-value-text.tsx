@@ -1,4 +1,4 @@
-import { HStack, Slider } from "@chakra-ui/react"
+import { HStack, Slider } from "@rechakra/react"
 
 export const SliderWithValueText = () => {
   return (

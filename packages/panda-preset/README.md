@@ -1,11 +1,11 @@
-# @chakra-ui/panda-preset
+# @rechakra/panda-preset
 
 Panda preset for using Chakra UI design system in your Panda CSS.
 
 ## Installation
 
 ```bash
-npm install @chakra-ui/panda-preset
+npm install @rechakra/panda-preset
 ```
 
 ## Usage
@@ -15,6 +15,6 @@ npm install @chakra-ui/panda-preset
 import { defineConfig } from "@pandacss/dev"
 
 export default defineConfig({
-  presets: ["@chakra-ui/panda-preset"],
+  presets: ["@rechakra/panda-preset"],
 })
 ```

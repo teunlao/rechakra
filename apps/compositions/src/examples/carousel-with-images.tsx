@@ -1,5 +1,5 @@
-import type { IconButtonProps } from "@chakra-ui/react"
-import { AspectRatio, Box, Carousel, IconButton, Image } from "@chakra-ui/react"
+import type { IconButtonProps } from "@rechakra/react"
+import { AspectRatio, Box, Carousel, IconButton, Image } from "@rechakra/react"
 import { forwardRef } from "react"
 import { LuArrowLeft, LuArrowRight } from "react-icons/lu"
 

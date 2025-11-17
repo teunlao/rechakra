@@ -1,4 +1,4 @@
-import { ColorSwatch, HStack } from "@chakra-ui/react"
+import { ColorSwatch, HStack } from "@rechakra/react"
 
 export const ColorSwatchWithAlpha = () => {
   return (

@@ -1,4 +1,4 @@
-import { Avatar, HStack } from "@chakra-ui/react"
+import { Avatar, HStack } from "@rechakra/react"
 
 export const AvatarWithFallback = () => {
   return (

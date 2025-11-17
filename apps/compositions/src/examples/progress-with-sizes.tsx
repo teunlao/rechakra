@@ -1,4 +1,4 @@
-import { For, Progress, Stack } from "@chakra-ui/react"
+import { For, Progress, Stack } from "@rechakra/react"
 
 export const ProgressWithSizes = () => {
   return (

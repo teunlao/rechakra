@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, Dialog, Menu, Portal } from "@chakra-ui/react"
+import { Button, Dialog, Menu, Portal } from "@rechakra/react"
 import Lorem from "react-lorem-ipsum"
 
 export const MenuWithinDialog = () => {

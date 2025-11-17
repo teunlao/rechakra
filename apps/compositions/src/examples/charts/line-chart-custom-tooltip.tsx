@@ -1,7 +1,7 @@
 "use client"
 
-import { Chart, useChart } from "@chakra-ui/charts"
-import { Box, HStack, Stack, Text } from "@chakra-ui/react"
+import { Chart, useChart } from "@rechakra/charts"
+import { Box, HStack, Stack, Text } from "@rechakra/react"
 import type { TooltipContentProps } from "recharts"
 import { CartesianGrid, Line, LineChart, Tooltip, XAxis, YAxis } from "recharts"
 

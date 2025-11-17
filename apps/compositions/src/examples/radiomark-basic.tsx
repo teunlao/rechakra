@@ -1,4 +1,4 @@
-import { Radiomark, Stack } from "@chakra-ui/react"
+import { Radiomark, Stack } from "@rechakra/react"
 
 export const RadiomarkBasic = () => {
   return (

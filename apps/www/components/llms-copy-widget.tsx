@@ -12,7 +12,7 @@ import {
   Portal,
   Separator,
   useClipboard,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import NextLink from "next/link"
 import { BsMarkdown } from "react-icons/bs"
 import { LuCheck, LuChevronDown } from "react-icons/lu"

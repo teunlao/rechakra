@@ -1,5 +1,5 @@
-import type { ColorPalette } from "@chakra-ui/react"
-import { Status as ChakraStatus } from "@chakra-ui/react"
+import type { ColorPalette } from "@rechakra/react"
+import { Status as ChakraStatus } from "@rechakra/react"
 import * as React from "react"
 
 type StatusValue = "success" | "error" | "warning" | "info"

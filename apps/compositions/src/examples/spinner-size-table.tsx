@@ -1,6 +1,6 @@
 "use client"
 
-import { For, Spinner, useRecipe } from "@chakra-ui/react"
+import { For, Spinner, useRecipe } from "@rechakra/react"
 
 export const SpinnerSizeTable = () => {
   const recipe = useRecipe({ key: "spinner" })

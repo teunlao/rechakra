@@ -1,4 +1,4 @@
-import { Mark, Text } from "@chakra-ui/react"
+import { Mark, Text } from "@rechakra/react"
 
 export const MarkBasic = () => {
   return (

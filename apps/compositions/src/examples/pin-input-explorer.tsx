@@ -1,6 +1,6 @@
 "use client"
 
-import { PinInput, VStack } from "@chakra-ui/react"
+import { PinInput, VStack } from "@rechakra/react"
 
 export const PinInputExplorer = () => {
   return (

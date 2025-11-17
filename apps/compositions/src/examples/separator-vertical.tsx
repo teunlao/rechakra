@@ -1,4 +1,4 @@
-import { HStack, Separator, Text } from "@chakra-ui/react"
+import { HStack, Separator, Text } from "@rechakra/react"
 
 export const SeparatorVertical = () => {
   return (

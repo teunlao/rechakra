@@ -1,4 +1,4 @@
-import { HStack, Kbd } from "@chakra-ui/react"
+import { HStack, Kbd } from "@rechakra/react"
 
 export const KbdWithCombinations = () => {
   return (

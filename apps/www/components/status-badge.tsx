@@ -1,4 +1,4 @@
-import { Badge, BadgeProps } from "@chakra-ui/react"
+import { Badge, BadgeProps } from "@rechakra/react"
 
 export const StatusBadge = (props: BadgeProps) => (
   <Badge

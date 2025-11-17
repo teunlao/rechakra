@@ -1,4 +1,4 @@
-import { ProgressCircle } from "@chakra-ui/react"
+import { ProgressCircle } from "@rechakra/react"
 
 export const ProgressCircleIndeterminate = () => {
   return (

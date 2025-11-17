@@ -1,6 +1,6 @@
 "use client"
 
-import { Badge, Button, HStack, Span, TagsInput } from "@chakra-ui/react"
+import { Badge, Button, HStack, Span, TagsInput } from "@rechakra/react"
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 const isValidEmail = (value: string) => EMAIL_REGEX.test(value)

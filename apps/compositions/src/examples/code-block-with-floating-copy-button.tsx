@@ -5,7 +5,7 @@ import {
   Float,
   IconButton,
   createShikiAdapter,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import type { HighlighterGeneric } from "shiki"
 
 const file = {

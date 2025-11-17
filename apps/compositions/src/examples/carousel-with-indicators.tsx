@@ -1,4 +1,4 @@
-import { Carousel } from "@chakra-ui/react"
+import { Carousel } from "@rechakra/react"
 import { DecorativeBox } from "compositions/lib/decorative-box"
 
 const items = Array.from({ length: 5 })

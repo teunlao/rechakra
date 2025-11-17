@@ -1,6 +1,6 @@
 "use client"
 
-import { Code, Listbox, Stack, createListCollection } from "@chakra-ui/react"
+import { Code, Listbox, Stack, createListCollection } from "@rechakra/react"
 import { useState } from "react"
 
 export const ListboxControlled = () => {

@@ -1,4 +1,4 @@
-import type { SystemContext } from "@chakra-ui/react"
+import type { SystemContext } from "@rechakra/react"
 import { pretty } from "./pretty.js"
 import { capitalize, unionType } from "./shared.js"
 
@@ -10,7 +10,7 @@ export async function generateTokens(sys: SystemContext) {
   const set = new Set<string>()
 
   set.add(
-    'import type { ChakraCustomColorPalette, ChakraCustomTokenUnion, ChakraCustomTokenValue } from "@chakra-ui/react/typegen"',
+    'import type { ChakraCustomColorPalette, ChakraCustomTokenUnion, ChakraCustomTokenValue } from "@rechakra/react/typegen"',
   )
 
   const baseTokenUnion = isTokenEmpty

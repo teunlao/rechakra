@@ -47,7 +47,7 @@ export async function fetchComposition(id: string) {
     return compositionFileSchema.parse(json)
   } catch (error) {
     throw new Error(
-      `Failed to fetch snippet "${id}". Make sure the id is correct or run @chakra-ui/cli snippet list to see available snippets.`,
+      `Failed to fetch snippet "${id}". Make sure the id is correct or run @rechakra/cli snippet list to see available snippets.`,
     )
   }
 }

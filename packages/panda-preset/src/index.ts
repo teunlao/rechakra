@@ -12,7 +12,7 @@ import { tokens } from "./tokens"
 import { utilities } from "./utilities"
 
 export default definePreset({
-  name: "@chakra-ui/panda-preset",
+  name: "@rechakra/panda-preset",
   globalCss,
   theme: {
     breakpoints,

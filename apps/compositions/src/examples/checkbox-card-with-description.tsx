@@ -1,4 +1,4 @@
-import { CheckboxCard } from "@chakra-ui/react"
+import { CheckboxCard } from "@rechakra/react"
 
 export const CheckboxCardWithDescription = () => {
   return (

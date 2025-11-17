@@ -1,4 +1,4 @@
-import { Button } from "@chakra-ui/react"
+import { Button } from "@rechakra/react"
 import type { Meta, StoryObj } from "@storybook/react"
 
 const meta: Meta<typeof Button> = {

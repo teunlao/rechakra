@@ -8,7 +8,7 @@ import {
   Portal,
   useFilter,
   useListCollection,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import { useState } from "react"
 
 export const ComboboxControlled = () => {

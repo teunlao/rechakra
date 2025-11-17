@@ -1,6 +1,6 @@
 "use client"
 
-import { TagsInput } from "@chakra-ui/react"
+import { TagsInput } from "@rechakra/react"
 
 export const TagsInputWithColors = () => (
   <TagsInput.Root defaultValue={["React", "Chakra", "TypeScript"]}>

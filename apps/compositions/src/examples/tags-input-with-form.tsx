@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, Field, Input, Stack, TagsInput } from "@chakra-ui/react"
+import { Button, Field, Input, Stack, TagsInput } from "@rechakra/react"
 
 export const TagsInputWithForm = () => {
   return (

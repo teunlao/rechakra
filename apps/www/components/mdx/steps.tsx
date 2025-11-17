@@ -1,4 +1,4 @@
-import { Timeline } from "@chakra-ui/react"
+import { Timeline } from "@rechakra/react"
 import { Children, isValidElement } from "react"
 
 export const Steps = (props: React.PropsWithChildren<{}>) => {

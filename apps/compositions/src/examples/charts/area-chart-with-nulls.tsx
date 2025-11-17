@@ -1,7 +1,7 @@
 "use client"
 
-import { Chart, useChart } from "@chakra-ui/charts"
-import { Box, For, Heading, SimpleGrid } from "@chakra-ui/react"
+import { Chart, useChart } from "@rechakra/charts"
+import { Box, For, Heading, SimpleGrid } from "@rechakra/react"
 import { Area, AreaChart, CartesianGrid, Tooltip, XAxis } from "recharts"
 
 export const AreaChartWithNulls = () => {

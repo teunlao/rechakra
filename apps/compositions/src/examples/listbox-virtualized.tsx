@@ -1,6 +1,6 @@
 "use client"
 
-import { Listbox, createListCollection, useLiveRef } from "@chakra-ui/react"
+import { Listbox, createListCollection, useLiveRef } from "@rechakra/react"
 import { type VirtualItem, useVirtualizer } from "@tanstack/react-virtual"
 import React, { useEffect, useMemo, useRef } from "react"
 

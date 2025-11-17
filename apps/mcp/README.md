@@ -34,7 +34,7 @@ Add to your Claude Desktop or Cursor configuration file:
   "mcpServers": {
     "chakra-ui": {
       "command": "npx",
-      "args": ["-y", "@chakra-ui/react-mcp"],
+      "args": ["-y", "@rechakra/react-mcp"],
       "env": {
         "CHAKRA_PRO_API_KEY": "your-api-key-here"
       }
@@ -50,7 +50,7 @@ Add to your `~/.codex/config.toml` file:
 ```toml
 [mcp_servers.chakra-ui]
 command = "npx"
-args = ["-y", "@chakra-ui/react-mcp"]
+args = ["-y", "@rechakra/react-mcp"]
 startup_timeout_ms = 20_000
 
 # Optional: Add Chakra Pro API key if using premium features
@@ -61,7 +61,7 @@ startup_timeout_ms = 20_000
 Or use the CLI command:
 
 ```bash
-codex mcp add chakra-ui -- npx -y @chakra-ui/react-mcp
+codex mcp add chakra-ui -- npx -y @rechakra/react-mcp
 ```
 
 **Note:** Requires Codex CLI v0.34.0 or later.

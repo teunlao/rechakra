@@ -7,7 +7,7 @@ import {
   Portal,
   Stack,
   Text,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import { LuChartLine } from "react-icons/lu"
 
 export const HoverCardBasic = () => {

@@ -68,7 +68,7 @@ const CUSTOMIZATION_SCENARIOS: Record<string, CustomizationScenario> = {
     })
     `,
     usage: `
-    import { Box } from "@chakra-ui/react"
+    import { Box } from "@rechakra/react"
 
     <Box data-state="off" _off={{ bg: "red.500" }} />
     <Box data-state="on" _on={{ bg: "green.500" }} />
@@ -76,7 +76,7 @@ const CUSTOMIZATION_SCENARIOS: Record<string, CustomizationScenario> = {
   },
   cursor: {
     description: `
-    import { createSystem, defaultConfig } from "@chakra-ui/react"
+    import { createSystem, defaultConfig } from "@rechakra/react"
 
     export const system = createSystem(defaultConfig, {
     theme: {
@@ -156,7 +156,7 @@ const CUSTOMIZATION_SCENARIOS: Record<string, CustomizationScenario> = {
 
 const generateTemplate = (content: string) => {
   return `
-    import { createSystem, defaultConfig } from "@chakra-ui/react"
+    import { createSystem, defaultConfig } from "@rechakra/react"
 
     ${content}
 
@@ -256,7 +256,7 @@ export const customizeThemeTool: Tool<{
               type: "text",
               text: `
               To get proper autocompletion, YOU MUST run the following command:
-              npx -y @chakra-ui/cli typegen /PATH_TO_YOUR_THEME.{ts,js}
+              npx -y @rechakra/cli typegen /PATH_TO_YOUR_THEME.{ts,js}
               `,
             },
           ],

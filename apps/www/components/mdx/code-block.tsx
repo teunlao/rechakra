@@ -1,4 +1,4 @@
-import { Box, HStack, Text } from "@chakra-ui/react"
+import { Box, HStack, Text } from "@rechakra/react"
 import type { CodeLang } from "./code-lang-icon"
 import { CodeLangIcon } from "./code-lang-icon"
 

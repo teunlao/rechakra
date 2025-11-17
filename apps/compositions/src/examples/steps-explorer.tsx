@@ -8,7 +8,7 @@ import {
   Stack,
   Steps,
   Text,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 
 export const StepsExplorer = () => {
   return (

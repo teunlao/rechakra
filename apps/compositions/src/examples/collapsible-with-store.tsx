@@ -7,7 +7,7 @@ import {
   Icon,
   Stack,
   useCollapsible,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import { LuChevronDown, LuChevronRight } from "react-icons/lu"
 
 export const CollapsibleWithStore = () => {

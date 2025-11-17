@@ -1,11 +1,4 @@
-import {
-  HStack,
-  Heading,
-  Progress,
-  Span,
-  Square,
-  Stack,
-} from "@chakra-ui/react"
+import { HStack, Heading, Progress, Span, Square, Stack } from "@rechakra/react"
 import { HiFolder, HiLockClosed, HiPencil } from "react-icons/hi"
 
 export const ProgressComposition = () => {

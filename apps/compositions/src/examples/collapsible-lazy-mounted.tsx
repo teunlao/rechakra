@@ -1,4 +1,4 @@
-import { Box, Collapsible } from "@chakra-ui/react"
+import { Box, Collapsible } from "@rechakra/react"
 
 export const CollapsibleLazyMounted = () => (
   <Collapsible.Root unmountOnExit>

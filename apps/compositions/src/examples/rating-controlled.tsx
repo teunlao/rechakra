@@ -1,6 +1,6 @@
 "use client"
 
-import { RatingGroup } from "@chakra-ui/react"
+import { RatingGroup } from "@rechakra/react"
 import { useState } from "react"
 
 export const RatingControlled = () => {

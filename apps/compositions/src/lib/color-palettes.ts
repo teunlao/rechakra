@@ -1,4 +1,4 @@
-import type { ColorPalette } from "@chakra-ui/react"
+import type { ColorPalette } from "@rechakra/react"
 
 export const colorPalettes: ColorPalette[] = [
   "gray",

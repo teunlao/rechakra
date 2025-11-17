@@ -8,7 +8,7 @@ import {
   Text,
   useFilter,
   useListCollection,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 
 export const ComboboxWithSelectionBehavior = () => {
   return (

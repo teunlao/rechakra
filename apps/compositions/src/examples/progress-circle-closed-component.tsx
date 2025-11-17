@@ -1,8 +1,8 @@
-import type { SystemStyleObject } from "@chakra-ui/react"
+import type { SystemStyleObject } from "@rechakra/react"
 import {
   AbsoluteCenter,
   ProgressCircle as ChakraProgressCircle,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import * as React from "react"
 
 interface ProgressCircleProps extends ChakraProgressCircle.RootProps {

@@ -1,4 +1,4 @@
-import { Badge, Stack } from "@chakra-ui/react"
+import { Badge, Stack } from "@rechakra/react"
 
 export const BadgeWithVariants = () => {
   return (

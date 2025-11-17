@@ -1,4 +1,4 @@
-import { Alert, CloseButton } from "@chakra-ui/react"
+import { Alert, CloseButton } from "@rechakra/react"
 
 export const AlertWithCloseButton = () => {
   return (

@@ -6,7 +6,7 @@ import {
   Select,
   createListCollection,
   useSelectContext,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 
 const SelectValue = () => {
   const select = useSelectContext()

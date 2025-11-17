@@ -1,6 +1,6 @@
 import { readExampleFile } from "@/lib/composition"
 import { highlightCode } from "@/lib/highlight-code"
-import { Box, BoxProps, HStack, Tabs } from "@chakra-ui/react"
+import { Box, BoxProps, HStack, Tabs } from "@rechakra/react"
 import dynamic from "next/dynamic"
 import { CopyButton } from "./copy-button"
 import { ErrorBoundary } from "./error-boundary"

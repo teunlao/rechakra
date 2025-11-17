@@ -1,4 +1,4 @@
-import { defaultSystem } from "@chakra-ui/react/preset"
+import { defaultSystem } from "@rechakra/react/preset"
 import { ensureDirSync } from "fs-extra"
 import { writeFile } from "fs/promises"
 import { dirname, join } from "path"

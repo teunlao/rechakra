@@ -1,5 +1,5 @@
 {
-  "name": "@chakra-ui/react-mcp",
+  "name": "@rechakra/react-mcp",
   "description": "The official MCP server for Chakra UI",
   "version": "2.1.1",
   "main": "dist/stdio.js",
@@ -14,7 +14,7 @@
   "homepage": "https://chakra-ui.com/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chakra-ui/chakra-ui",
+    "url": "https://github.com/teunlao/rechakra",
     "directory": "apps/mcp"
   },
   "scripts": {

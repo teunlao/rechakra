@@ -1,4 +1,4 @@
-import { HStack, IconButton, NumberInput } from "@chakra-ui/react"
+import { HStack, IconButton, NumberInput } from "@rechakra/react"
 import { LuMinus, LuPlus } from "react-icons/lu"
 
 export const NumberInputWithStepper = () => {

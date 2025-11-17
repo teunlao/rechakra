@@ -1,12 +1,6 @@
 "use client"
 
-import {
-  Button,
-  Center,
-  Presence,
-  Stack,
-  useDisclosure,
-} from "@chakra-ui/react"
+import { Button, Center, Presence, Stack, useDisclosure } from "@rechakra/react"
 
 export const PresenceFade = () => {
   const { open, onToggle } = useDisclosure()

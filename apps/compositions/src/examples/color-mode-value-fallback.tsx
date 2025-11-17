@@ -1,6 +1,6 @@
 "use client"
 
-import { ClientOnly, IconButton, Skeleton } from "@chakra-ui/react"
+import { ClientOnly, IconButton, Skeleton } from "@rechakra/react"
 import { useColorMode } from "compositions/ui/color-mode"
 import { LuMoon, LuSun } from "react-icons/lu"
 

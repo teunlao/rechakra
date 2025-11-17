@@ -1,4 +1,4 @@
-import { Badge, Stack } from "@chakra-ui/react"
+import { Badge, Stack } from "@rechakra/react"
 import { HiAtSymbol, HiStar } from "react-icons/hi"
 
 export const BadgeWithIcon = () => {

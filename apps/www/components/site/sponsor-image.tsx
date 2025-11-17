@@ -1,6 +1,6 @@
 "use client"
 
-import { type BoxProps, Image, Square, useAvatar } from "@chakra-ui/react"
+import { type BoxProps, Image, Square, useAvatar } from "@rechakra/react"
 import { LuImage } from "react-icons/lu"
 
 interface Props {

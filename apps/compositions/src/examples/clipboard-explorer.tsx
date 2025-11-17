@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, Clipboard, Input, Stack, Text } from "@chakra-ui/react"
+import { Button, Clipboard, Input, Stack, Text } from "@rechakra/react"
 
 export const ClipboardExplorer = () => {
   return (

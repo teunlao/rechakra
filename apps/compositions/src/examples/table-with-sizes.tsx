@@ -1,4 +1,4 @@
-import { For, Stack, Table } from "@chakra-ui/react"
+import { For, Stack, Table } from "@rechakra/react"
 
 export const TableWithSizes = () => {
   return (

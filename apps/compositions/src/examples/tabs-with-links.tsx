@@ -1,4 +1,4 @@
-import { Link, Tabs } from "@chakra-ui/react"
+import { Link, Tabs } from "@rechakra/react"
 
 export const TabsWithLinks = () => {
   return (

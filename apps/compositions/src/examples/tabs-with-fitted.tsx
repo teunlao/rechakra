@@ -1,4 +1,4 @@
-import { Tabs } from "@chakra-ui/react"
+import { Tabs } from "@rechakra/react"
 
 export const TabsWithFitted = () => {
   return (

@@ -1,6 +1,6 @@
 "use client"
 
-import { Box, Code, Slider, Stack } from "@chakra-ui/react"
+import { Box, Code, Slider, Stack } from "@rechakra/react"
 import { useState } from "react"
 
 const initialValue = [50]

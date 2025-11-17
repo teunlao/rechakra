@@ -1,4 +1,4 @@
-import { Badge, ColorSwatch } from "@chakra-ui/react"
+import { Badge, ColorSwatch } from "@rechakra/react"
 
 export const ColorSwatchWithBadge = () => {
   return (

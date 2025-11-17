@@ -8,7 +8,7 @@ import {
   Stack,
   type StackProps,
   Text,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import { forwardRef, useRef } from "react"
 
 const DrawerContainer = forwardRef<HTMLDivElement, StackProps>(

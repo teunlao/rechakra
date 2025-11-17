@@ -1,4 +1,4 @@
-import { Icon } from "@chakra-ui/react"
+import { Icon } from "@rechakra/react"
 
 export type CodeLang = "tsx" | "ts" | "js" | "jsx" | "css" | "json"
 

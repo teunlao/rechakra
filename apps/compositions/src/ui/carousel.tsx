@@ -1,7 +1,7 @@
 "use client"
 
-import { Carousel } from "@chakra-ui/react"
-import { Box, IconButton, Image } from "@chakra-ui/react"
+import { Carousel } from "@rechakra/react"
+import { Box, IconButton, Image } from "@rechakra/react"
 import * as React from "react"
 import { LuPause, LuPlay } from "react-icons/lu"
 

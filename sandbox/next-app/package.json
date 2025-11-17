@@ -10,7 +10,7 @@
     "chakra:typegen": "pnpm exec chakra typegen ./chakra.config.ts --isolated --outdir ./.chakra"
   },
   "dependencies": {
-    "@chakra-ui/react": "workspace:*",
+    "@rechakra/react": "workspace:*",
     "@emotion/react": "^11.14.0",
     "@types/node": "^24.0.4",
     "@types/react": "19.2.2",
@@ -24,11 +24,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/chakra-ui/chakra-ui.git",
+    "url": "https://github.com/teunlao/rechakra.git",
     "directory": "examples/next-app"
   },
   "bugs": {
-    "url": "https://github.com/chakra-ui/chakra-ui/issues"
+    "url": "https://github.com/teunlao/rechakra/issues"
   },
   "license": "MIT"
 }

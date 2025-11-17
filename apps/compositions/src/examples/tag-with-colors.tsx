@@ -1,4 +1,4 @@
-import { Stack, Tag, Text } from "@chakra-ui/react"
+import { Stack, Tag, Text } from "@rechakra/react"
 import { colorPalettes } from "compositions/lib/color-palettes"
 import { HiPlus } from "react-icons/hi"
 

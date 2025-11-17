@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, QrCode, Stack } from "@chakra-ui/react"
+import { Button, QrCode, Stack } from "@rechakra/react"
 
 export const QrCodeExplorer = () => {
   return (

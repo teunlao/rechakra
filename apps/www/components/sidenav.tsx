@@ -1,4 +1,4 @@
-import { HStack, Stack, StackProps } from "@chakra-ui/react"
+import { HStack, Stack, StackProps } from "@rechakra/react"
 import Link, { LinkProps } from "next/link"
 import { LuArrowUpRight } from "react-icons/lu"
 import { StatusBadge } from "./status-badge"

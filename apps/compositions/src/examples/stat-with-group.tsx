@@ -1,4 +1,4 @@
-import { Stat, StatGroup } from "@chakra-ui/react"
+import { Stat, StatGroup } from "@rechakra/react"
 
 export const StatWithGroup = () => {
   return (

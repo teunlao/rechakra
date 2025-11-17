@@ -1,12 +1,6 @@
 "use client"
 
-import {
-  Button,
-  CloseButton,
-  Dialog,
-  Portal,
-  useDialog,
-} from "@chakra-ui/react"
+import { Button, CloseButton, Dialog, Portal, useDialog } from "@rechakra/react"
 
 export const DialogWithStore = () => {
   const dialog = useDialog()

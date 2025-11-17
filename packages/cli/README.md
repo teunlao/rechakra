@@ -1,4 +1,4 @@
-# @chakra-ui/cli
+# @rechakra/cli
 
 Generate TypeScript types to provide autocomplete for your custom theme and add
 components and blocks to your project.
@@ -10,22 +10,22 @@ components and blocks to your project.
 Generate TypeScript types for your custom theme:
 
 ```sh
-npx @chakra-ui/cli tokens <path/to/your/theme.(js|ts)>
+npx @rechakra/cli tokens <path/to/your/theme.(js|ts)>
 ```
 
 or
 
 ```sh
-npx @chakra-ui/cli tokens <@your-org/chakra-theme-package>
+npx @rechakra/cli tokens <@your-org/chakra-theme-package>
 ```
 
 ```sh
-$ npx @chakra-ui/cli tokens --help
+$ npx @rechakra/cli tokens --help
 
 Usage: chakra-cli tokens [options] <source>
 
 Options:
-  --out <path>              output file e.g. node_modules/@chakra-ui/styled-system/dist/declarations/src/theming.types.d.ts
+  --out <path>              output file e.g. node_modules/@rechakra/styled-system/dist/declarations/src/theming.types.d.ts
   --strict-component-types  Generate strict types for props variant and size
   --strict-token-types      Generate strict types for theme tokens (e.g. color, spacing)
   --no-format               Disable auto formatting
@@ -56,13 +56,13 @@ Add community-driven snippets to your project:
 
 ```sh
 # Add recommended snippets
-npx @chakra-ui/cli snippet add
+npx @rechakra/cli snippet add
 
 # Add specific snippets
-npx @chakra-ui/cli snippet add provider toaster
+npx @rechakra/cli snippet add provider toaster
 
 # List available snippets
-npx @chakra-ui/cli snippet list
+npx @rechakra/cli snippet list
 ```
 
 ### Pro Blocks
@@ -71,19 +71,19 @@ Add premium blocks from Chakra UI Pro to your project:
 
 ```sh
 # Interactive block selection
-npx @chakra-ui/cli blocks add
+npx @rechakra/cli blocks add
 
 # Add all variants of a specific block
-npx @chakra-ui/cli blocks add hero
+npx @rechakra/cli blocks add hero
 
 # Add a specific variant of a block
-npx @chakra-ui/cli blocks add hero --variant "simple"
+npx @rechakra/cli blocks add hero --variant "simple"
 
 # List available blocks
-npx @chakra-ui/cli blocks list
+npx @rechakra/cli blocks list
 
 # List blocks in a specific category
-npx @chakra-ui/cli blocks list --category "marketing"
+npx @rechakra/cli blocks list --category "marketing"
 ```
 
 #### Pro Blocks Setup

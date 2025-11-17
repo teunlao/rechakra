@@ -1,7 +1,7 @@
 "use client"
 
 import { openInStackblitzReact } from "@/lib/stackblitz"
-import { Button } from "@chakra-ui/react"
+import { Button } from "@rechakra/react"
 import { StackblitzIcon } from "./framework-icon"
 
 export const StackblitzButton = ({ exampleId }: { exampleId: string }) => {

@@ -1,4 +1,4 @@
-import { Avatar, HStack, defineStyle } from "@chakra-ui/react"
+import { Avatar, HStack, defineStyle } from "@rechakra/react"
 
 const ringCss = defineStyle({
   outlineWidth: "2px",

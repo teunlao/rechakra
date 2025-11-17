@@ -1,6 +1,6 @@
 "use client"
 
-import { InputGroup, Span, TagsInput } from "@chakra-ui/react"
+import { InputGroup, Span, TagsInput } from "@rechakra/react"
 import { LuTags } from "react-icons/lu"
 
 export const TagsInputWithStartElement = () => {

@@ -1,6 +1,6 @@
 "use client"
 
-import { For, Link, Span, useRecipe } from "@chakra-ui/react"
+import { For, Link, Span, useRecipe } from "@rechakra/react"
 import { colorPalettes } from "compositions/lib/color-palettes"
 import { PlaygroundTable } from "compositions/lib/playground-table"
 

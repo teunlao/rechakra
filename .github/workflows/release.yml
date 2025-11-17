@@ -33,7 +33,7 @@ jobs:
         uses: actions/checkout@v5
         with:
           fetch-depth: 0
-          token: ${{ secrets.SAGE_PAT }}
+          token: ${{ secrets.RECHAKRA_PAT }}
 
       - name: Install
         uses: ./.github/composite-actions/install
@@ -52,9 +52,3 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Slack notification
-        if: steps.changesets.outputs.published == 'true'
-        run: pnpm slack
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}

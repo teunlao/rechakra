@@ -1,4 +1,4 @@
-import { Carousel, HStack, IconButton } from "@chakra-ui/react"
+import { Carousel, HStack, IconButton } from "@rechakra/react"
 import { DecorativeBox } from "compositions/lib/decorative-box"
 import {
   LuChevronLeft,

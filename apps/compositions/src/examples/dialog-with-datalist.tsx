@@ -9,7 +9,7 @@ import {
   Portal,
   Textarea,
   VStack,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 
 export const DialogWithDatalist = () => {
   return (

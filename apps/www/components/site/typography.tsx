@@ -8,7 +8,7 @@ import {
   Text,
   TextProps,
   defineStyle,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 
 const styles = defineStyle({
   color: { _light: "teal.600", _dark: "teal.500" },

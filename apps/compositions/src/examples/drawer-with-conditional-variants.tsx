@@ -1,11 +1,4 @@
-import {
-  Button,
-  CloseButton,
-  Drawer,
-  Kbd,
-  Portal,
-  Text,
-} from "@chakra-ui/react"
+import { Button, CloseButton, Drawer, Kbd, Portal, Text } from "@rechakra/react"
 
 export const DrawerWithConditionalVariants = () => {
   return (

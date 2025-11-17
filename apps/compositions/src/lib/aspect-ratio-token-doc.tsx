@@ -7,7 +7,7 @@ import {
   Text,
   VStack,
   defaultSystem,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import { TokenDoc } from "./token-doc"
 
 const { tokens } = defaultSystem

@@ -1,6 +1,6 @@
-import "@chakra-ui/react/typegen"
+import "@rechakra/react/typegen"
 
-declare module "@chakra-ui/react/typegen" {
+declare module "@rechakra/react/typegen" {
   interface ChakraCustomTypeGen {
     tokens: {
       colors: {

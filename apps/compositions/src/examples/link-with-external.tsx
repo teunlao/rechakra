@@ -1,4 +1,4 @@
-import { Link } from "@chakra-ui/react"
+import { Link } from "@rechakra/react"
 import { LuExternalLink } from "react-icons/lu"
 
 export const LinkWithExternal = () => {

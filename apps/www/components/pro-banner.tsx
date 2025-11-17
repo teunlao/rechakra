@@ -1,7 +1,7 @@
 "use client"
 
 import { docsConfig } from "@/docs.config"
-import { Center, Flex, Text, chakra } from "@chakra-ui/react"
+import { Center, Flex, Text, chakra } from "@rechakra/react"
 
 export const ProAdBanner = () => {
   return (

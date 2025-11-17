@@ -11,7 +11,7 @@ import {
   Span,
   Stack,
   Text,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import { Blob } from "./blob"
 import {
   GoldSponsorIcon,

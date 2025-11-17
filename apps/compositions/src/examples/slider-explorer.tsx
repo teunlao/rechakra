@@ -1,4 +1,4 @@
-import { Box, Slider, Stack } from "@chakra-ui/react"
+import { Box, Slider, Stack } from "@rechakra/react"
 
 export const SliderExplorer = () => {
   return (

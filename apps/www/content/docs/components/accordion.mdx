@@ -13,7 +13,7 @@ links:
 ## Usage
 
 ```tsx
-import { Accordion } from "@chakra-ui/react"
+import { Accordion } from "@rechakra/react"
 ```
 
 ```tsx
@@ -101,7 +101,7 @@ Pass the `_open` pseudo selector to the `Accordion.ItemTrigger` or
 Use `useAccordionContext` to access the accordion state at the root level:
 
 ```tsx
-import { useAccordionContext } from "@chakra-ui/react"
+import { useAccordionContext } from "@rechakra/react"
 
 const AccordionValueText = () => {
   const accordion = useAccordionContext()
@@ -122,7 +122,7 @@ const Demo = () => (
 Use `useAccordionItemContext` to access the state of a specific accordion item:
 
 ```tsx
-import { useAccordionItemContext } from "@chakra-ui/react"
+import { useAccordionItemContext } from "@rechakra/react"
 
 const AccordionItemStatus = () => {
   const item = useAccordionItemContext()

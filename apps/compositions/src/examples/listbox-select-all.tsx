@@ -1,6 +1,6 @@
 "use client"
 
-import type { CheckmarkProps, FlexProps } from "@chakra-ui/react"
+import type { CheckmarkProps, FlexProps } from "@rechakra/react"
 import {
   Box,
   Checkmark,
@@ -9,7 +9,7 @@ import {
   createListCollection,
   useListboxContext,
   useListboxItemContext,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 
 export const ListboxSelectAll = () => {
   return (

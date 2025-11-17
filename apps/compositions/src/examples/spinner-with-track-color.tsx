@@ -1,4 +1,4 @@
-import { Spinner } from "@chakra-ui/react"
+import { Spinner } from "@rechakra/react"
 
 export const SpinnerWithTrackColor = () => (
   <Spinner

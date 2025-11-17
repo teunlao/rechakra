@@ -32,16 +32,16 @@ components are not included in your final bundle.
 
 ```tsx
 // ❌ This imports the entire Chakra UI library
-import { Button, Input, Modal } from "@chakra-ui/react"
+import { Button, Input, Modal } from "@rechakra/react"
 ```
 
 **After (modular imports)**
 
 ```tsx
 // ✅ Import only the components you need
-import { Button } from "@chakra-ui/react/button"
-import { Input } from "@chakra-ui/react/input"
-import { Modal } from "@chakra-ui/react/modal"
+import { Button } from "@rechakra/react/button"
+import { Input } from "@rechakra/react/input"
+import { Modal } from "@rechakra/react/modal"
 ```
 
 ## Modular Recipe Imports
@@ -54,15 +54,15 @@ This can significantly reduce the JS payload in your application.
 
 ```tsx
 // ❌ This imports all recipes and their variants
-import { defaultSystem } from "@chakra-ui/react"
+import { defaultSystem } from "@rechakra/react"
 ```
 
 **After (modular recipe imports)**
 
 ```tsx
 // ✅ Import only the recipes you need
-import { createSystem, defaultBaseConfig } from "@chakra-ui/react"
-import { buttonRecipe, inputRecipe } from "@chakra-ui/react/theme"
+import { createSystem, defaultBaseConfig } from "@rechakra/react"
+import { buttonRecipe, inputRecipe } from "@rechakra/react/theme"
 
 const system = createSystem(defaultBaseConfig, {
   theme: {
@@ -87,7 +87,7 @@ forms), consider dynamic imports:
 import { Suspense, lazy } from "react"
 
 const Modal = lazy(() =>
-  import("@chakra-ui/react/modal").then((mod) => ({
+  import("@rechakra/react/modal").then((mod) => ({
     default: mod.Modal,
   })),
 )

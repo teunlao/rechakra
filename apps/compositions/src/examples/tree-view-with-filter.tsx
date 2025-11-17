@@ -7,7 +7,7 @@ import {
   TreeView,
   createTreeCollection,
   useFilter,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import { useState } from "react"
 import { LuFile, LuFolder } from "react-icons/lu"
 

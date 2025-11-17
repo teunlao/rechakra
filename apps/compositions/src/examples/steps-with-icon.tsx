@@ -1,4 +1,4 @@
-import { Button, ButtonGroup, Steps } from "@chakra-ui/react"
+import { Button, ButtonGroup, Steps } from "@rechakra/react"
 import { LuCalendar, LuCheck, LuUser, LuWallet } from "react-icons/lu"
 
 export const StepsWithIcon = () => {

@@ -1,4 +1,4 @@
-import { Tabs } from "@chakra-ui/react"
+import { Tabs } from "@rechakra/react"
 import { LuFolder, LuSquareCheck, LuUser } from "react-icons/lu"
 
 export const TabsWithDisabledTab = () => {

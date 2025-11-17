@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, QrCode, Stack, useQrCode } from "@chakra-ui/react"
+import { Button, QrCode, Stack, useQrCode } from "@rechakra/react"
 
 export const QrCodeWithStore = () => {
   const qrCode = useQrCode({ defaultValue: "https://www.google.com" })

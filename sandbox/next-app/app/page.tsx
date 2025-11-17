@@ -10,7 +10,7 @@ import {
   RadioGroup,
   Skeleton,
   VStack,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import Image from "next/image"
 import { LuBolt } from "react-icons/lu"
 import { ColorModeToggle } from "../components/color-mode-toggle"
@@ -66,7 +66,7 @@ export default async function Page() {
         <HStack>
           <Button color="brand.primary">Let's go!</Button>
           <Button bg="brand.secondary" color="white">
-            bun install @chakra-ui/react
+            bun install @rechakra/react
           </Button>
         </HStack>
 

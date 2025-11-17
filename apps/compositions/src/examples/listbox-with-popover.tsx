@@ -8,7 +8,7 @@ import {
   useFilter,
   useListCollection,
   useListbox,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import { useRef, useState } from "react"
 import { LuChevronDown } from "react-icons/lu"
 

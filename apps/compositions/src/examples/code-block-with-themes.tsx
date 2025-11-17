@@ -1,6 +1,6 @@
 "use client"
 
-import { ClientOnly, CodeBlock, createShikiAdapter } from "@chakra-ui/react"
+import { ClientOnly, CodeBlock, createShikiAdapter } from "@rechakra/react"
 import { useColorMode } from "compositions/ui/color-mode"
 import type { HighlighterGeneric } from "shiki"
 

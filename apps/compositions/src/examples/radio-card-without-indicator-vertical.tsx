@@ -1,4 +1,4 @@
-import { HStack, Icon, RadioCard } from "@chakra-ui/react"
+import { HStack, Icon, RadioCard } from "@rechakra/react"
 import { RiAppleFill, RiBankCardFill, RiPaypalFill } from "react-icons/ri"
 
 export const RadioCardWithoutIndicatorVertical = () => {

@@ -1,4 +1,4 @@
-import { Badge, Loader } from "@chakra-ui/react"
+import { Badge, Loader } from "@rechakra/react"
 
 export const LoaderWithBadge = () => {
   return (

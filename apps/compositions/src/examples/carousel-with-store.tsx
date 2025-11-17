@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, Carousel, IconButton, useCarousel } from "@chakra-ui/react"
+import { Button, Carousel, IconButton, useCarousel } from "@rechakra/react"
 import { DecorativeBox } from "compositions/lib/decorative-box"
 import { LuChevronLeft, LuChevronRight } from "react-icons/lu"
 

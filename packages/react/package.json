@@ -1,6 +1,6 @@
 {
-  "name": "@chakra-ui/react",
-  "version": "3.29.0",
+  "name": "@rechakra/react",
+  "version": "1.0.0",
   "description": "Responsive and accessible React UI components built with React and Emotion",
   "type": "module",
   "main": "dist/cjs/index.cjs",
@@ -18,7 +18,7 @@
   "homepage": "https://chakra-ui.com/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chakra-ui/chakra-ui",
+    "url": "https://github.com/teunlao/rechakra",
     "directory": "packages/react"
   },
   "keywords": [

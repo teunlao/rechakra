@@ -1,4 +1,4 @@
-import { Progress } from "@chakra-ui/react"
+import { Progress } from "@rechakra/react"
 import { InfoTip } from "compositions/ui/toggle-tip"
 
 export const ProgressWithLabelInfo = () => {

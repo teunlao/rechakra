@@ -1,4 +1,4 @@
-import { HStack, Highlight, Stack, Text } from "@chakra-ui/react"
+import { HStack, Highlight, Stack, Text } from "@rechakra/react"
 import { LuCalendar } from "react-icons/lu"
 import { LogoIcon } from "./logo"
 

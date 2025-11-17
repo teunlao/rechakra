@@ -1,4 +1,4 @@
-import { Slider } from "@chakra-ui/react"
+import { Slider } from "@rechakra/react"
 
 const marks = [
   { value: 0, label: "0%" },

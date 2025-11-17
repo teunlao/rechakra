@@ -1,4 +1,4 @@
-import { Group } from "@chakra-ui/react"
+import { Group } from "@rechakra/react"
 import { DecorativeBox } from "compositions/lib/decorative-box"
 
 export const GroupBasic = () => {

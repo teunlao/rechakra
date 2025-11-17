@@ -1,4 +1,4 @@
-import { Box, Flex, Spacer } from "@chakra-ui/react"
+import { Box, Flex, Spacer } from "@rechakra/react"
 
 export const FlexWithSpacer = () => {
   return (

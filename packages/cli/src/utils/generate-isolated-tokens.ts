@@ -1,5 +1,5 @@
-import type { SystemContext } from "@chakra-ui/react"
-import { defaultSystem } from "@chakra-ui/react"
+import type { SystemContext } from "@rechakra/react"
+import { defaultSystem } from "@rechakra/react"
 import { pretty } from "./pretty.js"
 
 interface TokenNode {
@@ -73,13 +73,13 @@ export function generateIsolatedTokens(sys: SystemContext) {
     insertToken(tree, name)
   }
 
-  const header = 'import "@chakra-ui/react/typegen"'
+  const header = 'import "@rechakra/react/typegen"'
 
   if (!hasCustomTokens) {
     return pretty(
       `${header}
 
-declare module "@chakra-ui/react/typegen" {
+declare module "@rechakra/react/typegen" {
   interface ChakraCustomTypeGen {}
 }
 `,
@@ -91,7 +91,7 @@ declare module "@chakra-ui/react/typegen" {
   return pretty(
     `${header}
 
-declare module "@chakra-ui/react/typegen" {
+declare module "@rechakra/react/typegen" {
   interface ChakraCustomTypeGen {
     tokens: ${tokensLiteral}
   }

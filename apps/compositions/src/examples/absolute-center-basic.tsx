@@ -1,4 +1,4 @@
-import { AbsoluteCenter, Box } from "@chakra-ui/react"
+import { AbsoluteCenter, Box } from "@rechakra/react"
 
 export const AbsoluteCenterBasic = () => {
   return (

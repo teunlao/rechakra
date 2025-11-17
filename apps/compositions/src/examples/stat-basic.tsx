@@ -1,4 +1,4 @@
-import { Stat } from "@chakra-ui/react"
+import { Stat } from "@rechakra/react"
 
 export const StatBasic = () => {
   return (

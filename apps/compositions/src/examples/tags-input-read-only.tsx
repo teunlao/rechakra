@@ -1,6 +1,6 @@
 "use client"
 
-import { TagsInput } from "@chakra-ui/react"
+import { TagsInput } from "@rechakra/react"
 
 export const TagsInputReadOnly = () => (
   <TagsInput.Root readOnly defaultValue={["React", "Chakra"]}>

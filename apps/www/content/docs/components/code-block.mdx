@@ -12,7 +12,7 @@ links:
 ## Usage
 
 ```js
-import { CodeBlock } from "@chakra-ui/react"
+import { CodeBlock } from "@rechakra/react"
 ```
 
 ```jsx
@@ -60,7 +60,7 @@ the selected languages.
 
 ```tsx
 import type { HighlighterGeneric } from "shiki"
-import { createShikiAdapter } from "@chakra-ui/react"
+import { createShikiAdapter } from "@rechakra/react"
 
 const shikiAdapter = createShikiAdapter<HighlighterGeneric<any, any>>({
   async load() {
@@ -89,7 +89,7 @@ Then, create the highlight.js adapter that dynamically loads the selected
 languages.
 
 ```tsx
-import { createHighlightJsAdapter } from "@chakra-ui/react"
+import { createHighlightJsAdapter } from "@rechakra/react"
 import hljs from "highlight.js/lib/core"
 
 const highlightJsAdapter = createHighlightJsAdapter<typeof hljs>({

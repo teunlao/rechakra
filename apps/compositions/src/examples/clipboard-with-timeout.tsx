@@ -1,4 +1,4 @@
-import { Button, Clipboard } from "@chakra-ui/react"
+import { Button, Clipboard } from "@rechakra/react"
 
 export const ClipboardWithTimeout = () => {
   return (

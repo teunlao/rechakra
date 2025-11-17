@@ -1,4 +1,4 @@
-import { Button } from "@chakra-ui/react"
+import { Button } from "@rechakra/react"
 import { ToggleTip } from "compositions/ui/toggle-tip"
 import { LuInfo } from "react-icons/lu"
 

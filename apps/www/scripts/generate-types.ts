@@ -13,7 +13,7 @@ import {
   mapEntries,
   toComponentCase,
 } from "@/utils/shared"
-import { defaultSystem } from "@chakra-ui/react/preset"
+import { defaultSystem } from "@rechakra/react/preset"
 import { ensureDirSync } from "fs-extra"
 import { existsSync, globSync, readFileSync, writeFileSync } from "node:fs"
 import { basename, join } from "node:path"

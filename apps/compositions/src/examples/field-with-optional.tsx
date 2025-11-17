@@ -1,4 +1,4 @@
-import { Badge, Field, Input } from "@chakra-ui/react"
+import { Badge, Field, Input } from "@rechakra/react"
 
 export const FieldWithOptional = () => {
   return (

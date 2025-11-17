@@ -1,6 +1,6 @@
 {
-  "name": "@chakra-ui/panda-preset",
-  "version": "3.29.0",
+  "name": "@rechakra/panda-preset",
+  "version": "1.0.0",
   "description": "Panda preset for Chakra UI",
   "type": "module",
   "main": "dist/cjs/index.cjs",
@@ -18,7 +18,7 @@
   "homepage": "https://chakra-ui.com/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chakra-ui/chakra-ui",
+    "url": "https://github.com/teunlao/rechakra",
     "directory": "packages/panda-preset"
   },
   "keywords": [
@@ -62,7 +62,7 @@
     "@pandacss/types": "^1.4.2"
   },
   "devDependencies": {
-    "@chakra-ui/cli": "workspace:*",
+    "@rechakra/cli": "workspace:*",
     "globby": "14.1.0"
   }
 }

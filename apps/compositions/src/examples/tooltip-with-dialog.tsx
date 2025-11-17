@@ -1,4 +1,4 @@
-import { Button, CloseButton, Dialog, Portal } from "@chakra-ui/react"
+import { Button, CloseButton, Dialog, Portal } from "@rechakra/react"
 import { Tooltip } from "compositions/ui/tooltip"
 
 export const TooltipWithDialog = () => {

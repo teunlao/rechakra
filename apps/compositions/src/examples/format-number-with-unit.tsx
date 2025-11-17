@@ -1,4 +1,4 @@
-import { FormatNumber, Text } from "@chakra-ui/react"
+import { FormatNumber, Text } from "@rechakra/react"
 
 export const FormatNumberWithUnit = () => {
   return (

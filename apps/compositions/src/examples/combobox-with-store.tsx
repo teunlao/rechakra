@@ -6,7 +6,7 @@ import {
   useCombobox,
   useFilter,
   useListCollection,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 
 export const ComboboxWithStore = () => {
   const { contains } = useFilter({ sensitivity: "base" })

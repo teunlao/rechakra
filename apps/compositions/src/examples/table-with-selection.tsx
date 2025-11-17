@@ -1,6 +1,6 @@
 "use client"
 
-import { Checkbox, Table } from "@chakra-ui/react"
+import { Checkbox, Table } from "@rechakra/react"
 import { useState } from "react"
 
 export const TableWithSelection = () => {

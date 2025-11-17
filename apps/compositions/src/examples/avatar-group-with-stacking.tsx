@@ -1,4 +1,4 @@
-import { Avatar, AvatarGroup, Stack } from "@chakra-ui/react"
+import { Avatar, AvatarGroup, Stack } from "@rechakra/react"
 
 export const AvatarGroupWithStacking = () => {
   return (

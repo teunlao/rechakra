@@ -1,6 +1,6 @@
 "use client"
 
-import { TreeView, createTreeCollection } from "@chakra-ui/react"
+import { TreeView, createTreeCollection } from "@rechakra/react"
 import { useState } from "react"
 import { LuFile, LuFolder, LuLoaderCircle } from "react-icons/lu"
 

@@ -1,4 +1,4 @@
-import { Avatar, Badge, For, Span, Stack, Timeline } from "@chakra-ui/react"
+import { Avatar, Badge, For, Span, Stack, Timeline } from "@rechakra/react"
 import { LuCheck } from "react-icons/lu"
 
 export const TimelineWithVariants = () => {

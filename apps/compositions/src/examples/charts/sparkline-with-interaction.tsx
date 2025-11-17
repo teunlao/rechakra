@@ -1,7 +1,7 @@
 "use client"
 
-import { Chart, useChart } from "@chakra-ui/charts"
-import { Box, Flex, FormatNumber, HStack, Text } from "@chakra-ui/react"
+import { Chart, useChart } from "@rechakra/charts"
+import { Box, Flex, FormatNumber, HStack, Text } from "@rechakra/react"
 import { useState } from "react"
 import { LuDownload } from "react-icons/lu"
 import { Area, AreaChart, Tooltip } from "recharts"

@@ -1,4 +1,4 @@
-import { Group, RadioCard } from "@chakra-ui/react"
+import { Group, RadioCard } from "@rechakra/react"
 
 export const RadioCardComposition = () => {
   return (

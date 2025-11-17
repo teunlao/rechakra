@@ -6,7 +6,7 @@ import {
   Checkbox,
   CloseButton,
   Portal,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import { useState } from "react"
 import { LuShare, LuTrash2 } from "react-icons/lu"
 

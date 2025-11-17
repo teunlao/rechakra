@@ -1,4 +1,4 @@
-import { Checkbox as ChakraCheckbox } from "@chakra-ui/react"
+import { Checkbox as ChakraCheckbox } from "@rechakra/react"
 import * as React from "react"
 
 export const Checkbox = React.forwardRef(function Checkbox(props, ref) {

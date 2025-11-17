@@ -6,7 +6,7 @@ import {
   Portal,
   Stack,
   Textarea,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 
 export const PopoverWithForm = () => {
   return (

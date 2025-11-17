@@ -1,4 +1,4 @@
-import { Field, HStack, Input } from "@chakra-ui/react"
+import { Field, HStack, Input } from "@rechakra/react"
 
 export const InputWithField = () => {
   return (

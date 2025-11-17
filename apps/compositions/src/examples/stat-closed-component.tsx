@@ -1,4 +1,4 @@
-import { Badge, Stat as ChakraStat, FormatNumber, Show } from "@chakra-ui/react"
+import { Badge, Stat as ChakraStat, FormatNumber, Show } from "@rechakra/react"
 import { InfoTip } from "compositions/ui/toggle-tip"
 import * as React from "react"
 

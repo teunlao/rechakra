@@ -5,7 +5,7 @@ export async function getNpmDownloads() {
 
   try {
     const response = await fetch(
-      "https://api.npmjs.org/downloads/point/last-month/@chakra-ui/react",
+      "https://api.npmjs.org/downloads/point/last-month/@rechakra/react",
     )
 
     // Check if response is ok and content-type is JSON

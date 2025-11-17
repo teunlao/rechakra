@@ -1,4 +1,4 @@
-import { Button, Icon } from "@chakra-ui/react"
+import { Button, Icon } from "@rechakra/react"
 import { LuPlus } from "react-icons/lu"
 
 export const ButtonWithIconComposition = () => {

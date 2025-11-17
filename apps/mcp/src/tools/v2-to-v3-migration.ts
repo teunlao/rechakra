@@ -14,7 +14,7 @@ const MIGRATION_SCENARIOS: Record<string, MigrationScenario> = {
   extend_theme_to_create_system: {
     name: "Extend Theme to Create System",
     description: "Update theme configuration from extendTheme to createSystem",
-    before: `import { extendTheme } from "@chakra-ui/react"
+    before: `import { extendTheme } from "@rechakra/react"
 
 export const theme = extendTheme({
   fonts: {
@@ -22,7 +22,7 @@ export const theme = extendTheme({
     body: \`'Figtree', sans-serif\`,
   },
 })`,
-    after: `import { createSystem, defaultConfig } from "@chakra-ui/react"
+    after: `import { createSystem, defaultConfig } from "@rechakra/react"
 
 export const system = createSystem(defaultConfig, {
   theme: {
@@ -41,21 +41,21 @@ export const system = createSystem(defaultConfig, {
     description:
       "Remove framer-motion and @emotion/styled from package.jsonn if unused",
     before: `npm uninstall @emotion/styled framer-motion`,
-    after: `The install the latest @emotion/react, next-themes, and @chakra-ui/react packages.`,
+    after: `The install the latest @emotion/react, next-themes, and @rechakra/react packages.`,
   },
 
   chakra_provider_configuration: {
     name: "Provider Configuration",
     description:
       "Update provider setup from ChakraProvider to Provider with snippets",
-    before: `import { ChakraProvider } from "@chakra-ui/react"
+    before: `import { ChakraProvider } from "@rechakra/react"
 
 export const App = ({ Component }) => (
   <ChakraProvider theme={theme}>
     <Component />
   </ChakraProvider>
 )`,
-    after: `Use the \`npx @chakra-ui/cli snippet add\` command to add the provider and color-mode snippets.
+    after: `Use the \`npx @rechakra/cli snippet add\` command to add the provider and color-mode snippets.
 Then update the app to use the new provider.
 
 import { Provider } from "@/components/ui/provider"
@@ -67,7 +67,7 @@ export const App = ({ Component }) => (
 )
 
 import { ColorModeProvider } from "@/components/ui/color-mode"
-import { ChakraProvider, defaultSystem } from "@chakra-ui/react"
+import { ChakraProvider, defaultSystem } from "@rechakra/react"
 
 export function Provider(props) {
   return (
@@ -88,7 +88,7 @@ export function Provider(props) {
   LightMode,
   DarkMode,
   ColorModeScript 
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 
 const { colorMode, toggleColorMode } = useColorMode()
 const bg = useColorModeValue('white', 'gray.800')
@@ -270,11 +270,11 @@ const bg = useColorModeValue('white', 'gray.800')
   divider_to_separator: {
     name: "Divider to Separator",
     description: "Rename Divider component to Separator",
-    before: `import { Divider } from "@chakra-ui/react"
+    before: `import { Divider } from "@rechakra/react"
 
 <Divider />
 <Divider orientation="vertical" />`,
-    after: `import { Separator } from "@chakra-ui/react"
+    after: `import { Separator } from "@rechakra/react"
 
 <Separator />
 <Separator orientation="vertical" />`,

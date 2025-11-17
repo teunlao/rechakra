@@ -1,4 +1,4 @@
-import { Flex, For, QrCode } from "@chakra-ui/react"
+import { Flex, For, QrCode } from "@rechakra/react"
 
 export const QrCodeWithFill = () => {
   return (

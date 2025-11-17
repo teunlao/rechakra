@@ -1,6 +1,6 @@
 "use client"
 
-import { Field, TagsInput } from "@chakra-ui/react"
+import { Field, TagsInput } from "@rechakra/react"
 
 export const TagsInputWithField = () => {
   return (

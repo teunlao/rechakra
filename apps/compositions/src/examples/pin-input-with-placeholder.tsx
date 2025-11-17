@@ -1,4 +1,4 @@
-import { PinInput } from "@chakra-ui/react"
+import { PinInput } from "@rechakra/react"
 
 export const PinInputWithPlaceholder = () => {
   return (

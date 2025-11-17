@@ -5,7 +5,7 @@ import {
   TreeView,
   createTreeCollection,
   useTreeViewNodeContext,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import { LuFile, LuFolder, LuSquareMinus, LuSquarePlus } from "react-icons/lu"
 
 interface Node {

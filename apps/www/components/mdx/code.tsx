@@ -1,6 +1,6 @@
 "use client"
 
-import { Box, type BoxProps, IconButton, defineStyle } from "@chakra-ui/react"
+import { Box, type BoxProps, IconButton, defineStyle } from "@rechakra/react"
 import { useCallback, useEffect, useRef, useState } from "react"
 import { LuCheck, LuCopy } from "react-icons/lu"
 

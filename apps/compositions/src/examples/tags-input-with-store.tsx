@@ -1,7 +1,7 @@
 "use client"
 
-import { Button, Stack, TagsInput } from "@chakra-ui/react"
-import { useTagsInput } from "@chakra-ui/react"
+import { Button, Stack, TagsInput } from "@rechakra/react"
+import { useTagsInput } from "@rechakra/react"
 
 export const TagsInputWithStore = () => {
   const tags = useTagsInput()

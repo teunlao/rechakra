@@ -1,4 +1,4 @@
-import { Breadcrumb, For, Stack } from "@chakra-ui/react"
+import { Breadcrumb, For, Stack } from "@rechakra/react"
 
 export const BreadcrumbWithSizes = () => {
   return (

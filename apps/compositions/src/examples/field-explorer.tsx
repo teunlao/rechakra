@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, Field, Input, Textarea, VStack } from "@chakra-ui/react"
+import { Button, Field, Input, Textarea, VStack } from "@rechakra/react"
 
 export const FieldExplorer = () => {
   return (

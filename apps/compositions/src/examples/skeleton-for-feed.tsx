@@ -4,7 +4,7 @@ import {
   SkeletonCircle,
   SkeletonText,
   Stack,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 
 export const SkeletonForFeed = () => {
   return (

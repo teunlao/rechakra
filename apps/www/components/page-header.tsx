@@ -7,8 +7,8 @@ import {
   Span,
   Stack,
   Text,
-} from "@chakra-ui/react"
-import type { StackProps } from "@chakra-ui/react"
+} from "@rechakra/react"
+import type { StackProps } from "@rechakra/react"
 import NextLink from "next/link"
 import { LuArrowUpRight } from "react-icons/lu"
 import { titleCase } from "scule"

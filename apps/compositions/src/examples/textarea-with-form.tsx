@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, Field, Stack, Textarea } from "@chakra-ui/react"
+import { Button, Field, Stack, Textarea } from "@rechakra/react"
 
 export const TextareaWithForm = () => {
   return (

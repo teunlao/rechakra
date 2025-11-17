@@ -1,4 +1,4 @@
-import { Checkmark, For, HStack } from "@chakra-ui/react"
+import { Checkmark, For, HStack } from "@rechakra/react"
 import { colorPalettes } from "compositions/lib/color-palettes"
 
 export const CheckmarkWithColors = () => {

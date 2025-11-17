@@ -1,6 +1,6 @@
 "use client"
 
-import { TreeView, createTreeCollection } from "@chakra-ui/react"
+import { TreeView, createTreeCollection } from "@rechakra/react"
 import { RxFrame, RxImage, RxSquare, RxText } from "react-icons/rx"
 
 export const TreeViewCustomIcon = () => {

@@ -1,14 +1,14 @@
 "use client"
 
+import createCache from "@emotion/cache"
+import { CacheProvider } from "@emotion/react"
 import {
   ChakraProvider,
   EnvironmentProvider,
   createSystem,
   defaultConfig,
   defineConfig,
-} from "@chakra-ui/react"
-import createCache from "@emotion/cache"
-import { CacheProvider } from "@emotion/react"
+} from "@rechakra/react"
 import { ThemeProvider, type ThemeProviderProps } from "next-themes"
 import { useEffect, useState } from "react"
 import root from "react-shadow/emotion"

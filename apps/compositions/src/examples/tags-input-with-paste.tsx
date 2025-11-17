@@ -1,6 +1,6 @@
 "use client"
 
-import { Box, Clipboard, IconButton, Stack, TagsInput } from "@chakra-ui/react"
+import { Box, Clipboard, IconButton, Stack, TagsInput } from "@rechakra/react"
 
 export const TagsInputWithPaste = () => (
   <Stack gap="8">

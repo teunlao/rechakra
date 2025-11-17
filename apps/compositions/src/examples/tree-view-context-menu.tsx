@@ -8,7 +8,7 @@ import {
   useTreeViewContext,
   useTreeViewNodeContext,
   useTreeViewStyles,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import { useId } from "react"
 import { LuFile, LuFolder } from "react-icons/lu"
 

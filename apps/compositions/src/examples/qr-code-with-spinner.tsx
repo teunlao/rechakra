@@ -1,4 +1,4 @@
-import { AbsoluteCenter, Box, QrCode, Spinner } from "@chakra-ui/react"
+import { AbsoluteCenter, Box, QrCode, Spinner } from "@rechakra/react"
 
 export const QrCodeWithSpinner = () => {
   return (

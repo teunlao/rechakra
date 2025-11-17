@@ -1,4 +1,4 @@
-import { AspectRatio } from "@chakra-ui/react"
+import { AspectRatio } from "@rechakra/react"
 
 export const Iframe = (props: React.IframeHTMLAttributes<HTMLElement>) => {
   return (

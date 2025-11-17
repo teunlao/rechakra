@@ -1,4 +1,4 @@
-import { Button, Card, Field, Input, Stack } from "@chakra-ui/react"
+import { Button, Card, Field, Input, Stack } from "@rechakra/react"
 
 export const CardWithForm = () => (
   <Card.Root maxW="sm">

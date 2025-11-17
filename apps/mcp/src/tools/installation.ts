@@ -18,11 +18,11 @@ type FrameworkSteps = {
 const baseSteps: InstallationStep[] = [
   {
     title: "Install packages",
-    command: "npm i @chakra-ui/react @emotion/react",
+    command: "npm i @rechakra/react @emotion/react",
   },
   {
     title: "Add snippets (optional)",
-    command: "npx @chakra-ui/cli snippet add",
+    command: "npx @rechakra/cli snippet add",
   },
 ]
 
@@ -69,7 +69,7 @@ return (
         file: "next.config.mjs",
         code: `export default {
 experimental: {
-optimizePackageImports: ["@chakra-ui/react"],
+optimizePackageImports: ["@rechakra/react"],
 },
 }`,
       },
@@ -116,7 +116,7 @@ return (
         file: "next.config.mjs",
         code: `export default {
 experimental: {
-optimizePackageImports: ["@chakra-ui/react"],
+optimizePackageImports: ["@rechakra/react"],
 },
 }`,
       },

@@ -1,4 +1,4 @@
-import { EmptyState, For, Stack, VStack } from "@chakra-ui/react"
+import { EmptyState, For, Stack, VStack } from "@rechakra/react"
 import { LuShoppingCart } from "react-icons/lu"
 
 export const EmptyStateSizes = () => {

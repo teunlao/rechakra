@@ -1,7 +1,7 @@
 import {
   Avatar as ChakraAvatar,
   AvatarGroup as ChakraAvatarGroup,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import * as React from "react"
 
 type ImageProps = React.ImgHTMLAttributes<HTMLImageElement>

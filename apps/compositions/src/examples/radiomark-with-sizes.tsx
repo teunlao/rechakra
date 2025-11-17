@@ -1,4 +1,4 @@
-import { For, HStack, Radiomark } from "@chakra-ui/react"
+import { For, HStack, Radiomark } from "@rechakra/react"
 
 export const RadiomarkWithSizes = () => {
   return (

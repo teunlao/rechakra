@@ -1,6 +1,6 @@
 "use client"
 
-import { ColorPicker, HStack, Portal, parseColor } from "@chakra-ui/react"
+import { ColorPicker, HStack, Portal, parseColor } from "@rechakra/react"
 
 export const ColorPickerWithReadonly = () => {
   return (

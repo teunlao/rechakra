@@ -2,8 +2,8 @@ import type {
   HTMLChakraProps,
   RecipeVariantProps,
   UnstyledProp,
-} from "@chakra-ui/react"
-import { createRecipeContext, defineRecipe } from "@chakra-ui/react"
+} from "@rechakra/react"
+import { createRecipeContext, defineRecipe } from "@rechakra/react"
 
 const buttonRecipe = defineRecipe({
   className: "button",

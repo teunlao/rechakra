@@ -1,4 +1,4 @@
-import { Icon } from "@chakra-ui/react"
+import { Icon } from "@rechakra/react"
 import { Md3dRotation } from "react-icons/md"
 
 export const IconWithReactIcon = () => (

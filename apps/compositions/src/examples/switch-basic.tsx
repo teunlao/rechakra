@@ -1,4 +1,4 @@
-import { Switch } from "@chakra-ui/react"
+import { Switch } from "@rechakra/react"
 
 export const SwitchBasic = () => {
   return (

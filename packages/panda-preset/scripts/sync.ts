@@ -24,7 +24,7 @@ async function main() {
     relativePath = relativePath === "def.ts" ? "./def.ts" : relativePath
 
     let updatedContent = content
-      .replaceAll("@chakra-ui/react", relativePath.replace(".ts", ""))
+      .replaceAll("@rechakra/react", relativePath.replace(".ts", ""))
       .replaceAll("chakra-", "")
       .replaceAll("switch:", "swittch:")
 
@@ -53,7 +53,7 @@ import { tokens } from "./tokens"
 import { utilities } from "./utilities"
 
 export default definePreset({
-  name: "@chakra-ui/panda-preset",
+  name: "@rechakra/panda-preset",
   globalCss,
   theme: {
     breakpoints,

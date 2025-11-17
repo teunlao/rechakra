@@ -1,6 +1,6 @@
 "use client"
 
-import { Box, Collapsible, Stack } from "@chakra-ui/react"
+import { Box, Collapsible, Stack } from "@rechakra/react"
 import { useState } from "react"
 
 export const CollapsibleControlled = () => {

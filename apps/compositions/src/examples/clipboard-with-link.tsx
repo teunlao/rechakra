@@ -1,4 +1,4 @@
-import { Clipboard, Link } from "@chakra-ui/react"
+import { Clipboard, Link } from "@rechakra/react"
 
 export const ClipboardWithLink = () => {
   return (

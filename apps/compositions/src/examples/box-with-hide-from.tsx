@@ -1,4 +1,4 @@
-import { HStack } from "@chakra-ui/react"
+import { HStack } from "@rechakra/react"
 import { DecorativeBox } from "compositions/lib/decorative-box"
 
 export const BoxWithHideFrom = () => (

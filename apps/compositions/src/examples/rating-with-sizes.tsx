@@ -1,4 +1,4 @@
-import { For, RatingGroup, Stack } from "@chakra-ui/react"
+import { For, RatingGroup, Stack } from "@rechakra/react"
 
 export const RatingWithSizes = () => {
   return (

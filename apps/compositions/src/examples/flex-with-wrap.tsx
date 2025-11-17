@@ -1,4 +1,4 @@
-import { Flex } from "@chakra-ui/react"
+import { Flex } from "@rechakra/react"
 import { DecorativeBox } from "compositions/lib/decorative-box"
 
 export const FlexWithWrap = () => {

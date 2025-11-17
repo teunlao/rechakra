@@ -1,4 +1,4 @@
-import { CheckboxCard, For, Stack } from "@chakra-ui/react"
+import { CheckboxCard, For, Stack } from "@rechakra/react"
 
 export const CheckboxCardWithSizes = () => {
   return (

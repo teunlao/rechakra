@@ -8,7 +8,7 @@ import {
   Stack,
   Table,
   Text,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import NextLink from "next/link"
 import { LuMinus } from "react-icons/lu"
 

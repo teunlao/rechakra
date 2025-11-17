@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, HStack, Stack, Text } from "@chakra-ui/react"
+import { Button, HStack, Stack, Text } from "@rechakra/react"
 import { toaster } from "compositions/ui/toaster"
 import { useState } from "react"
 

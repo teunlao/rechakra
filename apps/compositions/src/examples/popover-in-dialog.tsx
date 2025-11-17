@@ -7,7 +7,7 @@ import {
   Popover,
   Portal,
   Text,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 
 export const PopoverInDialog = () => {
   return (

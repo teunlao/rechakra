@@ -12,7 +12,7 @@
   "dependencies": {
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "@chakra-ui/react": "workspace:*",
+    "@rechakra/react": "workspace:*",
     "@emotion/react": "^11.14.0",
     "@emotion/cache": "^11.14.0",
     "@emotion/weak-memoize": "0.4.0",

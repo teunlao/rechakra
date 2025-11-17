@@ -7,7 +7,7 @@ import {
   createGridCollection,
   useFilter,
   useListboxContext,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import emojibase from "emojibase-data/en/compact.json"
 import { useCallback, useMemo, useState } from "react"
 import { LuSmile } from "react-icons/lu"

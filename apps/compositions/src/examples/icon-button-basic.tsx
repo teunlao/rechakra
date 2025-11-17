@@ -1,4 +1,4 @@
-import { IconButton } from "@chakra-ui/react"
+import { IconButton } from "@rechakra/react"
 import { LuSearch } from "react-icons/lu"
 
 export const IconButtonBasic = () => {

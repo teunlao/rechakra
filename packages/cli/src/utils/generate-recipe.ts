@@ -1,4 +1,4 @@
-import type { SystemContext } from "@chakra-ui/react"
+import type { SystemContext } from "@rechakra/react"
 import { pretty } from "./pretty.js"
 import { capitalize, isBooleanValue, unionType } from "./shared.js"
 
@@ -140,7 +140,7 @@ export async function generateRecipe(sys: SystemContext, strict = true) {
     [
       'import type { RecipeDefinition, SlotRecipeDefinition, SystemRecipeFn, SystemSlotRecipeFn } from "../recipe.types"',
       'import type { ConditionalValue } from "../css.types"',
-      'import type { ChakraCustomRecipeConfig, ChakraCustomSlotRecipeConfig, ChakraCustomRecipeSlots } from "@chakra-ui/react/typegen"',
+      'import type { ChakraCustomRecipeConfig, ChakraCustomSlotRecipeConfig, ChakraCustomRecipeSlots } from "@rechakra/react/typegen"',
       recipeResult,
       slotRecipeResult,
       `

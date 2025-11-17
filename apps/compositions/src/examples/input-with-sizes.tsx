@@ -1,4 +1,4 @@
-import { Input, Stack } from "@chakra-ui/react"
+import { Input, Stack } from "@rechakra/react"
 
 export const InputWithSizes = () => {
   return (

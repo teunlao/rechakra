@@ -1,4 +1,4 @@
-import { Box, Center, Icon, Text, VStack } from "@chakra-ui/react"
+import { Box, Center, Icon, Text, VStack } from "@rechakra/react"
 import { LuVideo } from "react-icons/lu"
 
 interface ImagePlaceholderProps {

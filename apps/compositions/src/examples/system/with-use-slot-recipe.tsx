@@ -1,6 +1,6 @@
 "use client"
 
-import { Box, useSlotRecipe } from "@chakra-ui/react"
+import { Box, useSlotRecipe } from "@rechakra/react"
 
 export const SystemWithUseSlotRecipe = () => {
   const alert = useSlotRecipe({ key: "alert" })

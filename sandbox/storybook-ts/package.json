@@ -19,7 +19,7 @@
   "devDependencies": {
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.2",
-    "@chakra-ui/react": "workspace:*",
+    "@rechakra/react": "workspace:*",
     "@storybook/addon-links": "9.1.12",
     "@storybook/addon-themes": "9.1.12",
     "@storybook/react": "9.1.12",

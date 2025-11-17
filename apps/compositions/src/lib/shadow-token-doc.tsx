@@ -1,6 +1,6 @@
 "use client"
 
-import { Box, Center, For, SimpleGrid, VStack } from "@chakra-ui/react"
+import { Box, Center, For, SimpleGrid, VStack } from "@rechakra/react"
 import { TokenDoc } from "./token-doc"
 
 export const ShadowTokenDoc = () => {

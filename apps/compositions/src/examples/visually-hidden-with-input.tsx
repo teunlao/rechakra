@@ -1,4 +1,4 @@
-import { HStack, VisuallyHidden } from "@chakra-ui/react"
+import { HStack, VisuallyHidden } from "@rechakra/react"
 
 export const VisuallyHiddenWithInput = () => {
   return (

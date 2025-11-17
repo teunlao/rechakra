@@ -2,7 +2,7 @@ import { Blob } from "@/components/site/blob"
 import { FooterSection } from "@/components/site/footer.section"
 import { HeaderSection } from "@/components/site/header.section"
 import { BlitzIcon } from "@/components/site/icons"
-import { Icon, Stack } from "@chakra-ui/react"
+import { Icon, Stack } from "@rechakra/react"
 
 const BlitzIconSection = () => (
   <Icon

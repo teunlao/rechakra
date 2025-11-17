@@ -7,7 +7,7 @@ import {
   Input,
   Portal,
   Stack,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import { useRef } from "react"
 
 export const DrawerWithInitialFocus = () => {

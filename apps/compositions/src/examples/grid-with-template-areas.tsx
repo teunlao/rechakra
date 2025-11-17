@@ -1,4 +1,4 @@
-import { Grid, GridItem } from "@chakra-ui/react"
+import { Grid, GridItem } from "@rechakra/react"
 import { DecorativeBox } from "compositions/lib/decorative-box"
 
 export const GridWithTemplateAreas = () => {

@@ -12,7 +12,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@chakra-ui/react": "workspace:*",
+    "@rechakra/react": "workspace:*",
     "@emotion/cache": "^11.14.0",
     "@emotion/react": "^11.14.0",
     "@emotion/server": "^11.11.0",

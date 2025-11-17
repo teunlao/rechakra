@@ -1,6 +1,6 @@
 "use client"
 
-import { Select, createListCollection } from "@chakra-ui/react"
+import { Select, createListCollection } from "@rechakra/react"
 
 export const SelectBasicExplorer = () => {
   return (

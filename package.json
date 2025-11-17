@@ -4,7 +4,7 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chakra-ui/chakra-ui.git"
+    "url": "git+https://github.com/teunlao/rechakra.git"
   },
   "author": "Segun Adebayo <sage@adebayosegun.com>",
   "license": "MIT",
@@ -22,7 +22,7 @@
     "typedocs": "pnpm react typedocs",
     "typecheck": "tsc --noEmit",
     "test": "vitest",
-    "react": "pnpm --filter=@chakra-ui/react",
+    "react": "pnpm --filter=@rechakra/react",
     "www": "pnpm --filter=./apps/www",
     "mcp": "pnpm --filter=./apps/mcp",
     "panda": "pnpm --filter=./packages/panda-preset",
@@ -44,7 +44,7 @@
   },
   "version": "2.0.0",
   "dependencies": {
-    "@chakra-ui/cli": "workspace:*",
+    "@rechakra/cli": "workspace:*",
     "@changesets/changelog-github": "0.5.1",
     "@changesets/cli": "2.29.7",
     "@changesets/get-release-plan": "4.0.13",

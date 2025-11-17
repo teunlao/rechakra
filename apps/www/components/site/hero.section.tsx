@@ -18,7 +18,7 @@ import {
   Span,
   Stack,
   Tabs,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import { PinInput } from "compositions/ui/pin-input"
 import { Slider } from "compositions/ui/slider"
 import { Switch } from "compositions/ui/switch"
@@ -187,7 +187,7 @@ export const HeroSection = () => (
             gap="2.5"
           >
             <LuTerminal />
-            npm i @chakra-ui/react
+            npm i @rechakra/react
           </Center>
         </Stack>
       </Stack>

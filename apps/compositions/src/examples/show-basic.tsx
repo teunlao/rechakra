@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, Show, Stack } from "@chakra-ui/react"
+import { Button, Show, Stack } from "@rechakra/react"
 import { useState } from "react"
 
 export const ShowBasic = () => {

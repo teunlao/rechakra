@@ -1,4 +1,4 @@
-import { Container } from "@chakra-ui/react"
+import { Container } from "@rechakra/react"
 import { DecorativeBox } from "compositions/lib/decorative-box"
 
 export const ContainerBasic = () => {

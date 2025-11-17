@@ -1,6 +1,6 @@
 "use client"
 
-import { Box, Listbox, Text, createListCollection } from "@chakra-ui/react"
+import { Box, Listbox, Text, createListCollection } from "@rechakra/react"
 
 export const ListboxWithDescription = () => {
   return (

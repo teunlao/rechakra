@@ -1,4 +1,4 @@
-import { Span, TagsInput } from "@chakra-ui/react"
+import { Span, TagsInput } from "@rechakra/react"
 
 export const TagsInputWithLongTags = () => {
   return (

@@ -1,7 +1,7 @@
 "use client"
 
-import { Box, BoxProps, Flex, Heading, Icon, Text } from "@chakra-ui/react"
-import * as anatomies from "@chakra-ui/react/anatomy"
+import { Box, BoxProps, Flex, Heading, Icon, Text } from "@rechakra/react"
+import * as anatomies from "@rechakra/react/anatomy"
 import { useEffect, useRef, useState } from "react"
 import { HiChevronRight } from "react-icons/hi"
 import { camelCase, kebabCase } from "scule"

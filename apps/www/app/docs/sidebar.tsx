@@ -11,7 +11,7 @@ import {
   Stack,
   Text,
   chakra,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import { BreadcrumbRoot } from "compositions/ui/breadcrumb"
 import {
   DrawerBackdrop,

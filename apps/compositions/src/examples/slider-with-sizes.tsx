@@ -1,4 +1,4 @@
-import { For, Slider, Stack } from "@chakra-ui/react"
+import { For, Slider, Stack } from "@rechakra/react"
 
 export const SliderWithSizes = () => {
   return (

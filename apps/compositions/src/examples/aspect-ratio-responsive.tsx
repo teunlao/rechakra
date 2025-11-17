@@ -1,4 +1,4 @@
-import { AspectRatio } from "@chakra-ui/react"
+import { AspectRatio } from "@rechakra/react"
 import { DecorativeBox } from "compositions/lib/decorative-box"
 
 export const AspectRatioResponsive = () => (

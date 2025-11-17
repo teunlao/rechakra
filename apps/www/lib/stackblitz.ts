@@ -72,14 +72,14 @@ const packageJson = {
   version: "0.0.0",
   type: "module",
   scripts: {
-    codegen: "npx @chakra-ui/cli snippet add",
+    codegen: "npx @rechakra/cli snippet add",
     dev: "vite",
     build: "tsc -b && vite build",
     lint: "eslint .",
     preview: "vite preview",
   },
   dependencies: {
-    "@chakra-ui/react": "^3",
+    "@rechakra/react": "^3",
     "@emotion/react": "^11.13.3",
     "next-themes": "^0.3.0",
     react: "^19",
@@ -87,7 +87,7 @@ const packageJson = {
     "react-icons": "^5.3.0",
   },
   devDependencies: {
-    "@chakra-ui/cli": "^3",
+    "@rechakra/cli": "^3",
     "@eslint/js": "^9.10.0",
     "@types/react": "^18.3.6",
     "@types/react-dom": "^18.3.0",
@@ -126,7 +126,7 @@ const indexHtml = `<!doctype html>
   </body>
 </html>`
 
-const main = `import { Box } from '@chakra-ui/react';
+const main = `import { Box } from '@rechakra/react';
 import { Provider } from '@/components/ui/provider';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';

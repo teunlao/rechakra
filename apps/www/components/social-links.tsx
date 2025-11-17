@@ -1,4 +1,4 @@
-import { HStack, IconButton } from "@chakra-ui/react"
+import { HStack, IconButton } from "@rechakra/react"
 import Link from "next/link"
 import { BsDiscord, BsGithub, BsTwitterX } from "react-icons/bs"
 

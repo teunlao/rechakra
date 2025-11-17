@@ -8,7 +8,7 @@ import {
   SimpleGrid,
   Span,
   Stack,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import {
   Ethereum,
   Lattice,

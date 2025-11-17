@@ -1,6 +1,6 @@
 "use client"
 
-import { CheckboxCard, For, Stack, useSlotRecipe } from "@chakra-ui/react"
+import { CheckboxCard, For, Stack, useSlotRecipe } from "@rechakra/react"
 import { PlaygroundTable } from "compositions/lib/playground-table"
 
 export const CheckboxCardSizeTable = () => {

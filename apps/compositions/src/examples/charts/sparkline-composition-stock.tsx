@@ -1,6 +1,6 @@
 "use client"
 
-import { Chart, useChart } from "@chakra-ui/charts"
+import { Chart, useChart } from "@rechakra/charts"
 import {
   Badge,
   Box,
@@ -9,7 +9,7 @@ import {
   Span,
   Stack,
   Stat,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import { Area, AreaChart } from "recharts"
 
 export const SparklineCompositionStock = () => {

@@ -1,4 +1,4 @@
-import { Stat } from "@chakra-ui/react"
+import { Stat } from "@rechakra/react"
 import { InfoTip } from "compositions/ui/toggle-tip"
 
 export const StatWithInfoTip = () => {

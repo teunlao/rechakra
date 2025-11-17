@@ -1,6 +1,6 @@
 "use client"
 
-import { Chart, useChart } from "@chakra-ui/charts"
+import { Chart, useChart } from "@rechakra/charts"
 import { Scatter, ScatterChart, XAxis, YAxis } from "recharts"
 
 export const ScatterChartConnectDots = () => {

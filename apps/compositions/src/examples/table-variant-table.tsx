@@ -6,7 +6,7 @@ import {
   Table,
   type TableRootProps,
   useSlotRecipe,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import { colorPalettes } from "compositions/lib/color-palettes"
 import { PlaygroundTable } from "compositions/lib/playground-table"
 

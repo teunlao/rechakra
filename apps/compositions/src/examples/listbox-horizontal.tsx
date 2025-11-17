@@ -6,7 +6,7 @@ import {
   Stack,
   Text,
   createListCollection,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 
 export const ListboxHorizontal = () => {
   return (

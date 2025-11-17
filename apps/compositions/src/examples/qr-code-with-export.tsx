@@ -1,4 +1,4 @@
-import { Button, QrCode } from "@chakra-ui/react"
+import { Button, QrCode } from "@rechakra/react"
 
 export const QrCodeWithExport = () => {
   return (

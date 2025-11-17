@@ -1,4 +1,4 @@
-import { HStack, Icon, RadioCard } from "@chakra-ui/react"
+import { HStack, Icon, RadioCard } from "@rechakra/react"
 import { LuArrowRight, LuCircleOff, LuLock } from "react-icons/lu"
 
 export const RadioCardWithIcon = () => {

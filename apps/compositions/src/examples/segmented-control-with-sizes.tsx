@@ -1,4 +1,4 @@
-import { For, SegmentGroup, Stack, Text, VStack } from "@chakra-ui/react"
+import { For, SegmentGroup, Stack, Text, VStack } from "@rechakra/react"
 
 export const SegmentedControlWithSizes = () => {
   return (

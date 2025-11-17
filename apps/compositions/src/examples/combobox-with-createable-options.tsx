@@ -8,7 +8,7 @@ import {
   Stack,
   Text,
   createListCollection,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import { useMemo, useState } from "react"
 
 interface Tag {

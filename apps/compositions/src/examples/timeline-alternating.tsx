@@ -1,4 +1,4 @@
-import { Timeline } from "@chakra-ui/react"
+import { Timeline } from "@rechakra/react"
 
 export const TimelineAlternating = () => {
   return (

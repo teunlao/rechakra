@@ -1,6 +1,6 @@
 "use client"
 
-import { CodeBlock, IconButton, createShikiAdapter } from "@chakra-ui/react"
+import { CodeBlock, IconButton, createShikiAdapter } from "@rechakra/react"
 import { RxCodesandboxLogo } from "react-icons/rx"
 import type { HighlighterGeneric } from "shiki"
 

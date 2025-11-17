@@ -1,5 +1,6 @@
 "use client"
 
+import { standardSchemaResolver } from "@hookform/resolvers/standard-schema"
 import {
   Button,
   Field,
@@ -7,8 +8,7 @@ import {
   Select,
   Stack,
   createListCollection,
-} from "@chakra-ui/react"
-import { standardSchemaResolver } from "@hookform/resolvers/standard-schema"
+} from "@rechakra/react"
 import { Controller, useForm } from "react-hook-form"
 import { z } from "zod"
 

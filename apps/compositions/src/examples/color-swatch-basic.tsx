@@ -1,4 +1,4 @@
-import { ColorSwatch } from "@chakra-ui/react"
+import { ColorSwatch } from "@rechakra/react"
 
 export const ColorSwatchBasic = () => {
   return <ColorSwatch value="#bada55" />

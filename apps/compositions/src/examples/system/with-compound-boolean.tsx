@@ -1,6 +1,6 @@
 "use client"
 
-import { Stack, chakra } from "@chakra-ui/react"
+import { Stack, chakra } from "@rechakra/react"
 
 const Badge = chakra("div", {
   base: {

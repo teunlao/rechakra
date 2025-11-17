@@ -1,4 +1,4 @@
-import { List } from "@chakra-ui/react"
+import { List } from "@rechakra/react"
 
 export const ListOrdered = () => {
   return (

@@ -6,7 +6,7 @@ import {
   Input,
   Span,
   Timeline,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 import { LuPen, LuX } from "react-icons/lu"
 import LoremIpsum from "react-lorem-ipsum"
 

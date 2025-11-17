@@ -4,7 +4,7 @@ import {
   defineConfig,
   defineRecipe,
   defineSlotRecipe,
-} from "@chakra-ui/react"
+} from "@rechakra/react"
 
 const brandChipRecipe = defineRecipe({
   className: "brand-chip",

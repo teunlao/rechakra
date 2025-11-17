@@ -1,6 +1,6 @@
 "use client"
 
-import { For, Span, Stack, TagsInput } from "@chakra-ui/react"
+import { For, Span, Stack, TagsInput } from "@rechakra/react"
 
 export const TagsInputWithSizes = () => {
   return (
