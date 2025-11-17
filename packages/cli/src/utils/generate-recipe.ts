@@ -65,7 +65,7 @@ export async function generateRecipe(
       ${recipeEntries}
      }
 
-     export type ConfigRecipes = ChakraBuiltinRecipes & ChakraCustomRecipeConfig
+     export type ConfigRecipes = Omit<ChakraBuiltinRecipes, keyof ChakraCustomRecipeConfig> & ChakraCustomRecipeConfig
     `
 
   const recipeResult = [recipes.join("\n"), recipeRecord].join("\n")
@@ -130,13 +130,13 @@ export async function generateRecipe(
       ${slotRecipeEntries}
      }
 
-     export type ConfigSlotRecipes = ChakraBuiltinSlotRecipes & ChakraCustomSlotRecipeConfig
+     export type ConfigSlotRecipes = Omit<ChakraBuiltinSlotRecipes, keyof ChakraCustomSlotRecipeConfig> & ChakraCustomSlotRecipeConfig
 
      type ChakraBuiltinRecipeSlots = {
        ${slotRecordEntries}
     }
 
-     export type ConfigRecipeSlots = ChakraBuiltinRecipeSlots & ChakraCustomRecipeSlots
+     export type ConfigRecipeSlots = Omit<ChakraBuiltinRecipeSlots, keyof ChakraCustomRecipeSlots> & ChakraCustomRecipeSlots
     `
 
   const slotRecipeResult = [slotRecipes.join("\n"), slotRecipeRecord].join("\n")

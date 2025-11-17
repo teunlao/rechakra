@@ -295,7 +295,7 @@ type ChakraBuiltinRecipes = {
   colorSwatch: SystemRecipeFn<ColorSwatchVariantProps, ColorSwatchVariantMap>
 }
 
-export type ConfigRecipes = ChakraBuiltinRecipes & ChakraCustomRecipeConfig
+export type ConfigRecipes = Omit<ChakraBuiltinRecipes, keyof ChakraCustomRecipeConfig> & ChakraCustomRecipeConfig
 
 // Accordion
 
@@ -1520,7 +1520,7 @@ type ChakraBuiltinSlotRecipes = {
   treeView: SystemSlotRecipeFn<TreeViewSlot, TreeViewVariantProps, TreeViewVariantMap>
 }
 
-export type ConfigSlotRecipes = ChakraBuiltinSlotRecipes & ChakraCustomSlotRecipeConfig
+export type ConfigSlotRecipes = Omit<ChakraBuiltinSlotRecipes, keyof ChakraCustomSlotRecipeConfig> & ChakraCustomSlotRecipeConfig
 
 type ChakraBuiltinRecipeSlots = {
   accordion: AccordionSlot
@@ -1577,7 +1577,7 @@ type ChakraBuiltinRecipeSlots = {
   treeView: TreeViewSlot
 }
 
-export type ConfigRecipeSlots = ChakraBuiltinRecipeSlots & ChakraCustomRecipeSlots
+export type ConfigRecipeSlots = Omit<ChakraBuiltinRecipeSlots, keyof ChakraCustomRecipeSlots> & ChakraCustomRecipeSlots
 
 export type SlotRecipeRecord<T, K> = T extends keyof ConfigRecipeSlots ? Record<ConfigRecipeSlots[T], K> : Record<string, K>
 
