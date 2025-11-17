@@ -12,6 +12,7 @@ const defaultSlotRecipeKeys = new Set(Object.keys(defaultSlotRecipes))
 export async function generateIsolatedRecipes(
   sys: SystemContext,
   strict = true,
+  typegenImport = "@rechakra/react",
 ) {
   const theme = sys._config.theme ?? {}
   const customRecipes = Object.keys(theme.recipes ?? {}).filter((key) => {
@@ -34,9 +35,10 @@ export async function generateIsolatedRecipes(
     console.log("custom slot recipes", customSlotRecipes)
   }
 
+  const typegenTarget = `${typegenImport}/typegen`
   const chunks: string[] = [
-    'import type { ConditionalValue, RecipeDefinition, SlotRecipeDefinition, SystemRecipeFn, SystemSlotRecipeFn } from "@rechakra/react"',
-    'import "@rechakra/react/typegen"',
+    `import type { ConditionalValue, RecipeDefinition, SlotRecipeDefinition, SystemRecipeFn, SystemSlotRecipeFn } from "${typegenImport}"`,
+    `import "${typegenTarget}"`,
   ]
 
   const recipeInterfaceChunks: string[] = []
@@ -109,7 +111,7 @@ export async function generateIsolatedRecipes(
   chunks.push(recipeInterfaceChunks.join("\n\n"))
   chunks.push(slotInterfaceChunks.join("\n\n"))
 
-  const moduleAugmentation = `declare module "@rechakra/react/typegen" {\n  interface ChakraCustomRecipeConfig {\n    ${recipeConfigEntries.join("\n    ") || "// no custom recipes"}\n  }\n\n  interface ChakraCustomSlotRecipeConfig {\n    ${slotConfigEntries.join("\n    ") || "// no custom slot recipes"}\n  }\n\n  interface ChakraCustomRecipeSlots {\n    ${slotRecordEntries.join("\n    ") || "// no custom slots"}\n  }\n}`
+  const moduleAugmentation = `declare module "${typegenTarget}" {\n  interface ChakraCustomRecipeConfig {\n    ${recipeConfigEntries.join("\n    ") || "// no custom recipes"}\n  }\n\n  interface ChakraCustomSlotRecipeConfig {\n    ${slotConfigEntries.join("\n    ") || "// no custom slot recipes"}\n  }\n\n  interface ChakraCustomRecipeSlots {\n    ${slotRecordEntries.join("\n    ") || "// no custom slots"}\n  }\n}`
 
   chunks.push(moduleAugmentation)
 

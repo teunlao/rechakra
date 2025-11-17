@@ -62,7 +62,10 @@ function printTree(node: Record<string, TokenNode | true>, depth = 0): string {
   return lines.join("\n")
 }
 
-export function generateIsolatedTokens(sys: SystemContext) {
+export function generateIsolatedTokens(
+  sys: SystemContext,
+  typegenImport = "@rechakra/react",
+) {
   const tree: Record<string, TokenNode> = {}
   let hasCustomTokens = false
 
@@ -73,13 +76,14 @@ export function generateIsolatedTokens(sys: SystemContext) {
     insertToken(tree, name)
   }
 
-  const header = 'import "@rechakra/react/typegen"'
+  const typegenTarget = `${typegenImport}/typegen`
+  const header = `import "${typegenTarget}"`
 
   if (!hasCustomTokens) {
     return pretty(
       `${header}
 
-declare module "@rechakra/react/typegen" {
+declare module "${typegenTarget}" {
   interface ChakraCustomTypeGen {}
 }
 `,
@@ -91,7 +95,7 @@ declare module "@rechakra/react/typegen" {
   return pretty(
     `${header}
 
-declare module "@rechakra/react/typegen" {
+declare module "${typegenTarget}" {
   interface ChakraCustomTypeGen {
     tokens: ${tokensLiteral}
   }

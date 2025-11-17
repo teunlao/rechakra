@@ -2,7 +2,11 @@ import type { SystemContext } from "@rechakra/react"
 import { pretty } from "./pretty.js"
 import { capitalize, unionType } from "./shared.js"
 
-export async function generateTokens(sys: SystemContext) {
+export async function generateTokens(
+  sys: SystemContext,
+  typegenImport = "@rechakra/react",
+) {
+  const typegenTarget = `${typegenImport}/typegen`
   const { allTokens, tokenMap, colorPaletteMap, categoryMap } = sys.tokens
 
   const isTokenEmpty = allTokens.length === 0
@@ -10,7 +14,7 @@ export async function generateTokens(sys: SystemContext) {
   const set = new Set<string>()
 
   set.add(
-    'import type { ChakraCustomColorPalette, ChakraCustomTokenUnion, ChakraCustomTokenValue } from "@rechakra/react/typegen"',
+    `import type { ChakraCustomColorPalette, ChakraCustomTokenUnion, ChakraCustomTokenValue } from "${typegenTarget}"`,
   )
 
   const baseTokenUnion = isTokenEmpty

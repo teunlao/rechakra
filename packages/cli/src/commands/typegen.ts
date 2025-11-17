@@ -38,9 +38,13 @@ interface CodegenFlags {
   clean?: boolean
   outdir?: string
   isolated?: boolean
+  typegenImport?: string
 }
 
-type ResolvedCodegenFlags = CodegenFlags & { outdir: string }
+type ResolvedCodegenFlags = CodegenFlags & {
+  outdir: string
+  typegenImport: string
+}
 
 export const TypegenCommand = new Command("typegen")
   .argument("<source>", "path to the theme file")
@@ -53,6 +57,11 @@ export const TypegenCommand = new Command("typegen")
     "--isolated",
     "Generate augmentation-only typings without touching node_modules",
   )
+  .option(
+    "--typegen-import <module>",
+    "Module name used for typegen imports",
+    "@rechakra/react",
+  )
   .action(async (source: string, flags: CodegenFlags) => {
     debug("source", source)
     debug("flags", flags)
@@ -61,7 +70,11 @@ export const TypegenCommand = new Command("typegen")
     const resolvedOutdir =
       flags.outdir ??
       (flags.isolated ? join(cwd, ".chakra") : getDefaultBasePath())
-    const options: ResolvedCodegenFlags = { ...flags, outdir: resolvedOutdir }
+    const options: ResolvedCodegenFlags = {
+      ...flags,
+      outdir: resolvedOutdir,
+      typegenImport: flags.typegenImport ?? "@rechakra/react",
+    }
 
     if (options.clean) {
       debug("cleaning output directory", options.outdir)
@@ -110,7 +123,7 @@ function codegen(sys: SystemContext, flags: ResolvedCodegenFlags) {
           await io.write(
             flags.outdir,
             "tokens.isolated",
-            generateIsolatedTokens(sys),
+            generateIsolatedTokens(sys, flags.typegenImport),
           )
           return "✅ Generated isolated token typings"
         },
@@ -121,7 +134,7 @@ function codegen(sys: SystemContext, flags: ResolvedCodegenFlags) {
           await io.write(
             flags.outdir,
             "recipes.isolated",
-            generateIsolatedRecipes(sys, flags.strict),
+            generateIsolatedRecipes(sys, flags.strict, flags.typegenImport),
           )
           return "✅ Generated isolated recipe typings"
         },
@@ -143,7 +156,7 @@ function codegen(sys: SystemContext, flags: ResolvedCodegenFlags) {
         await io.write(
           flags.outdir,
           "recipes.gen",
-          generateRecipe(sys, flags.strict),
+          generateRecipe(sys, flags.strict, flags.typegenImport),
         )
         return "✅ Generated recipe typings"
       },
@@ -158,7 +171,11 @@ function codegen(sys: SystemContext, flags: ResolvedCodegenFlags) {
     {
       title: "Generating token types...",
       task: async () => {
-        await io.write(flags.outdir, "token.gen", generateTokens(sys))
+        await io.write(
+          flags.outdir,
+          "token.gen",
+          generateTokens(sys, flags.typegenImport),
+        )
         return "✅ Generated token typings"
       },
     },

@@ -1,5 +1,17 @@
 # @rechakra/react
 
+## 1.0.1
+
+### Patch Changes
+
+- Add isolated typegen mode with custom token/recipe augmentation support
+
+## 2.1.2
+
+### Patch Changes
+
+- Initial release fixes
+
 ## 3.29.0
 
 ### Minor Changes

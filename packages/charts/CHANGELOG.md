@@ -1,5 +1,21 @@
 # @rechakra/charts
 
+## 1.0.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @rechakra/react@1.0.1
+
+## 2.1.2
+
+### Patch Changes
+
+- Initial release fixes
+
+- Updated dependencies []:
+  - @rechakra/react@2.1.2
+
 ## 3.29.0
 
 ## 3.28.1

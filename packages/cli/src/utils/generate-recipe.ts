@@ -2,7 +2,12 @@ import type { SystemContext } from "@rechakra/react"
 import { pretty } from "./pretty.js"
 import { capitalize, isBooleanValue, unionType } from "./shared.js"
 
-export async function generateRecipe(sys: SystemContext, strict = true) {
+export async function generateRecipe(
+  sys: SystemContext,
+  strict = true,
+  typegenImport = "@rechakra/react",
+) {
+  const typegenTarget = `${typegenImport}/typegen`
   const theme = sys._config.theme ?? {}
 
   const sysRecipes = theme.recipes ?? {}
@@ -140,7 +145,7 @@ export async function generateRecipe(sys: SystemContext, strict = true) {
     [
       'import type { RecipeDefinition, SlotRecipeDefinition, SystemRecipeFn, SystemSlotRecipeFn } from "../recipe.types"',
       'import type { ConditionalValue } from "../css.types"',
-      'import type { ChakraCustomRecipeConfig, ChakraCustomSlotRecipeConfig, ChakraCustomRecipeSlots } from "@rechakra/react/typegen"',
+      `import type { ChakraCustomRecipeConfig, ChakraCustomSlotRecipeConfig, ChakraCustomRecipeSlots } from "${typegenTarget}"`,
       recipeResult,
       slotRecipeResult,
       `

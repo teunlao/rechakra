@@ -1,6 +1,6 @@
 {
   "name": "@rechakra/cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate theme typings for autocomplete",
   "keywords": [
     "theme",
@@ -68,7 +68,7 @@
     "zod": "^4.1.12"
   },
   "peerDependencies": {
-    "@rechakra/react": ">=3.0.0-next.0"
+    "@rechakra/react": ">=1.0.1"
   },
   "devDependencies": {
     "@rechakra/react": "workspace:*"

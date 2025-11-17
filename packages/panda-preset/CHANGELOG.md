@@ -1,5 +1,13 @@
 # @rechakra/panda-preset
 
+## 1.0.1
+
+## 2.1.2
+
+### Patch Changes
+
+- Initial release fixes
+
 ## 3.29.0
 
 ### Minor Changes
