@@ -7,6 +7,7 @@ declare module "@rechakra/react/typegen" {
         brand: {
           primary: true
           secondary: true
+          temp: true
         }
       }
     }

@@ -532,6 +532,12 @@ importers:
         specifier: workspace:*
         version: link:../react
 
+  packages/demo-theme:
+    dependencies:
+      '@rechakra/react':
+        specifier: workspace:*
+        version: link:../react
+
   packages/panda-preset:
     dependencies:
       '@pandacss/types':
@@ -654,6 +660,9 @@ importers:
       '@emotion/react':
         specifier: ^11.14.0
         version: 11.14.0(@types/react@19.2.2)(react@19.2.0)
+      '@rechakra/demo-theme':
+        specifier: workspace:*
+        version: link:../../packages/demo-theme
       '@rechakra/react':
         specifier: workspace:*
         version: link:../../packages/react
