@@ -1,6 +1,7 @@
 import {
   Box,
   Button,
+  type ButtonVariant,
   Checkbox,
   ClientOnly,
   HStack,
@@ -64,7 +65,12 @@ export default async function Page() {
         </Progress.Root>
 
         <HStack>
-          <Button color="brand.primary">Let's go!</Button>
+          <Button
+            color="brand.primary"
+            variant={"solid" satisfies ButtonVariant["variant"]}
+          >
+            Let's go!
+          </Button>
           <Button bg="brand.secondary" color="white">
             bun install @rechakra/react
           </Button>

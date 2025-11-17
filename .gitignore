@@ -1,6 +1,7 @@
 # website public/ folder (temporary; copied to root for docs:build and vercel compat)
 # public/
 
+**/.chakra
 dist
 node_modules/
 npm-debug.log

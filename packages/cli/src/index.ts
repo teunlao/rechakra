@@ -4,6 +4,7 @@ import { config } from "dotenv"
 import { createRequire } from "node:module"
 import { BlocksCommand } from "./commands/blocks.js"
 import { EjectCommand } from "./commands/eject.js"
+import { LintSchemaCommand } from "./commands/lint-schema.js"
 import { SnippetCommand } from "./commands/snippet.js"
 import { TypegenCommand } from "./commands/typegen.js"
 
@@ -23,6 +24,7 @@ export async function run() {
 
   program
     .addCommand(TypegenCommand)
+    .addCommand(LintSchemaCommand)
     .addCommand(SnippetCommand)
     .addCommand(BlocksCommand)
     .addCommand(EjectCommand)
