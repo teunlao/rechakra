@@ -10,10 +10,14 @@ export async function generateTokens(sys: SystemContext) {
   const set = new Set<string>()
 
   set.add(
-    `export type Token = ${
-      isTokenEmpty ? "string" : unionType(Array.from(tokenMap.keys()))
-    }`,
+    'import type { ChakraCustomColorPalette, ChakraCustomTokenUnion, ChakraCustomTokenValue } from "@chakra-ui/react/typegen"',
   )
+
+  const baseTokenUnion = isTokenEmpty
+    ? "string"
+    : unionType(Array.from(tokenMap.keys()))
+
+  set.add(`export type Token = ${baseTokenUnion} | ChakraCustomTokenUnion`)
 
   const result = new Set<string>(["export type Tokens = {"])
 
@@ -22,13 +26,20 @@ export async function generateTokens(sys: SystemContext) {
   } else {
     const colorPaletteKeys = Array.from(colorPaletteMap.keys())
 
-    if (colorPaletteKeys.length) {
-      set.add(`export type ColorPalette = ${unionType(colorPaletteKeys)}`)
-    }
+    const colorPaletteType = colorPaletteKeys.length
+      ? `${unionType(colorPaletteKeys)} | ChakraCustomColorPalette`
+      : "ChakraCustomColorPalette"
+
+    set.add(`export type ColorPalette = ${colorPaletteType}`)
 
     for (const [key, value] of categoryMap.entries()) {
       const typeName = capitalize(key)
-      set.add(`export type ${typeName}Token = ${unionType(value.keys())}`)
+      const categoryValues = Array.from(value.keys())
+      const customTypeRef = `ChakraCustomTokenValue<"${key}">`
+      const union = categoryValues.length
+        ? `${unionType(categoryValues)} | ${customTypeRef}`
+        : customTypeRef
+      set.add(`export type ${typeName}Token = ${union}`)
       result.add(`\t\t${key}: ${typeName}Token`)
     }
   }

@@ -5,12 +5,14 @@ import {
   ClientOnly,
   HStack,
   Heading,
+  IconButton,
   Progress,
   RadioGroup,
   Skeleton,
   VStack,
 } from "@chakra-ui/react"
 import Image from "next/image"
+import { LuBolt } from "react-icons/lu"
 import { ColorModeToggle } from "../components/color-mode-toggle"
 
 export default async function Page() {
@@ -62,9 +64,19 @@ export default async function Page() {
         </Progress.Root>
 
         <HStack>
-          <Button>Let's go!</Button>
-          <Button variant="outline">bun install @chakra-ui/react</Button>
+          <Button color="brand.primary">Let's go!</Button>
+          <Button bg="brand.secondary" color="white">
+            bun install @chakra-ui/react
+          </Button>
         </HStack>
+
+        <IconButton
+          aria-label="brand action"
+          color="brand.primary"
+          variant="ghost"
+        >
+          <LuBolt />
+        </IconButton>
       </VStack>
 
       <Box pos="absolute" top="4" right="4">

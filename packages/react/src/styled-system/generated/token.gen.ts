@@ -1,3 +1,5 @@
+import type { ChakraCustomColorPalette, ChakraCustomTokenUnion, ChakraCustomTokenValue } from "@chakra-ui/react/typegen"
+
 export type Token =
   | "aspectRatios.square"
   | "aspectRatios.landscape"
@@ -401,6 +403,7 @@ export type Token =
   | "colors.gray.emphasized"
   | "colors.gray.solid"
   | "colors.gray.focusRing"
+  | "colors.gray.border"
   | "colors.red.contrast"
   | "colors.red.fg"
   | "colors.red.subtle"
@@ -408,6 +411,7 @@ export type Token =
   | "colors.red.emphasized"
   | "colors.red.solid"
   | "colors.red.focusRing"
+  | "colors.red.border"
   | "colors.orange.contrast"
   | "colors.orange.fg"
   | "colors.orange.subtle"
@@ -415,6 +419,7 @@ export type Token =
   | "colors.orange.emphasized"
   | "colors.orange.solid"
   | "colors.orange.focusRing"
+  | "colors.orange.border"
   | "colors.green.contrast"
   | "colors.green.fg"
   | "colors.green.subtle"
@@ -422,6 +427,7 @@ export type Token =
   | "colors.green.emphasized"
   | "colors.green.solid"
   | "colors.green.focusRing"
+  | "colors.green.border"
   | "colors.blue.contrast"
   | "colors.blue.fg"
   | "colors.blue.subtle"
@@ -429,6 +435,7 @@ export type Token =
   | "colors.blue.emphasized"
   | "colors.blue.solid"
   | "colors.blue.focusRing"
+  | "colors.blue.border"
   | "colors.yellow.contrast"
   | "colors.yellow.fg"
   | "colors.yellow.subtle"
@@ -436,6 +443,7 @@ export type Token =
   | "colors.yellow.emphasized"
   | "colors.yellow.solid"
   | "colors.yellow.focusRing"
+  | "colors.yellow.border"
   | "colors.teal.contrast"
   | "colors.teal.fg"
   | "colors.teal.subtle"
@@ -443,6 +451,7 @@ export type Token =
   | "colors.teal.emphasized"
   | "colors.teal.solid"
   | "colors.teal.focusRing"
+  | "colors.teal.border"
   | "colors.purple.contrast"
   | "colors.purple.fg"
   | "colors.purple.subtle"
@@ -450,6 +459,7 @@ export type Token =
   | "colors.purple.emphasized"
   | "colors.purple.solid"
   | "colors.purple.focusRing"
+  | "colors.purple.border"
   | "colors.pink.contrast"
   | "colors.pink.fg"
   | "colors.pink.subtle"
@@ -457,6 +467,7 @@ export type Token =
   | "colors.pink.emphasized"
   | "colors.pink.solid"
   | "colors.pink.focusRing"
+  | "colors.pink.border"
   | "colors.cyan.contrast"
   | "colors.cyan.fg"
   | "colors.cyan.subtle"
@@ -464,6 +475,7 @@ export type Token =
   | "colors.cyan.emphasized"
   | "colors.cyan.solid"
   | "colors.cyan.focusRing"
+  | "colors.cyan.border"
   | "shadows.xs"
   | "shadows.sm"
   | "shadows.md"
@@ -534,6 +546,8 @@ export type Token =
   | "colors.colorPalette.fg"
   | "colors.colorPalette.solid"
   | "colors.colorPalette.focusRing"
+  | "colors.colorPalette.border"
+  | ChakraCustomTokenUnion
 
 export type ColorPalette =
   | "transparent"
@@ -555,14 +569,15 @@ export type ColorPalette =
   | "bg"
   | "fg"
   | "border"
+  | ChakraCustomColorPalette
 
-export type AspectRatiosToken = "square" | "landscape" | "portrait" | "wide" | "ultrawide" | "golden"
+export type AspectRatiosToken = "square" | "landscape" | "portrait" | "wide" | "ultrawide" | "golden" | ChakraCustomTokenValue<"aspectRatios">
 
-export type AnimationsToken = "spin" | "ping" | "pulse" | "bounce"
+export type AnimationsToken = "spin" | "ping" | "pulse" | "bounce" | ChakraCustomTokenValue<"animations">
 
-export type BlursToken = "none" | "sm" | "md" | "lg" | "xl" | "2xl" | "3xl" | "4xl"
+export type BlursToken = "none" | "sm" | "md" | "lg" | "xl" | "2xl" | "3xl" | "4xl" | ChakraCustomTokenValue<"blurs">
 
-export type BordersToken = "xs" | "sm" | "md" | "lg" | "xl"
+export type BordersToken = "xs" | "sm" | "md" | "lg" | "xl" | ChakraCustomTokenValue<"borders">
 
 export type ColorsToken =
   | "transparent"
@@ -735,6 +750,7 @@ export type ColorsToken =
   | "gray.emphasized"
   | "gray.solid"
   | "gray.focusRing"
+  | "gray.border"
   | "red.contrast"
   | "red.fg"
   | "red.subtle"
@@ -742,6 +758,7 @@ export type ColorsToken =
   | "red.emphasized"
   | "red.solid"
   | "red.focusRing"
+  | "red.border"
   | "orange.contrast"
   | "orange.fg"
   | "orange.subtle"
@@ -749,6 +766,7 @@ export type ColorsToken =
   | "orange.emphasized"
   | "orange.solid"
   | "orange.focusRing"
+  | "orange.border"
   | "green.contrast"
   | "green.fg"
   | "green.subtle"
@@ -756,6 +774,7 @@ export type ColorsToken =
   | "green.emphasized"
   | "green.solid"
   | "green.focusRing"
+  | "green.border"
   | "blue.contrast"
   | "blue.fg"
   | "blue.subtle"
@@ -763,6 +782,7 @@ export type ColorsToken =
   | "blue.emphasized"
   | "blue.solid"
   | "blue.focusRing"
+  | "blue.border"
   | "yellow.contrast"
   | "yellow.fg"
   | "yellow.subtle"
@@ -770,6 +790,7 @@ export type ColorsToken =
   | "yellow.emphasized"
   | "yellow.solid"
   | "yellow.focusRing"
+  | "yellow.border"
   | "teal.contrast"
   | "teal.fg"
   | "teal.subtle"
@@ -777,6 +798,7 @@ export type ColorsToken =
   | "teal.emphasized"
   | "teal.solid"
   | "teal.focusRing"
+  | "teal.border"
   | "purple.contrast"
   | "purple.fg"
   | "purple.subtle"
@@ -784,6 +806,7 @@ export type ColorsToken =
   | "purple.emphasized"
   | "purple.solid"
   | "purple.focusRing"
+  | "purple.border"
   | "pink.contrast"
   | "pink.fg"
   | "pink.subtle"
@@ -791,6 +814,7 @@ export type ColorsToken =
   | "pink.emphasized"
   | "pink.solid"
   | "pink.focusRing"
+  | "pink.border"
   | "cyan.contrast"
   | "cyan.fg"
   | "cyan.subtle"
@@ -798,6 +822,7 @@ export type ColorsToken =
   | "cyan.emphasized"
   | "cyan.solid"
   | "cyan.focusRing"
+  | "cyan.border"
   | "colorPalette"
   | "colorPalette.50"
   | "colorPalette.100"
@@ -823,22 +848,64 @@ export type ColorsToken =
   | "colorPalette.fg"
   | "colorPalette.solid"
   | "colorPalette.focusRing"
+  | "colorPalette.border"
+  | ChakraCustomTokenValue<"colors">
 
-export type DurationsToken = "fastest" | "faster" | "fast" | "moderate" | "slow" | "slower" | "slowest"
+export type DurationsToken = "fastest" | "faster" | "fast" | "moderate" | "slow" | "slower" | "slowest" | ChakraCustomTokenValue<"durations">
 
-export type EasingsToken = "ease-in" | "ease-out" | "ease-in-out" | "ease-in-smooth"
+export type EasingsToken = "ease-in" | "ease-out" | "ease-in-out" | "ease-in-smooth" | ChakraCustomTokenValue<"easings">
 
-export type FontsToken = "heading" | "body" | "mono"
+export type FontsToken = "heading" | "body" | "mono" | ChakraCustomTokenValue<"fonts">
 
-export type FontSizesToken = "2xs" | "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "3xl" | "4xl" | "5xl" | "6xl" | "7xl" | "8xl" | "9xl"
+export type FontSizesToken =
+  | "2xs"
+  | "xs"
+  | "sm"
+  | "md"
+  | "lg"
+  | "xl"
+  | "2xl"
+  | "3xl"
+  | "4xl"
+  | "5xl"
+  | "6xl"
+  | "7xl"
+  | "8xl"
+  | "9xl"
+  | ChakraCustomTokenValue<"fontSizes">
 
-export type FontWeightsToken = "thin" | "extralight" | "light" | "normal" | "medium" | "semibold" | "bold" | "extrabold" | "black"
+export type FontWeightsToken =
+  | "thin"
+  | "extralight"
+  | "light"
+  | "normal"
+  | "medium"
+  | "semibold"
+  | "bold"
+  | "extrabold"
+  | "black"
+  | ChakraCustomTokenValue<"fontWeights">
 
-export type LetterSpacingsToken = "tighter" | "tight" | "wide" | "wider" | "widest"
+export type LetterSpacingsToken = "tighter" | "tight" | "wide" | "wider" | "widest" | ChakraCustomTokenValue<"letterSpacings">
 
-export type LineHeightsToken = "shorter" | "short" | "moderate" | "tall" | "taller"
+export type LineHeightsToken = "shorter" | "short" | "moderate" | "tall" | "taller" | ChakraCustomTokenValue<"lineHeights">
 
-export type RadiiToken = "none" | "2xs" | "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "3xl" | "4xl" | "full" | "l1" | "l2" | "l3"
+export type RadiiToken =
+  | "none"
+  | "2xs"
+  | "xs"
+  | "sm"
+  | "md"
+  | "lg"
+  | "xl"
+  | "2xl"
+  | "3xl"
+  | "4xl"
+  | "full"
+  | "l1"
+  | "l2"
+  | "l3"
+  | ChakraCustomTokenValue<"radii">
 
 export type SpacingToken =
   | "1"
@@ -909,6 +976,7 @@ export type SpacingToken =
   | "-2.5"
   | "-3.5"
   | "-4.5"
+  | ChakraCustomTokenValue<"spacing">
 
 export type SizesToken =
   | "1"
@@ -1002,6 +1070,7 @@ export type SizesToken =
   | "breakpoint-lg"
   | "breakpoint-xl"
   | "breakpoint-2xl"
+  | ChakraCustomTokenValue<"sizes">
 
 export type ZIndexToken =
   | "hide"
@@ -1017,12 +1086,13 @@ export type ZIndexToken =
   | "toast"
   | "tooltip"
   | "max"
+  | ChakraCustomTokenValue<"zIndex">
 
-export type CursorToken = "button" | "checkbox" | "disabled" | "menuitem" | "option" | "radio" | "slider" | "switch"
+export type CursorToken = "button" | "checkbox" | "disabled" | "menuitem" | "option" | "radio" | "slider" | "switch" | ChakraCustomTokenValue<"cursor">
 
-export type BreakpointsToken = "sm" | "md" | "lg" | "xl" | "2xl"
+export type BreakpointsToken = "sm" | "md" | "lg" | "xl" | "2xl" | ChakraCustomTokenValue<"breakpoints">
 
-export type ShadowsToken = "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "inner" | "inset"
+export type ShadowsToken = "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "inner" | "inset" | ChakraCustomTokenValue<"shadows">
 
 export type Tokens = {
   aspectRatios: AspectRatiosToken

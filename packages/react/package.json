@@ -124,6 +124,17 @@
         "default": "./dist/cjs/styled-system/index.cjs"
       }
     },
+    "./typegen": {
+      "dev": "./src/typegen/index.ts",
+      "import": {
+        "types": "./dist/types/typegen/index.d.ts",
+        "default": "./dist/esm/typegen/index.js"
+      },
+      "require": {
+        "types": "./dist/types/typegen/index.d.ts",
+        "default": "./dist/cjs/typegen/index.cjs"
+      }
+    },
     "./collection": {
       "dev": "./src/collection.ts",
       "import": {

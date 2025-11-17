@@ -6,6 +6,7 @@ import { writeFileSync } from "fs"
 import { createRequire } from "node:module"
 import { join, resolve } from "node:path"
 import { generateCondition } from "../utils/generate-conditions"
+import { generateIsolatedTokens } from "../utils/generate-isolated-tokens"
 import { generatePropTypes } from "../utils/generate-prop-types"
 import { generateRecipe } from "../utils/generate-recipe"
 import { generateSystemTypes } from "../utils/generate-system-types"
@@ -34,8 +35,11 @@ interface CodegenFlags {
   format?: boolean
   watch?: string
   clean?: boolean
-  outdir: string
+  outdir?: string
+  isolated?: boolean
 }
+
+type ResolvedCodegenFlags = CodegenFlags & { outdir: string }
 
 export const TypegenCommand = new Command("typegen")
   .argument("<source>", "path to the theme file")
@@ -43,18 +47,24 @@ export const TypegenCommand = new Command("typegen")
   .option("--strict", "Generate strict types for props variant and size")
   .option("--watch [path]", "Watch directory for changes and rebuild")
   .option("--clean", "Clean the output directory")
+  .option("--outdir <dir>", "Output directory to write the generated types")
   .option(
-    "--outdir <dir>",
-    "Output directory to write the generated types",
-    getDefaultBasePath(),
+    "--isolated",
+    "Generate augmentation-only typings without touching node_modules",
   )
   .action(async (source: string, flags: CodegenFlags) => {
     debug("source", source)
     debug("flags", flags)
 
-    if (flags.clean) {
-      debug("cleaning output directory", flags.outdir)
-      await io.clean(flags.outdir)
+    const cwd = process.cwd()
+    const resolvedOutdir =
+      flags.outdir ??
+      (flags.isolated ? join(cwd, ".chakra") : getDefaultBasePath())
+    const options: ResolvedCodegenFlags = { ...flags, outdir: resolvedOutdir }
+
+    if (options.clean) {
+      debug("cleaning output directory", options.outdir)
+      await io.clean(options.outdir)
     }
 
     let result = await io.read(source)
@@ -67,14 +77,14 @@ export const TypegenCommand = new Command("typegen")
     }
 
     const build = async () => {
-      await codegen(result.mod, flags)
+      await codegen(result.mod, options)
 
-      if (flags.watch) {
+      if (options.watch) {
         p.log.info("\n⌛️ Watching for changes...")
       }
     }
 
-    if (!flags.watch) {
+    if (!options.watch) {
       await build()
     } else {
       debug("watch dependencies", result.dependencies)
@@ -87,9 +97,25 @@ export const TypegenCommand = new Command("typegen")
     p.outro("🎉 Done!")
   })
 
-function codegen(sys: SystemContext, flags: CodegenFlags) {
+function codegen(sys: SystemContext, flags: ResolvedCodegenFlags) {
   io.ensureDir(flags.outdir)
   debug("writing codegen to", flags.outdir)
+
+  if (flags.isolated) {
+    return tasks([
+      {
+        title: "Generating isolated token types...",
+        task: async () => {
+          await io.write(
+            flags.outdir,
+            "tokens.isolated",
+            generateIsolatedTokens(sys),
+          )
+          return "✅ Generated isolated token typings"
+        },
+      },
+    ])
+  }
 
   return tasks([
     {
