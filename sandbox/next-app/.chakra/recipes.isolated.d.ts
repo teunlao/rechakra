@@ -1,6 +1,11 @@
-import type { RecipeDefinition, SlotRecipeDefinition, SystemRecipeFn, SystemSlotRecipeFn } from "../recipe.types"
-import type { ConditionalValue } from "../css.types"
-import type { ChakraCustomRecipeConfig, ChakraCustomSlotRecipeConfig, ChakraCustomRecipeSlots } from "@chakra-ui/react/typegen"
+import type {
+  ConditionalValue,
+  RecipeDefinition,
+  SlotRecipeDefinition,
+  SystemRecipeFn,
+  SystemSlotRecipeFn,
+} from "@chakra-ui/react"
+import "@chakra-ui/react/typegen"
 
 export interface BadgeVariant {
   /** @default "subtle" */
@@ -21,7 +26,14 @@ export interface ButtonVariant {
   /** @default "md" */
   size?: "2xs" | "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | undefined
   /** @default "solid" */
-  variant?: "solid" | "subtle" | "surface" | "outline" | "ghost" | "plain" | undefined
+  variant?:
+    | "solid"
+    | "subtle"
+    | "surface"
+    | "outline"
+    | "ghost"
+    | "plain"
+    | undefined
 }
 
 export type ButtonVariantProps = {
@@ -53,7 +65,9 @@ export interface ContainerVariant {
 }
 
 export type ContainerVariantProps = {
-  [K in keyof ContainerVariant]?: ConditionalValue<ContainerVariant[K]> | undefined
+  [K in keyof ContainerVariant]?:
+    | ConditionalValue<ContainerVariant[K]>
+    | undefined
 }
 
 export type ContainerVariantMap = {
@@ -62,7 +76,19 @@ export type ContainerVariantMap = {
 
 export interface HeadingVariant {
   /** @default "xl" */
-  size?: "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "3xl" | "4xl" | "5xl" | "6xl" | "7xl" | undefined
+  size?:
+    | "xs"
+    | "sm"
+    | "md"
+    | "lg"
+    | "xl"
+    | "2xl"
+    | "3xl"
+    | "4xl"
+    | "5xl"
+    | "6xl"
+    | "7xl"
+    | undefined
 }
 
 export type HeadingVariantProps = {
@@ -76,8 +102,8 @@ export type HeadingVariantMap = {
 export interface InputVariant {
   /** @default "md" */
   size?: "2xs" | "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | undefined
-  /** @default "outline" */
-  variant?: "outline" | "subtle" | "flushed" | undefined
+  /** @default "brand" */
+  variant?: "outline" | "subtle" | "flushed" | "brand" | undefined
 }
 
 export type InputVariantProps = {
@@ -96,7 +122,9 @@ export interface InputAddonVariant {
 }
 
 export type InputAddonVariantProps = {
-  [K in keyof InputAddonVariant]?: ConditionalValue<InputAddonVariant[K]> | undefined
+  [K in keyof InputAddonVariant]?:
+    | ConditionalValue<InputAddonVariant[K]>
+    | undefined
 }
 
 export type InputAddonVariantMap = {
@@ -153,7 +181,9 @@ export interface SeparatorVariant {
 }
 
 export type SeparatorVariantProps = {
-  [K in keyof SeparatorVariant]?: ConditionalValue<SeparatorVariant[K]> | undefined
+  [K in keyof SeparatorVariant]?:
+    | ConditionalValue<SeparatorVariant[K]>
+    | undefined
 }
 
 export type SeparatorVariantMap = {
@@ -168,7 +198,9 @@ export interface SkeletonVariant {
 }
 
 export type SkeletonVariantProps = {
-  [K in keyof SkeletonVariant]?: ConditionalValue<SkeletonVariant[K]> | undefined
+  [K in keyof SkeletonVariant]?:
+    | ConditionalValue<SkeletonVariant[K]>
+    | undefined
 }
 
 export type SkeletonVariantMap = {
@@ -178,7 +210,9 @@ export type SkeletonVariantMap = {
 export interface SkipNavLinkVariant {}
 
 export type SkipNavLinkVariantProps = {
-  [K in keyof SkipNavLinkVariant]?: ConditionalValue<SkipNavLinkVariant[K]> | undefined
+  [K in keyof SkipNavLinkVariant]?:
+    | ConditionalValue<SkipNavLinkVariant[K]>
+    | undefined
 }
 
 export type SkipNavLinkVariantMap = {
@@ -206,7 +240,9 @@ export interface TextareaVariant {
 }
 
 export type TextareaVariantProps = {
-  [K in keyof TextareaVariant]?: ConditionalValue<TextareaVariant[K]> | undefined
+  [K in keyof TextareaVariant]?:
+    | ConditionalValue<TextareaVariant[K]>
+    | undefined
 }
 
 export type TextareaVariantMap = {
@@ -235,7 +271,9 @@ export interface CheckmarkVariant {
 }
 
 export type CheckmarkVariantProps = {
-  [K in keyof CheckmarkVariant]?: ConditionalValue<CheckmarkVariant[K]> | undefined
+  [K in keyof CheckmarkVariant]?:
+    | ConditionalValue<CheckmarkVariant[K]>
+    | undefined
 }
 
 export type CheckmarkVariantMap = {
@@ -251,7 +289,9 @@ export interface RadiomarkVariant {
 }
 
 export type RadiomarkVariantProps = {
-  [K in keyof RadiomarkVariant]?: ConditionalValue<RadiomarkVariant[K]> | undefined
+  [K in keyof RadiomarkVariant]?:
+    | ConditionalValue<RadiomarkVariant[K]>
+    | undefined
 }
 
 export type RadiomarkVariantMap = {
@@ -260,46 +300,55 @@ export type RadiomarkVariantMap = {
 
 export interface ColorSwatchVariant {
   /** @default "md" */
-  size?: "2xs" | "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "inherit" | "full" | undefined
+  size?:
+    | "2xs"
+    | "xs"
+    | "sm"
+    | "md"
+    | "lg"
+    | "xl"
+    | "2xl"
+    | "inherit"
+    | "full"
+    | undefined
   /** @default "rounded" */
   shape?: "square" | "circle" | "rounded" | undefined
 }
 
 export type ColorSwatchVariantProps = {
-  [K in keyof ColorSwatchVariant]?: ConditionalValue<ColorSwatchVariant[K]> | undefined
+  [K in keyof ColorSwatchVariant]?:
+    | ConditionalValue<ColorSwatchVariant[K]>
+    | undefined
 }
 
 export type ColorSwatchVariantMap = {
   [K in keyof ColorSwatchVariant]: Array<ColorSwatchVariant[K]>
 }
 
-type ChakraBuiltinRecipes = {
-  badge: SystemRecipeFn<BadgeVariantProps, BadgeVariantMap>
-  button: SystemRecipeFn<ButtonVariantProps, ButtonVariantMap>
-  code: SystemRecipeFn<CodeVariantProps, CodeVariantMap>
-  container: SystemRecipeFn<ContainerVariantProps, ContainerVariantMap>
-  heading: SystemRecipeFn<HeadingVariantProps, HeadingVariantMap>
-  input: SystemRecipeFn<InputVariantProps, InputVariantMap>
-  inputAddon: SystemRecipeFn<InputAddonVariantProps, InputAddonVariantMap>
-  kbd: SystemRecipeFn<KbdVariantProps, KbdVariantMap>
-  link: SystemRecipeFn<LinkVariantProps, LinkVariantMap>
-  mark: SystemRecipeFn<MarkVariantProps, MarkVariantMap>
-  separator: SystemRecipeFn<SeparatorVariantProps, SeparatorVariantMap>
-  skeleton: SystemRecipeFn<SkeletonVariantProps, SkeletonVariantMap>
-  skipNavLink: SystemRecipeFn<SkipNavLinkVariantProps, SkipNavLinkVariantMap>
-  spinner: SystemRecipeFn<SpinnerVariantProps, SpinnerVariantMap>
-  textarea: SystemRecipeFn<TextareaVariantProps, TextareaVariantMap>
-  icon: SystemRecipeFn<IconVariantProps, IconVariantMap>
-  checkmark: SystemRecipeFn<CheckmarkVariantProps, CheckmarkVariantMap>
-  radiomark: SystemRecipeFn<RadiomarkVariantProps, RadiomarkVariantMap>
-  colorSwatch: SystemRecipeFn<ColorSwatchVariantProps, ColorSwatchVariantMap>
+export interface BrandChipVariant {
+  /** @default "primary" */
+  tone?: "primary" | "secondary" | undefined
+  /** @default "md" */
+  size?: "sm" | "md" | undefined
 }
 
-export type ConfigRecipes = ChakraBuiltinRecipes & ChakraCustomRecipeConfig
+export type BrandChipVariantProps = {
+  [K in keyof BrandChipVariant]?:
+    | ConditionalValue<BrandChipVariant[K]>
+    | undefined
+}
 
-// Accordion
+export type BrandChipVariantMap = {
+  [K in keyof BrandChipVariant]: Array<BrandChipVariant[K]>
+}
 
-export type AccordionSlot = "root" | "item" | "itemTrigger" | "itemContent" | "itemIndicator" | "itemBody"
+export type AccordionSlot =
+  | "root"
+  | "item"
+  | "itemTrigger"
+  | "itemContent"
+  | "itemIndicator"
+  | "itemBody"
 
 export interface AccordionVariant {
   /** @default "outline" */
@@ -309,35 +358,44 @@ export interface AccordionVariant {
 }
 
 export type AccordionVariantProps = {
-  [K in keyof AccordionVariant]?: ConditionalValue<AccordionVariant[K]> | undefined
+  [K in keyof AccordionVariant]?:
+    | ConditionalValue<AccordionVariant[K]>
+    | undefined
 }
 
 export type AccordionVariantMap = {
   [K in keyof AccordionVariant]: Array<AccordionVariant[K]>
 }
 
-// ActionBar
-
-export type ActionBarSlot = "positioner" | "content" | "separator" | "selectionTrigger" | "closeTrigger"
+export type ActionBarSlot =
+  | "positioner"
+  | "content"
+  | "separator"
+  | "selectionTrigger"
+  | "closeTrigger"
 
 export interface ActionBarVariant {}
 
 export type ActionBarVariantProps = {
-  [K in keyof ActionBarVariant]?: ConditionalValue<ActionBarVariant[K]> | undefined
+  [K in keyof ActionBarVariant]?:
+    | ConditionalValue<ActionBarVariant[K]>
+    | undefined
 }
 
 export type ActionBarVariantMap = {
   [K in keyof ActionBarVariant]: Array<ActionBarVariant[K]>
 }
 
-// Alert
-
-export type AlertSlot = "title" | "description" | "root" | "indicator" | "content"
+export type AlertSlot =
+  | "title"
+  | "description"
+  | "root"
+  | "indicator"
+  | "content"
 
 export interface AlertVariant {
   /** @default "info" */
   status?: "info" | "warning" | "success" | "error" | "neutral" | undefined
-  /** @default false */
   inline?: boolean | undefined
   /** @default "subtle" */
   variant?: "subtle" | "surface" | "outline" | "solid" | undefined
@@ -352,8 +410,6 @@ export type AlertVariantProps = {
 export type AlertVariantMap = {
   [K in keyof AlertVariant]: Array<AlertVariant[K]>
 }
-
-// Avatar
 
 export type AvatarSlot = "root" | "image" | "fallback"
 
@@ -375,8 +431,6 @@ export type AvatarVariantMap = {
   [K in keyof AvatarVariant]: Array<AvatarVariant[K]>
 }
 
-// Blockquote
-
 export type BlockquoteSlot = "root" | "icon" | "content" | "caption"
 
 export interface BlockquoteVariant {
@@ -387,16 +441,23 @@ export interface BlockquoteVariant {
 }
 
 export type BlockquoteVariantProps = {
-  [K in keyof BlockquoteVariant]?: ConditionalValue<BlockquoteVariant[K]> | undefined
+  [K in keyof BlockquoteVariant]?:
+    | ConditionalValue<BlockquoteVariant[K]>
+    | undefined
 }
 
 export type BlockquoteVariantMap = {
   [K in keyof BlockquoteVariant]: Array<BlockquoteVariant[K]>
 }
 
-// Breadcrumb
-
-export type BreadcrumbSlot = "link" | "currentLink" | "item" | "list" | "root" | "ellipsis" | "separator"
+export type BreadcrumbSlot =
+  | "link"
+  | "currentLink"
+  | "item"
+  | "list"
+  | "root"
+  | "ellipsis"
+  | "separator"
 
 export interface BreadcrumbVariant {
   /** @default "plain" */
@@ -406,16 +467,22 @@ export interface BreadcrumbVariant {
 }
 
 export type BreadcrumbVariantProps = {
-  [K in keyof BreadcrumbVariant]?: ConditionalValue<BreadcrumbVariant[K]> | undefined
+  [K in keyof BreadcrumbVariant]?:
+    | ConditionalValue<BreadcrumbVariant[K]>
+    | undefined
 }
 
 export type BreadcrumbVariantMap = {
   [K in keyof BreadcrumbVariant]: Array<BreadcrumbVariant[K]>
 }
 
-// Card
-
-export type CardSlot = "root" | "header" | "body" | "footer" | "title" | "description"
+export type CardSlot =
+  | "root"
+  | "header"
+  | "body"
+  | "footer"
+  | "title"
+  | "description"
 
 export interface CardVariant {
   /** @default "md" */
@@ -432,21 +499,28 @@ export type CardVariantMap = {
   [K in keyof CardVariant]: Array<CardVariant[K]>
 }
 
-// Carousel
-
-export type CarouselSlot = "root" | "itemGroup" | "item" | "control" | "nextTrigger" | "prevTrigger" | "indicatorGroup" | "indicator" | "autoplayTrigger"
+export type CarouselSlot =
+  | "root"
+  | "itemGroup"
+  | "item"
+  | "control"
+  | "nextTrigger"
+  | "prevTrigger"
+  | "indicatorGroup"
+  | "indicator"
+  | "autoplayTrigger"
 
 export interface CarouselVariant {}
 
 export type CarouselVariantProps = {
-  [K in keyof CarouselVariant]?: ConditionalValue<CarouselVariant[K]> | undefined
+  [K in keyof CarouselVariant]?:
+    | ConditionalValue<CarouselVariant[K]>
+    | undefined
 }
 
 export type CarouselVariantMap = {
   [K in keyof CarouselVariant]: Array<CarouselVariant[K]>
 }
-
-// Checkbox
 
 export type CheckboxSlot = "root" | "label" | "control" | "indicator" | "group"
 
@@ -458,16 +532,23 @@ export interface CheckboxVariant {
 }
 
 export type CheckboxVariantProps = {
-  [K in keyof CheckboxVariant]?: ConditionalValue<CheckboxVariant[K]> | undefined
+  [K in keyof CheckboxVariant]?:
+    | ConditionalValue<CheckboxVariant[K]>
+    | undefined
 }
 
 export type CheckboxVariantMap = {
   [K in keyof CheckboxVariant]: Array<CheckboxVariant[K]>
 }
 
-// CheckboxCard
-
-export type CheckboxCardSlot = "root" | "control" | "label" | "description" | "addon" | "indicator" | "content"
+export type CheckboxCardSlot =
+  | "root"
+  | "control"
+  | "label"
+  | "description"
+  | "addon"
+  | "indicator"
+  | "content"
 
 export interface CheckboxCardVariant {
   /** @default "md" */
@@ -482,14 +563,14 @@ export interface CheckboxCardVariant {
 }
 
 export type CheckboxCardVariantProps = {
-  [K in keyof CheckboxCardVariant]?: ConditionalValue<CheckboxCardVariant[K]> | undefined
+  [K in keyof CheckboxCardVariant]?:
+    | ConditionalValue<CheckboxCardVariant[K]>
+    | undefined
 }
 
 export type CheckboxCardVariantMap = {
   [K in keyof CheckboxCardVariant]: Array<CheckboxCardVariant[K]>
 }
-
-// CodeBlock
 
 export type CodeBlockSlot =
   | "root"
@@ -513,28 +594,28 @@ export interface CodeBlockVariant {
 }
 
 export type CodeBlockVariantProps = {
-  [K in keyof CodeBlockVariant]?: ConditionalValue<CodeBlockVariant[K]> | undefined
+  [K in keyof CodeBlockVariant]?:
+    | ConditionalValue<CodeBlockVariant[K]>
+    | undefined
 }
 
 export type CodeBlockVariantMap = {
   [K in keyof CodeBlockVariant]: Array<CodeBlockVariant[K]>
 }
 
-// Collapsible
-
 export type CollapsibleSlot = "root" | "trigger" | "content" | "indicator"
 
 export interface CollapsibleVariant {}
 
 export type CollapsibleVariantProps = {
-  [K in keyof CollapsibleVariant]?: ConditionalValue<CollapsibleVariant[K]> | undefined
+  [K in keyof CollapsibleVariant]?:
+    | ConditionalValue<CollapsibleVariant[K]>
+    | undefined
 }
 
 export type CollapsibleVariantMap = {
   [K in keyof CollapsibleVariant]: Array<CollapsibleVariant[K]>
 }
-
-// DataList
 
 export type DataListSlot = "root" | "item" | "itemLabel" | "itemValue"
 
@@ -548,14 +629,14 @@ export interface DataListVariant {
 }
 
 export type DataListVariantProps = {
-  [K in keyof DataListVariant]?: ConditionalValue<DataListVariant[K]> | undefined
+  [K in keyof DataListVariant]?:
+    | ConditionalValue<DataListVariant[K]>
+    | undefined
 }
 
 export type DataListVariantMap = {
   [K in keyof DataListVariant]: Array<DataListVariant[K]>
 }
-
-// Dialog
 
 export type DialogSlot =
   | "trigger"
@@ -578,7 +659,14 @@ export interface DialogVariant {
   /** @default "md" */
   size?: "xs" | "sm" | "md" | "lg" | "xl" | "cover" | "full" | undefined
   /** @default "scale" */
-  motionPreset?: "scale" | "slide-in-bottom" | "slide-in-top" | "slide-in-left" | "slide-in-right" | "none" | undefined
+  motionPreset?:
+    | "scale"
+    | "slide-in-bottom"
+    | "slide-in-top"
+    | "slide-in-left"
+    | "slide-in-right"
+    | "none"
+    | undefined
 }
 
 export type DialogVariantProps = {
@@ -588,8 +676,6 @@ export type DialogVariantProps = {
 export type DialogVariantMap = {
   [K in keyof DialogVariant]: Array<DialogVariant[K]>
 }
-
-// Drawer
 
 export type DrawerSlot =
   | "trigger"
@@ -620,9 +706,17 @@ export type DrawerVariantMap = {
   [K in keyof DrawerVariant]: Array<DrawerVariant[K]>
 }
 
-// Editable
-
-export type EditableSlot = "root" | "area" | "label" | "preview" | "input" | "editTrigger" | "submitTrigger" | "cancelTrigger" | "control" | "textarea"
+export type EditableSlot =
+  | "root"
+  | "area"
+  | "label"
+  | "preview"
+  | "input"
+  | "editTrigger"
+  | "submitTrigger"
+  | "cancelTrigger"
+  | "control"
+  | "textarea"
 
 export interface EditableVariant {
   /** @default "md" */
@@ -630,16 +724,21 @@ export interface EditableVariant {
 }
 
 export type EditableVariantProps = {
-  [K in keyof EditableVariant]?: ConditionalValue<EditableVariant[K]> | undefined
+  [K in keyof EditableVariant]?:
+    | ConditionalValue<EditableVariant[K]>
+    | undefined
 }
 
 export type EditableVariantMap = {
   [K in keyof EditableVariant]: Array<EditableVariant[K]>
 }
 
-// EmptyState
-
-export type EmptyStateSlot = "root" | "content" | "indicator" | "title" | "description"
+export type EmptyStateSlot =
+  | "root"
+  | "content"
+  | "indicator"
+  | "title"
+  | "description"
 
 export interface EmptyStateVariant {
   /** @default "md" */
@@ -647,16 +746,25 @@ export interface EmptyStateVariant {
 }
 
 export type EmptyStateVariantProps = {
-  [K in keyof EmptyStateVariant]?: ConditionalValue<EmptyStateVariant[K]> | undefined
+  [K in keyof EmptyStateVariant]?:
+    | ConditionalValue<EmptyStateVariant[K]>
+    | undefined
 }
 
 export type EmptyStateVariantMap = {
   [K in keyof EmptyStateVariant]: Array<EmptyStateVariant[K]>
 }
 
-// Field
-
-export type FieldSlot = "root" | "errorText" | "helperText" | "input" | "label" | "select" | "textarea" | "requiredIndicator" | "requiredIndicator"
+export type FieldSlot =
+  | "root"
+  | "errorText"
+  | "helperText"
+  | "input"
+  | "label"
+  | "select"
+  | "textarea"
+  | "requiredIndicator"
+  | "requiredIndicator"
 
 export interface FieldVariant {
   /** @default "vertical" */
@@ -671,9 +779,12 @@ export type FieldVariantMap = {
   [K in keyof FieldVariant]: Array<FieldVariant[K]>
 }
 
-// Fieldset
-
-export type FieldsetSlot = "root" | "errorText" | "helperText" | "legend" | "content"
+export type FieldsetSlot =
+  | "root"
+  | "errorText"
+  | "helperText"
+  | "legend"
+  | "content"
 
 export interface FieldsetVariant {
   /** @default "md" */
@@ -681,14 +792,14 @@ export interface FieldsetVariant {
 }
 
 export type FieldsetVariantProps = {
-  [K in keyof FieldsetVariant]?: ConditionalValue<FieldsetVariant[K]> | undefined
+  [K in keyof FieldsetVariant]?:
+    | ConditionalValue<FieldsetVariant[K]>
+    | undefined
 }
 
 export type FieldsetVariantMap = {
   [K in keyof FieldsetVariant]: Array<FieldsetVariant[K]>
 }
-
-// FileUpload
 
 export type FileUploadSlot =
   | "root"
@@ -710,16 +821,21 @@ export type FileUploadSlot =
 export interface FileUploadVariant {}
 
 export type FileUploadVariantProps = {
-  [K in keyof FileUploadVariant]?: ConditionalValue<FileUploadVariant[K]> | undefined
+  [K in keyof FileUploadVariant]?:
+    | ConditionalValue<FileUploadVariant[K]>
+    | undefined
 }
 
 export type FileUploadVariantMap = {
   [K in keyof FileUploadVariant]: Array<FileUploadVariant[K]>
 }
 
-// HoverCard
-
-export type HoverCardSlot = "arrow" | "arrowTip" | "trigger" | "positioner" | "content"
+export type HoverCardSlot =
+  | "arrow"
+  | "arrowTip"
+  | "trigger"
+  | "positioner"
+  | "content"
 
 export interface HoverCardVariant {
   /** @default "md" */
@@ -727,14 +843,14 @@ export interface HoverCardVariant {
 }
 
 export type HoverCardVariantProps = {
-  [K in keyof HoverCardVariant]?: ConditionalValue<HoverCardVariant[K]> | undefined
+  [K in keyof HoverCardVariant]?:
+    | ConditionalValue<HoverCardVariant[K]>
+    | undefined
 }
 
 export type HoverCardVariantMap = {
   [K in keyof HoverCardVariant]: Array<HoverCardVariant[K]>
 }
-
-// List
 
 export type ListSlot = "root" | "item" | "indicator"
 
@@ -751,8 +867,6 @@ export type ListVariantProps = {
 export type ListVariantMap = {
   [K in keyof ListVariant]: Array<ListVariant[K]>
 }
-
-// Listbox
 
 export type ListboxSlot =
   | "label"
@@ -779,8 +893,6 @@ export type ListboxVariantProps = {
 export type ListboxVariantMap = {
   [K in keyof ListboxVariant]: Array<ListboxVariant[K]>
 }
-
-// Menu
 
 export type MenuSlot =
   | "arrow"
@@ -814,8 +926,6 @@ export type MenuVariantMap = {
   [K in keyof MenuVariant]: Array<MenuVariant[K]>
 }
 
-// NativeSelect
-
 export type NativeSelectSlot = "root" | "field" | "indicator"
 
 export interface NativeSelectVariant {
@@ -826,16 +936,24 @@ export interface NativeSelectVariant {
 }
 
 export type NativeSelectVariantProps = {
-  [K in keyof NativeSelectVariant]?: ConditionalValue<NativeSelectVariant[K]> | undefined
+  [K in keyof NativeSelectVariant]?:
+    | ConditionalValue<NativeSelectVariant[K]>
+    | undefined
 }
 
 export type NativeSelectVariantMap = {
   [K in keyof NativeSelectVariant]: Array<NativeSelectVariant[K]>
 }
 
-// NumberInput
-
-export type NumberInputSlot = "root" | "label" | "input" | "control" | "valueText" | "incrementTrigger" | "decrementTrigger" | "scrubber"
+export type NumberInputSlot =
+  | "root"
+  | "label"
+  | "input"
+  | "control"
+  | "valueText"
+  | "incrementTrigger"
+  | "decrementTrigger"
+  | "scrubber"
 
 export interface NumberInputVariant {
   /** @default "md" */
@@ -845,14 +963,14 @@ export interface NumberInputVariant {
 }
 
 export type NumberInputVariantProps = {
-  [K in keyof NumberInputVariant]?: ConditionalValue<NumberInputVariant[K]> | undefined
+  [K in keyof NumberInputVariant]?:
+    | ConditionalValue<NumberInputVariant[K]>
+    | undefined
 }
 
 export type NumberInputVariantMap = {
   [K in keyof NumberInputVariant]: Array<NumberInputVariant[K]>
 }
-
-// PinInput
 
 export type PinInputSlot = "root" | "label" | "input" | "control"
 
@@ -865,14 +983,14 @@ export interface PinInputVariant {
 }
 
 export type PinInputVariantProps = {
-  [K in keyof PinInputVariant]?: ConditionalValue<PinInputVariant[K]> | undefined
+  [K in keyof PinInputVariant]?:
+    | ConditionalValue<PinInputVariant[K]>
+    | undefined
 }
 
 export type PinInputVariantMap = {
   [K in keyof PinInputVariant]: Array<PinInputVariant[K]>
 }
-
-// Popover
 
 export type PopoverSlot =
   | "arrow"
@@ -902,9 +1020,16 @@ export type PopoverVariantMap = {
   [K in keyof PopoverVariant]: Array<PopoverVariant[K]>
 }
 
-// Progress
-
-export type ProgressSlot = "root" | "label" | "track" | "range" | "valueText" | "view" | "circle" | "circleTrack" | "circleRange"
+export type ProgressSlot =
+  | "root"
+  | "label"
+  | "track"
+  | "range"
+  | "valueText"
+  | "view"
+  | "circle"
+  | "circleTrack"
+  | "circleRange"
 
 export interface ProgressVariant {
   /** @default "outline" */
@@ -918,16 +1043,25 @@ export interface ProgressVariant {
 }
 
 export type ProgressVariantProps = {
-  [K in keyof ProgressVariant]?: ConditionalValue<ProgressVariant[K]> | undefined
+  [K in keyof ProgressVariant]?:
+    | ConditionalValue<ProgressVariant[K]>
+    | undefined
 }
 
 export type ProgressVariantMap = {
   [K in keyof ProgressVariant]: Array<ProgressVariant[K]>
 }
 
-// ProgressCircle
-
-export type ProgressCircleSlot = "root" | "label" | "track" | "range" | "valueText" | "view" | "circle" | "circleTrack" | "circleRange"
+export type ProgressCircleSlot =
+  | "root"
+  | "label"
+  | "track"
+  | "range"
+  | "valueText"
+  | "view"
+  | "circle"
+  | "circleTrack"
+  | "circleRange"
 
 export interface ProgressCircleVariant {
   /** @default "md" */
@@ -935,14 +1069,14 @@ export interface ProgressCircleVariant {
 }
 
 export type ProgressCircleVariantProps = {
-  [K in keyof ProgressCircleVariant]?: ConditionalValue<ProgressCircleVariant[K]> | undefined
+  [K in keyof ProgressCircleVariant]?:
+    | ConditionalValue<ProgressCircleVariant[K]>
+    | undefined
 }
 
 export type ProgressCircleVariantMap = {
   [K in keyof ProgressCircleVariant]: Array<ProgressCircleVariant[K]>
 }
-
-// RadioCard
 
 export type RadioCardSlot =
   | "root"
@@ -969,16 +1103,24 @@ export interface RadioCardVariant {
 }
 
 export type RadioCardVariantProps = {
-  [K in keyof RadioCardVariant]?: ConditionalValue<RadioCardVariant[K]> | undefined
+  [K in keyof RadioCardVariant]?:
+    | ConditionalValue<RadioCardVariant[K]>
+    | undefined
 }
 
 export type RadioCardVariantMap = {
   [K in keyof RadioCardVariant]: Array<RadioCardVariant[K]>
 }
 
-// RadioGroup
-
-export type RadioGroupSlot = "root" | "label" | "item" | "itemText" | "itemControl" | "indicator" | "itemAddon" | "itemIndicator"
+export type RadioGroupSlot =
+  | "root"
+  | "label"
+  | "item"
+  | "itemText"
+  | "itemControl"
+  | "indicator"
+  | "itemAddon"
+  | "itemIndicator"
 
 export interface RadioGroupVariant {
   /** @default "solid" */
@@ -988,16 +1130,21 @@ export interface RadioGroupVariant {
 }
 
 export type RadioGroupVariantProps = {
-  [K in keyof RadioGroupVariant]?: ConditionalValue<RadioGroupVariant[K]> | undefined
+  [K in keyof RadioGroupVariant]?:
+    | ConditionalValue<RadioGroupVariant[K]>
+    | undefined
 }
 
 export type RadioGroupVariantMap = {
   [K in keyof RadioGroupVariant]: Array<RadioGroupVariant[K]>
 }
 
-// RatingGroup
-
-export type RatingGroupSlot = "root" | "label" | "item" | "control" | "itemIndicator"
+export type RatingGroupSlot =
+  | "root"
+  | "label"
+  | "item"
+  | "control"
+  | "itemIndicator"
 
 export interface RatingGroupVariant {
   /** @default "md" */
@@ -1005,16 +1152,22 @@ export interface RatingGroupVariant {
 }
 
 export type RatingGroupVariantProps = {
-  [K in keyof RatingGroupVariant]?: ConditionalValue<RatingGroupVariant[K]> | undefined
+  [K in keyof RatingGroupVariant]?:
+    | ConditionalValue<RatingGroupVariant[K]>
+    | undefined
 }
 
 export type RatingGroupVariantMap = {
   [K in keyof RatingGroupVariant]: Array<RatingGroupVariant[K]>
 }
 
-// ScrollArea
-
-export type ScrollAreaSlot = "root" | "viewport" | "content" | "scrollbar" | "thumb" | "corner"
+export type ScrollAreaSlot =
+  | "root"
+  | "viewport"
+  | "content"
+  | "scrollbar"
+  | "thumb"
+  | "corner"
 
 export interface ScrollAreaVariant {
   /** @default "hover" */
@@ -1024,16 +1177,22 @@ export interface ScrollAreaVariant {
 }
 
 export type ScrollAreaVariantProps = {
-  [K in keyof ScrollAreaVariant]?: ConditionalValue<ScrollAreaVariant[K]> | undefined
+  [K in keyof ScrollAreaVariant]?:
+    | ConditionalValue<ScrollAreaVariant[K]>
+    | undefined
 }
 
 export type ScrollAreaVariantMap = {
   [K in keyof ScrollAreaVariant]: Array<ScrollAreaVariant[K]>
 }
 
-// SegmentGroup
-
-export type SegmentGroupSlot = "root" | "label" | "item" | "itemText" | "itemControl" | "indicator"
+export type SegmentGroupSlot =
+  | "root"
+  | "label"
+  | "item"
+  | "itemText"
+  | "itemControl"
+  | "indicator"
 
 export interface SegmentGroupVariant {
   /** @default "md" */
@@ -1041,14 +1200,14 @@ export interface SegmentGroupVariant {
 }
 
 export type SegmentGroupVariantProps = {
-  [K in keyof SegmentGroupVariant]?: ConditionalValue<SegmentGroupVariant[K]> | undefined
+  [K in keyof SegmentGroupVariant]?:
+    | ConditionalValue<SegmentGroupVariant[K]>
+    | undefined
 }
 
 export type SegmentGroupVariantMap = {
   [K in keyof SegmentGroupVariant]: Array<SegmentGroupVariant[K]>
 }
-
-// Select
 
 export type SelectSlot =
   | "label"
@@ -1083,8 +1242,6 @@ export type SelectVariantMap = {
   [K in keyof SelectVariant]: Array<SelectVariant[K]>
 }
 
-// Combobox
-
 export type ComboboxSlot =
   | "root"
   | "clearTrigger"
@@ -1112,14 +1269,14 @@ export interface ComboboxVariant {
 }
 
 export type ComboboxVariantProps = {
-  [K in keyof ComboboxVariant]?: ConditionalValue<ComboboxVariant[K]> | undefined
+  [K in keyof ComboboxVariant]?:
+    | ConditionalValue<ComboboxVariant[K]>
+    | undefined
 }
 
 export type ComboboxVariantMap = {
   [K in keyof ComboboxVariant]: Array<ComboboxVariant[K]>
 }
-
-// Slider
 
 export type SliderSlot =
   | "root"
@@ -1151,9 +1308,13 @@ export type SliderVariantMap = {
   [K in keyof SliderVariant]: Array<SliderVariant[K]>
 }
 
-// Stat
-
-export type StatSlot = "root" | "label" | "helpText" | "valueText" | "valueUnit" | "indicator"
+export type StatSlot =
+  | "root"
+  | "label"
+  | "helpText"
+  | "valueText"
+  | "valueUnit"
+  | "indicator"
 
 export interface StatVariant {
   /** @default "md" */
@@ -1167,8 +1328,6 @@ export type StatVariantProps = {
 export type StatVariantMap = {
   [K in keyof StatVariant]: Array<StatVariant[K]>
 }
-
-// Steps
 
 export type StepsSlot =
   | "root"
@@ -1201,8 +1360,6 @@ export type StepsVariantMap = {
   [K in keyof StepsVariant]: Array<StepsVariant[K]>
 }
 
-// Switch
-
 export type SwitchSlot = "root" | "label" | "control" | "thumb" | "indicator"
 
 export interface SwitchVariant {
@@ -1220,9 +1377,15 @@ export type SwitchVariantMap = {
   [K in keyof SwitchVariant]: Array<SwitchVariant[K]>
 }
 
-// Table
-
-export type TableSlot = "root" | "header" | "body" | "row" | "columnHeader" | "cell" | "footer" | "caption"
+export type TableSlot =
+  | "root"
+  | "header"
+  | "body"
+  | "row"
+  | "columnHeader"
+  | "cell"
+  | "footer"
+  | "caption"
 
 export interface TableVariant {
   interactive?: boolean | undefined
@@ -1243,9 +1406,13 @@ export type TableVariantMap = {
   [K in keyof TableVariant]: Array<TableVariant[K]>
 }
 
-// Tabs
-
-export type TabsSlot = "root" | "trigger" | "list" | "content" | "contentGroup" | "indicator"
+export type TabsSlot =
+  | "root"
+  | "trigger"
+  | "list"
+  | "content"
+  | "contentGroup"
+  | "indicator"
 
 export interface TabsVariant {
   fitted?: boolean | undefined
@@ -1264,9 +1431,12 @@ export type TabsVariantMap = {
   [K in keyof TabsVariant]: Array<TabsVariant[K]>
 }
 
-// Tag
-
-export type TagSlot = "root" | "label" | "closeTrigger" | "startElement" | "endElement"
+export type TagSlot =
+  | "root"
+  | "label"
+  | "closeTrigger"
+  | "startElement"
+  | "endElement"
 
 export interface TagVariant {
   /** @default "md" */
@@ -1283,9 +1453,17 @@ export type TagVariantMap = {
   [K in keyof TagVariant]: Array<TagVariant[K]>
 }
 
-// TagsInput
-
-export type TagsInputSlot = "root" | "label" | "control" | "input" | "clearTrigger" | "item" | "itemPreview" | "itemInput" | "itemText" | "itemDeleteTrigger"
+export type TagsInputSlot =
+  | "root"
+  | "label"
+  | "control"
+  | "input"
+  | "clearTrigger"
+  | "item"
+  | "itemPreview"
+  | "itemInput"
+  | "itemText"
+  | "itemDeleteTrigger"
 
 export interface TagsInputVariant {
   /** @default "md" */
@@ -1295,16 +1473,22 @@ export interface TagsInputVariant {
 }
 
 export type TagsInputVariantProps = {
-  [K in keyof TagsInputVariant]?: ConditionalValue<TagsInputVariant[K]> | undefined
+  [K in keyof TagsInputVariant]?:
+    | ConditionalValue<TagsInputVariant[K]>
+    | undefined
 }
 
 export type TagsInputVariantMap = {
   [K in keyof TagsInputVariant]: Array<TagsInputVariant[K]>
 }
 
-// Toast
-
-export type ToastSlot = "root" | "title" | "description" | "indicator" | "closeTrigger" | "actionTrigger"
+export type ToastSlot =
+  | "root"
+  | "title"
+  | "description"
+  | "indicator"
+  | "closeTrigger"
+  | "actionTrigger"
 
 export interface ToastVariant {}
 
@@ -1316,9 +1500,12 @@ export type ToastVariantMap = {
   [K in keyof ToastVariant]: Array<ToastVariant[K]>
 }
 
-// Tooltip
-
-export type TooltipSlot = "trigger" | "arrow" | "arrowTip" | "positioner" | "content"
+export type TooltipSlot =
+  | "trigger"
+  | "arrow"
+  | "arrowTip"
+  | "positioner"
+  | "content"
 
 export interface TooltipVariant {}
 
@@ -1329,8 +1516,6 @@ export type TooltipVariantProps = {
 export type TooltipVariantMap = {
   [K in keyof TooltipVariant]: Array<TooltipVariant[K]>
 }
-
-// Status
 
 export type StatusSlot = "root" | "indicator"
 
@@ -1347,28 +1532,33 @@ export type StatusVariantMap = {
   [K in keyof StatusVariant]: Array<StatusVariant[K]>
 }
 
-// Timeline
-
-export type TimelineSlot = "root" | "item" | "content" | "separator" | "indicator" | "connector" | "title" | "description"
+export type TimelineSlot =
+  | "root"
+  | "item"
+  | "content"
+  | "separator"
+  | "indicator"
+  | "connector"
+  | "title"
+  | "description"
 
 export interface TimelineVariant {
   /** @default "solid" */
   variant?: "subtle" | "solid" | "outline" | "plain" | undefined
-  /** @default false */
   showLastSeparator?: boolean | undefined
   /** @default "md" */
   size?: "sm" | "md" | "lg" | "xl" | undefined
 }
 
 export type TimelineVariantProps = {
-  [K in keyof TimelineVariant]?: ConditionalValue<TimelineVariant[K]> | undefined
+  [K in keyof TimelineVariant]?:
+    | ConditionalValue<TimelineVariant[K]>
+    | undefined
 }
 
 export type TimelineVariantMap = {
   [K in keyof TimelineVariant]: Array<TimelineVariant[K]>
 }
-
-// ColorPicker
 
 export type ColorPickerSlot =
   | "root"
@@ -1406,16 +1596,21 @@ export interface ColorPickerVariant {
 }
 
 export type ColorPickerVariantProps = {
-  [K in keyof ColorPickerVariant]?: ConditionalValue<ColorPickerVariant[K]> | undefined
+  [K in keyof ColorPickerVariant]?:
+    | ConditionalValue<ColorPickerVariant[K]>
+    | undefined
 }
 
 export type ColorPickerVariantMap = {
   [K in keyof ColorPickerVariant]: Array<ColorPickerVariant[K]>
 }
 
-// QrCode
-
-export type QrCodeSlot = "root" | "frame" | "pattern" | "overlay" | "downloadTrigger"
+export type QrCodeSlot =
+  | "root"
+  | "frame"
+  | "pattern"
+  | "overlay"
+  | "downloadTrigger"
 
 export interface QrCodeVariant {
   /** @default "md" */
@@ -1429,8 +1624,6 @@ export type QrCodeVariantProps = {
 export type QrCodeVariantMap = {
   [K in keyof QrCodeVariant]: Array<QrCodeVariant[K]>
 }
-
-// TreeView
 
 export type TreeViewSlot =
   | "branch"
@@ -1458,133 +1651,301 @@ export interface TreeViewVariant {
 }
 
 export type TreeViewVariantProps = {
-  [K in keyof TreeViewVariant]?: ConditionalValue<TreeViewVariant[K]> | undefined
+  [K in keyof TreeViewVariant]?:
+    | ConditionalValue<TreeViewVariant[K]>
+    | undefined
 }
 
 export type TreeViewVariantMap = {
   [K in keyof TreeViewVariant]: Array<TreeViewVariant[K]>
 }
 
-type ChakraBuiltinSlotRecipes = {
-  accordion: SystemSlotRecipeFn<AccordionSlot, AccordionVariantProps, AccordionVariantMap>
-  actionBar: SystemSlotRecipeFn<ActionBarSlot, ActionBarVariantProps, ActionBarVariantMap>
-  alert: SystemSlotRecipeFn<AlertSlot, AlertVariantProps, AlertVariantMap>
-  avatar: SystemSlotRecipeFn<AvatarSlot, AvatarVariantProps, AvatarVariantMap>
-  blockquote: SystemSlotRecipeFn<BlockquoteSlot, BlockquoteVariantProps, BlockquoteVariantMap>
-  breadcrumb: SystemSlotRecipeFn<BreadcrumbSlot, BreadcrumbVariantProps, BreadcrumbVariantMap>
-  card: SystemSlotRecipeFn<CardSlot, CardVariantProps, CardVariantMap>
-  carousel: SystemSlotRecipeFn<CarouselSlot, CarouselVariantProps, CarouselVariantMap>
-  checkbox: SystemSlotRecipeFn<CheckboxSlot, CheckboxVariantProps, CheckboxVariantMap>
-  checkboxCard: SystemSlotRecipeFn<CheckboxCardSlot, CheckboxCardVariantProps, CheckboxCardVariantMap>
-  codeBlock: SystemSlotRecipeFn<CodeBlockSlot, CodeBlockVariantProps, CodeBlockVariantMap>
-  collapsible: SystemSlotRecipeFn<CollapsibleSlot, CollapsibleVariantProps, CollapsibleVariantMap>
-  dataList: SystemSlotRecipeFn<DataListSlot, DataListVariantProps, DataListVariantMap>
-  dialog: SystemSlotRecipeFn<DialogSlot, DialogVariantProps, DialogVariantMap>
-  drawer: SystemSlotRecipeFn<DrawerSlot, DrawerVariantProps, DrawerVariantMap>
-  editable: SystemSlotRecipeFn<EditableSlot, EditableVariantProps, EditableVariantMap>
-  emptyState: SystemSlotRecipeFn<EmptyStateSlot, EmptyStateVariantProps, EmptyStateVariantMap>
-  field: SystemSlotRecipeFn<FieldSlot, FieldVariantProps, FieldVariantMap>
-  fieldset: SystemSlotRecipeFn<FieldsetSlot, FieldsetVariantProps, FieldsetVariantMap>
-  fileUpload: SystemSlotRecipeFn<FileUploadSlot, FileUploadVariantProps, FileUploadVariantMap>
-  hoverCard: SystemSlotRecipeFn<HoverCardSlot, HoverCardVariantProps, HoverCardVariantMap>
-  list: SystemSlotRecipeFn<ListSlot, ListVariantProps, ListVariantMap>
-  listbox: SystemSlotRecipeFn<ListboxSlot, ListboxVariantProps, ListboxVariantMap>
-  menu: SystemSlotRecipeFn<MenuSlot, MenuVariantProps, MenuVariantMap>
-  nativeSelect: SystemSlotRecipeFn<NativeSelectSlot, NativeSelectVariantProps, NativeSelectVariantMap>
-  numberInput: SystemSlotRecipeFn<NumberInputSlot, NumberInputVariantProps, NumberInputVariantMap>
-  pinInput: SystemSlotRecipeFn<PinInputSlot, PinInputVariantProps, PinInputVariantMap>
-  popover: SystemSlotRecipeFn<PopoverSlot, PopoverVariantProps, PopoverVariantMap>
-  progress: SystemSlotRecipeFn<ProgressSlot, ProgressVariantProps, ProgressVariantMap>
-  progressCircle: SystemSlotRecipeFn<ProgressCircleSlot, ProgressCircleVariantProps, ProgressCircleVariantMap>
-  radioCard: SystemSlotRecipeFn<RadioCardSlot, RadioCardVariantProps, RadioCardVariantMap>
-  radioGroup: SystemSlotRecipeFn<RadioGroupSlot, RadioGroupVariantProps, RadioGroupVariantMap>
-  ratingGroup: SystemSlotRecipeFn<RatingGroupSlot, RatingGroupVariantProps, RatingGroupVariantMap>
-  scrollArea: SystemSlotRecipeFn<ScrollAreaSlot, ScrollAreaVariantProps, ScrollAreaVariantMap>
-  segmentGroup: SystemSlotRecipeFn<SegmentGroupSlot, SegmentGroupVariantProps, SegmentGroupVariantMap>
-  select: SystemSlotRecipeFn<SelectSlot, SelectVariantProps, SelectVariantMap>
-  combobox: SystemSlotRecipeFn<ComboboxSlot, ComboboxVariantProps, ComboboxVariantMap>
-  slider: SystemSlotRecipeFn<SliderSlot, SliderVariantProps, SliderVariantMap>
-  stat: SystemSlotRecipeFn<StatSlot, StatVariantProps, StatVariantMap>
-  steps: SystemSlotRecipeFn<StepsSlot, StepsVariantProps, StepsVariantMap>
-  switch: SystemSlotRecipeFn<SwitchSlot, SwitchVariantProps, SwitchVariantMap>
-  table: SystemSlotRecipeFn<TableSlot, TableVariantProps, TableVariantMap>
-  tabs: SystemSlotRecipeFn<TabsSlot, TabsVariantProps, TabsVariantMap>
-  tag: SystemSlotRecipeFn<TagSlot, TagVariantProps, TagVariantMap>
-  tagsInput: SystemSlotRecipeFn<TagsInputSlot, TagsInputVariantProps, TagsInputVariantMap>
-  toast: SystemSlotRecipeFn<ToastSlot, ToastVariantProps, ToastVariantMap>
-  tooltip: SystemSlotRecipeFn<TooltipSlot, TooltipVariantProps, TooltipVariantMap>
-  status: SystemSlotRecipeFn<StatusSlot, StatusVariantProps, StatusVariantMap>
-  timeline: SystemSlotRecipeFn<TimelineSlot, TimelineVariantProps, TimelineVariantMap>
-  colorPicker: SystemSlotRecipeFn<ColorPickerSlot, ColorPickerVariantProps, ColorPickerVariantMap>
-  qrCode: SystemSlotRecipeFn<QrCodeSlot, QrCodeVariantProps, QrCodeVariantMap>
-  treeView: SystemSlotRecipeFn<TreeViewSlot, TreeViewVariantProps, TreeViewVariantMap>
+export type HeroCardSlot = "root" | "badge" | "body"
+
+export interface HeroCardVariant {
+  /** @default "primary" */
+  tone?: "primary" | "secondary" | undefined
 }
 
-export type ConfigSlotRecipes = ChakraBuiltinSlotRecipes & ChakraCustomSlotRecipeConfig
-
-type ChakraBuiltinRecipeSlots = {
-  accordion: AccordionSlot
-  actionBar: ActionBarSlot
-  alert: AlertSlot
-  avatar: AvatarSlot
-  blockquote: BlockquoteSlot
-  breadcrumb: BreadcrumbSlot
-  card: CardSlot
-  carousel: CarouselSlot
-  checkbox: CheckboxSlot
-  checkboxCard: CheckboxCardSlot
-  codeBlock: CodeBlockSlot
-  collapsible: CollapsibleSlot
-  dataList: DataListSlot
-  dialog: DialogSlot
-  drawer: DrawerSlot
-  editable: EditableSlot
-  emptyState: EmptyStateSlot
-  field: FieldSlot
-  fieldset: FieldsetSlot
-  fileUpload: FileUploadSlot
-  hoverCard: HoverCardSlot
-  list: ListSlot
-  listbox: ListboxSlot
-  menu: MenuSlot
-  nativeSelect: NativeSelectSlot
-  numberInput: NumberInputSlot
-  pinInput: PinInputSlot
-  popover: PopoverSlot
-  progress: ProgressSlot
-  progressCircle: ProgressCircleSlot
-  radioCard: RadioCardSlot
-  radioGroup: RadioGroupSlot
-  ratingGroup: RatingGroupSlot
-  scrollArea: ScrollAreaSlot
-  segmentGroup: SegmentGroupSlot
-  select: SelectSlot
-  combobox: ComboboxSlot
-  slider: SliderSlot
-  stat: StatSlot
-  steps: StepsSlot
-  switch: SwitchSlot
-  table: TableSlot
-  tabs: TabsSlot
-  tag: TagSlot
-  tagsInput: TagsInputSlot
-  toast: ToastSlot
-  tooltip: TooltipSlot
-  status: StatusSlot
-  timeline: TimelineSlot
-  colorPicker: ColorPickerSlot
-  qrCode: QrCodeSlot
-  treeView: TreeViewSlot
+export type HeroCardVariantProps = {
+  [K in keyof HeroCardVariant]?:
+    | ConditionalValue<HeroCardVariant[K]>
+    | undefined
 }
 
-export type ConfigRecipeSlots = ChakraBuiltinRecipeSlots & ChakraCustomRecipeSlots
+export type HeroCardVariantMap = {
+  [K in keyof HeroCardVariant]: Array<HeroCardVariant[K]>
+}
 
-export type SlotRecipeRecord<T, K> = T extends keyof ConfigRecipeSlots ? Record<ConfigRecipeSlots[T], K> : Record<string, K>
+declare module "@chakra-ui/react/typegen" {
+  interface ChakraCustomRecipeConfig {
+    badge: SystemRecipeFn<BadgeVariantProps, BadgeVariantMap>
+    button: SystemRecipeFn<ButtonVariantProps, ButtonVariantMap>
+    code: SystemRecipeFn<CodeVariantProps, CodeVariantMap>
+    container: SystemRecipeFn<ContainerVariantProps, ContainerVariantMap>
+    heading: SystemRecipeFn<HeadingVariantProps, HeadingVariantMap>
+    input: SystemRecipeFn<InputVariantProps, InputVariantMap>
+    inputAddon: SystemRecipeFn<InputAddonVariantProps, InputAddonVariantMap>
+    kbd: SystemRecipeFn<KbdVariantProps, KbdVariantMap>
+    link: SystemRecipeFn<LinkVariantProps, LinkVariantMap>
+    mark: SystemRecipeFn<MarkVariantProps, MarkVariantMap>
+    separator: SystemRecipeFn<SeparatorVariantProps, SeparatorVariantMap>
+    skeleton: SystemRecipeFn<SkeletonVariantProps, SkeletonVariantMap>
+    skipNavLink: SystemRecipeFn<SkipNavLinkVariantProps, SkipNavLinkVariantMap>
+    spinner: SystemRecipeFn<SpinnerVariantProps, SpinnerVariantMap>
+    textarea: SystemRecipeFn<TextareaVariantProps, TextareaVariantMap>
+    icon: SystemRecipeFn<IconVariantProps, IconVariantMap>
+    checkmark: SystemRecipeFn<CheckmarkVariantProps, CheckmarkVariantMap>
+    radiomark: SystemRecipeFn<RadiomarkVariantProps, RadiomarkVariantMap>
+    colorSwatch: SystemRecipeFn<ColorSwatchVariantProps, ColorSwatchVariantMap>
+    brandChip: SystemRecipeFn<BrandChipVariantProps, BrandChipVariantMap>
+  }
 
-export type SlotRecipeProps<T> = T extends keyof ConfigSlotRecipes
-  ? ConfigSlotRecipes[T]["__type"] & { recipe?: SlotRecipeDefinition | undefined }
-  : { recipe?: SlotRecipeDefinition | undefined }
+  interface ChakraCustomSlotRecipeConfig {
+    accordion: SystemSlotRecipeFn<
+      AccordionSlot,
+      AccordionVariantProps,
+      AccordionVariantMap
+    >
+    actionBar: SystemSlotRecipeFn<
+      ActionBarSlot,
+      ActionBarVariantProps,
+      ActionBarVariantMap
+    >
+    alert: SystemSlotRecipeFn<AlertSlot, AlertVariantProps, AlertVariantMap>
+    avatar: SystemSlotRecipeFn<AvatarSlot, AvatarVariantProps, AvatarVariantMap>
+    blockquote: SystemSlotRecipeFn<
+      BlockquoteSlot,
+      BlockquoteVariantProps,
+      BlockquoteVariantMap
+    >
+    breadcrumb: SystemSlotRecipeFn<
+      BreadcrumbSlot,
+      BreadcrumbVariantProps,
+      BreadcrumbVariantMap
+    >
+    card: SystemSlotRecipeFn<CardSlot, CardVariantProps, CardVariantMap>
+    carousel: SystemSlotRecipeFn<
+      CarouselSlot,
+      CarouselVariantProps,
+      CarouselVariantMap
+    >
+    checkbox: SystemSlotRecipeFn<
+      CheckboxSlot,
+      CheckboxVariantProps,
+      CheckboxVariantMap
+    >
+    checkboxCard: SystemSlotRecipeFn<
+      CheckboxCardSlot,
+      CheckboxCardVariantProps,
+      CheckboxCardVariantMap
+    >
+    codeBlock: SystemSlotRecipeFn<
+      CodeBlockSlot,
+      CodeBlockVariantProps,
+      CodeBlockVariantMap
+    >
+    collapsible: SystemSlotRecipeFn<
+      CollapsibleSlot,
+      CollapsibleVariantProps,
+      CollapsibleVariantMap
+    >
+    dataList: SystemSlotRecipeFn<
+      DataListSlot,
+      DataListVariantProps,
+      DataListVariantMap
+    >
+    dialog: SystemSlotRecipeFn<DialogSlot, DialogVariantProps, DialogVariantMap>
+    drawer: SystemSlotRecipeFn<DrawerSlot, DrawerVariantProps, DrawerVariantMap>
+    editable: SystemSlotRecipeFn<
+      EditableSlot,
+      EditableVariantProps,
+      EditableVariantMap
+    >
+    emptyState: SystemSlotRecipeFn<
+      EmptyStateSlot,
+      EmptyStateVariantProps,
+      EmptyStateVariantMap
+    >
+    field: SystemSlotRecipeFn<FieldSlot, FieldVariantProps, FieldVariantMap>
+    fieldset: SystemSlotRecipeFn<
+      FieldsetSlot,
+      FieldsetVariantProps,
+      FieldsetVariantMap
+    >
+    fileUpload: SystemSlotRecipeFn<
+      FileUploadSlot,
+      FileUploadVariantProps,
+      FileUploadVariantMap
+    >
+    hoverCard: SystemSlotRecipeFn<
+      HoverCardSlot,
+      HoverCardVariantProps,
+      HoverCardVariantMap
+    >
+    list: SystemSlotRecipeFn<ListSlot, ListVariantProps, ListVariantMap>
+    listbox: SystemSlotRecipeFn<
+      ListboxSlot,
+      ListboxVariantProps,
+      ListboxVariantMap
+    >
+    menu: SystemSlotRecipeFn<MenuSlot, MenuVariantProps, MenuVariantMap>
+    nativeSelect: SystemSlotRecipeFn<
+      NativeSelectSlot,
+      NativeSelectVariantProps,
+      NativeSelectVariantMap
+    >
+    numberInput: SystemSlotRecipeFn<
+      NumberInputSlot,
+      NumberInputVariantProps,
+      NumberInputVariantMap
+    >
+    pinInput: SystemSlotRecipeFn<
+      PinInputSlot,
+      PinInputVariantProps,
+      PinInputVariantMap
+    >
+    popover: SystemSlotRecipeFn<
+      PopoverSlot,
+      PopoverVariantProps,
+      PopoverVariantMap
+    >
+    progress: SystemSlotRecipeFn<
+      ProgressSlot,
+      ProgressVariantProps,
+      ProgressVariantMap
+    >
+    progressCircle: SystemSlotRecipeFn<
+      ProgressCircleSlot,
+      ProgressCircleVariantProps,
+      ProgressCircleVariantMap
+    >
+    radioCard: SystemSlotRecipeFn<
+      RadioCardSlot,
+      RadioCardVariantProps,
+      RadioCardVariantMap
+    >
+    radioGroup: SystemSlotRecipeFn<
+      RadioGroupSlot,
+      RadioGroupVariantProps,
+      RadioGroupVariantMap
+    >
+    ratingGroup: SystemSlotRecipeFn<
+      RatingGroupSlot,
+      RatingGroupVariantProps,
+      RatingGroupVariantMap
+    >
+    scrollArea: SystemSlotRecipeFn<
+      ScrollAreaSlot,
+      ScrollAreaVariantProps,
+      ScrollAreaVariantMap
+    >
+    segmentGroup: SystemSlotRecipeFn<
+      SegmentGroupSlot,
+      SegmentGroupVariantProps,
+      SegmentGroupVariantMap
+    >
+    select: SystemSlotRecipeFn<SelectSlot, SelectVariantProps, SelectVariantMap>
+    combobox: SystemSlotRecipeFn<
+      ComboboxSlot,
+      ComboboxVariantProps,
+      ComboboxVariantMap
+    >
+    slider: SystemSlotRecipeFn<SliderSlot, SliderVariantProps, SliderVariantMap>
+    stat: SystemSlotRecipeFn<StatSlot, StatVariantProps, StatVariantMap>
+    steps: SystemSlotRecipeFn<StepsSlot, StepsVariantProps, StepsVariantMap>
+    switch: SystemSlotRecipeFn<SwitchSlot, SwitchVariantProps, SwitchVariantMap>
+    table: SystemSlotRecipeFn<TableSlot, TableVariantProps, TableVariantMap>
+    tabs: SystemSlotRecipeFn<TabsSlot, TabsVariantProps, TabsVariantMap>
+    tag: SystemSlotRecipeFn<TagSlot, TagVariantProps, TagVariantMap>
+    tagsInput: SystemSlotRecipeFn<
+      TagsInputSlot,
+      TagsInputVariantProps,
+      TagsInputVariantMap
+    >
+    toast: SystemSlotRecipeFn<ToastSlot, ToastVariantProps, ToastVariantMap>
+    tooltip: SystemSlotRecipeFn<
+      TooltipSlot,
+      TooltipVariantProps,
+      TooltipVariantMap
+    >
+    status: SystemSlotRecipeFn<StatusSlot, StatusVariantProps, StatusVariantMap>
+    timeline: SystemSlotRecipeFn<
+      TimelineSlot,
+      TimelineVariantProps,
+      TimelineVariantMap
+    >
+    colorPicker: SystemSlotRecipeFn<
+      ColorPickerSlot,
+      ColorPickerVariantProps,
+      ColorPickerVariantMap
+    >
+    qrCode: SystemSlotRecipeFn<QrCodeSlot, QrCodeVariantProps, QrCodeVariantMap>
+    treeView: SystemSlotRecipeFn<
+      TreeViewSlot,
+      TreeViewVariantProps,
+      TreeViewVariantMap
+    >
+    heroCard: SystemSlotRecipeFn<
+      HeroCardSlot,
+      HeroCardVariantProps,
+      HeroCardVariantMap
+    >
+  }
 
-export type RecipeProps<T> = T extends keyof ConfigRecipes
-  ? ConfigRecipes[T]["__type"] & { recipe?: RecipeDefinition | undefined }
-  : { recipe?: RecipeDefinition | undefined }
+  interface ChakraCustomRecipeSlots {
+    accordion: AccordionSlot
+    actionBar: ActionBarSlot
+    alert: AlertSlot
+    avatar: AvatarSlot
+    blockquote: BlockquoteSlot
+    breadcrumb: BreadcrumbSlot
+    card: CardSlot
+    carousel: CarouselSlot
+    checkbox: CheckboxSlot
+    checkboxCard: CheckboxCardSlot
+    codeBlock: CodeBlockSlot
+    collapsible: CollapsibleSlot
+    dataList: DataListSlot
+    dialog: DialogSlot
+    drawer: DrawerSlot
+    editable: EditableSlot
+    emptyState: EmptyStateSlot
+    field: FieldSlot
+    fieldset: FieldsetSlot
+    fileUpload: FileUploadSlot
+    hoverCard: HoverCardSlot
+    list: ListSlot
+    listbox: ListboxSlot
+    menu: MenuSlot
+    nativeSelect: NativeSelectSlot
+    numberInput: NumberInputSlot
+    pinInput: PinInputSlot
+    popover: PopoverSlot
+    progress: ProgressSlot
+    progressCircle: ProgressCircleSlot
+    radioCard: RadioCardSlot
+    radioGroup: RadioGroupSlot
+    ratingGroup: RatingGroupSlot
+    scrollArea: ScrollAreaSlot
+    segmentGroup: SegmentGroupSlot
+    select: SelectSlot
+    combobox: ComboboxSlot
+    slider: SliderSlot
+    stat: StatSlot
+    steps: StepsSlot
+    switch: SwitchSlot
+    table: TableSlot
+    tabs: TabsSlot
+    tag: TagSlot
+    tagsInput: TagsInputSlot
+    toast: ToastSlot
+    tooltip: TooltipSlot
+    status: StatusSlot
+    timeline: TimelineSlot
+    colorPicker: ColorPickerSlot
+    qrCode: QrCodeSlot
+    treeView: TreeViewSlot
+    heroCard: HeroCardSlot
+  }
+}

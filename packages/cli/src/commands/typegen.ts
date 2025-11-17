@@ -6,6 +6,7 @@ import { writeFileSync } from "fs"
 import { createRequire } from "node:module"
 import { join, resolve } from "node:path"
 import { generateCondition } from "../utils/generate-conditions"
+import { generateIsolatedRecipes } from "../utils/generate-isolated-recipes"
 import { generateIsolatedTokens } from "../utils/generate-isolated-tokens"
 import { generatePropTypes } from "../utils/generate-prop-types"
 import { generateRecipe } from "../utils/generate-recipe"
@@ -112,6 +113,17 @@ function codegen(sys: SystemContext, flags: ResolvedCodegenFlags) {
             generateIsolatedTokens(sys),
           )
           return "✅ Generated isolated token typings"
+        },
+      },
+      {
+        title: "Generating isolated recipe types...",
+        task: async () => {
+          await io.write(
+            flags.outdir,
+            "recipes.isolated",
+            generateIsolatedRecipes(sys, flags.strict),
+          )
+          return "✅ Generated isolated recipe typings"
         },
       },
     ])

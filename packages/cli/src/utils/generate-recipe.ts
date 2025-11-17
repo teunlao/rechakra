@@ -46,19 +46,21 @@ export async function generateRecipe(sys: SystemContext, strict = true) {
   })
 
   const recipeKeys = Object.keys(sysRecipes)
+  const recipeEntries = recipeKeys.length
+    ? Object.keys(sysRecipes)
+        .map((key) => {
+          const upperName = capitalize(key)
+          return `${key}: SystemRecipeFn<${upperName}VariantProps, ${upperName}VariantMap>`
+        })
+        .join("\n")
+    : "[key: string]: SystemRecipeFn<any>"
+
   const recipeRecord = `
-     export interface ConfigRecipes {
-      ${
-        recipeKeys.length
-          ? Object.keys(sysRecipes)
-              .map((key) => {
-                const upperName = capitalize(key)
-                return `${key}: SystemRecipeFn<${upperName}VariantProps, ${upperName}VariantMap>`
-              })
-              .join("\n")
-          : "[key: string]: SystemRecipeFn<any>"
-      }
+     type ChakraBuiltinRecipes = {
+      ${recipeEntries}
      }
+
+     export type ConfigRecipes = ChakraBuiltinRecipes & ChakraCustomRecipeConfig
     `
 
   const recipeResult = [recipes.join("\n"), recipeRecord].join("\n")
@@ -105,29 +107,31 @@ export async function generateRecipe(sys: SystemContext, strict = true) {
     return str
   })
 
+  const slotRecipeEntries = slotRecipeKeys.length
+    ? slotRecipeKeys
+        .map((key) => {
+          const upperName = capitalize(key)
+          return `${key}: SystemSlotRecipeFn<${upperName}Slot, ${upperName}VariantProps, ${upperName}VariantMap>`
+        })
+        .join("\n")
+    : "[key: string]: SystemSlotRecipeFn<string, any>"
+
+  const slotRecordEntries = slotRecipeKeys.length
+    ? slotRecipeKeys.map((key) => `${key}: ${capitalize(key)}Slot`).join("\n")
+    : "[key: string]: string"
+
   const slotRecipeRecord = `
-     export interface ConfigSlotRecipes {
-      ${
-        slotRecipeKeys.length
-          ? slotRecipeKeys
-              .map((key) => {
-                const upperName = capitalize(key)
-                return `${key}: SystemSlotRecipeFn<${upperName}Slot, ${upperName}VariantProps, ${upperName}VariantMap>`
-              })
-              .join("\n")
-          : "[key: string]: SystemSlotRecipeFn<string, any>"
-      }
+     type ChakraBuiltinSlotRecipes = {
+      ${slotRecipeEntries}
      }
 
-     export interface ConfigRecipeSlots {
-       ${
-         slotRecipeKeys.length
-           ? slotRecipeKeys
-               .map((key) => `${key}: ${capitalize(key)}Slot`)
-               .join("\n")
-           : "[key: string]: string"
-       }
+     export type ConfigSlotRecipes = ChakraBuiltinSlotRecipes & ChakraCustomSlotRecipeConfig
+
+     type ChakraBuiltinRecipeSlots = {
+       ${slotRecordEntries}
     }
+
+     export type ConfigRecipeSlots = ChakraBuiltinRecipeSlots & ChakraCustomRecipeSlots
     `
 
   const slotRecipeResult = [slotRecipes.join("\n"), slotRecipeRecord].join("\n")
@@ -136,6 +140,7 @@ export async function generateRecipe(sys: SystemContext, strict = true) {
     [
       'import type { RecipeDefinition, SlotRecipeDefinition, SystemRecipeFn, SystemSlotRecipeFn } from "../recipe.types"',
       'import type { ConditionalValue } from "../css.types"',
+      'import type { ChakraCustomRecipeConfig, ChakraCustomSlotRecipeConfig, ChakraCustomRecipeSlots } from "@chakra-ui/react/typegen"',
       recipeResult,
       slotRecipeResult,
       `

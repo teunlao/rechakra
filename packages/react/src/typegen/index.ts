@@ -1,5 +1,11 @@
 export interface ChakraCustomTypeGen {}
 
+export interface ChakraCustomRecipeConfig {}
+
+export interface ChakraCustomSlotRecipeConfig {}
+
+export interface ChakraCustomRecipeSlots {}
+
 export type ChakraTokenTree = {
   [Key in string]?: true | ChakraTokenTree
 }
