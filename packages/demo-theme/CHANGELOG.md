@@ -1,5 +1,12 @@
 # @rechakra/demo-theme
 
+## 1.0.4
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @rechakra/react@1.0.4
+
 ## 1.0.3
 
 ### Patch Changes

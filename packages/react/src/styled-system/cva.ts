@@ -33,7 +33,10 @@ export function createRecipeFn(options: Options): RecipeCreatorFn {
 
   function cva(config: Dict = {}) {
     const defaultsConfig = defaults(config)
-    const { base, defaultVariants, compoundVariants } = defaultsConfig
+    const { defaultVariants, compoundVariants } = defaultsConfig
+
+    // Normalize base styles to prevent shorthand/longhand conflicts with variants
+    const base = normalize(defaultsConfig.base)
 
     const variants = mapEntries(defaultsConfig.variants, (key, obj) => [
       key,

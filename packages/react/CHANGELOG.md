@@ -1,5 +1,29 @@
 # @rechakra/react
 
+## 1.0.4
+
+### Patch Changes
+
+- Fix recipe base styles not being normalized, causing shorthand property
+  conflicts with variants.
+
+  When a recipe had shorthand properties (like `rounded`) in both `base` and
+  `variants.size`, the base shorthand would overwrite the variant's normalized
+  longhand during final CSS generation.
+
+  Example that now works correctly:
+
+  ```tsx
+  const recipe = defineRecipe({
+    base: { rounded: "1rem" },
+    variants: {
+      size: {
+        md: { rounded: "100px" }, // Now correctly overrides base
+      },
+    },
+  })
+  ```
+
 ## 1.0.3
 
 ### Patch Changes
