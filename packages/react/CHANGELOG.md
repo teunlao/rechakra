@@ -1,5 +1,14 @@
 # @rechakra/react
 
+## 1.0.5
+
+### Patch Changes
+
+- [`0e99dc8`](https://github.com/teunlao/rechakra/commit/0e99dc8477802a9af34d39b27ee609d9a0c32a45)
+  Thanks [@teunlao](https://github.com/teunlao)! - Disable modal side-effects by
+  default in `DialogRoot` (no focus trap, scroll lock, or aria-hidden) to reduce
+  UI lag; apps can opt back in via props.
+
 ## 1.0.4
 
 ### Patch Changes

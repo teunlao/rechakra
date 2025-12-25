@@ -1,5 +1,13 @@
 # @rechakra/demo-theme
 
+## 1.0.5
+
+### Patch Changes
+
+- Updated dependencies
+  [[`0e99dc8`](https://github.com/teunlao/rechakra/commit/0e99dc8477802a9af34d39b27ee609d9a0c32a45)]:
+  - @rechakra/react@1.0.5
+
 ## 1.0.4
 
 ### Patch Changes
