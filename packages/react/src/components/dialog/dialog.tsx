@@ -35,7 +35,10 @@ export interface DialogRootProviderProps extends DialogRootProviderBaseProps {
 export const DialogRootProvider = withRootProvider<DialogRootProviderProps>(
   ArkDialog.RootProvider,
   {
-    defaultProps: { unmountOnExit: true, lazyMount: true },
+    defaultProps: {
+      unmountOnExit: true,
+      lazyMount: true,
+    },
   },
 )
 
@@ -50,7 +53,13 @@ export interface DialogRootProps extends DialogRootBaseProps {
 }
 
 export const DialogRoot = withRootProvider<DialogRootProps>(ArkDialog.Root, {
-  defaultProps: { unmountOnExit: true, lazyMount: true },
+  defaultProps: {
+    unmountOnExit: true,
+    lazyMount: true,
+    modal: false,
+    trapFocus: false,
+    preventScroll: false,
+  },
 })
 
 ////////////////////////////////////////////////////////////////////////////////////
